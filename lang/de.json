@@ -96,6 +96,46 @@
       "WeaponOutOfLine": {
         "Title": "Waffe außer Linie",
         "Description": "Dein Angriff bringt die Waffe weit aus ihrer Kampflinie. Dein nächster Angriff mit derselben Waffe oder demselben unbewaffneten Angriff vor Ende deines nächsten Zuges erhält einen Umstandsmalus von -2. Eine andere Waffe oder ein anderer unbewaffneter Angriff ist nicht betroffen."
+      },
+      "AwkwardRegrip": {
+        "Title": "Ungünstig nachgefasst",
+        "Description": "Deine schnelle Waffe rutscht in einen ungünstigen Griff. Dein nächster Angriff mit derselben Waffe oder demselben unbewaffneten Angriff vor Ende deines nächsten Zuges profitiert bei der Berechnung des Mehrfachangriffsmalus nicht vom Merkmal Agil."
+      },
+      "GuardTooHigh": {
+        "Title": "Deckung zu hoch",
+        "Description": "Du hebst deine Deckung zu weit an und gibst dein Gleichgewicht preis. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf deinen Reflex-SG."
+      },
+      "GuardTooLow": {
+        "Title": "Deckung zu tief",
+        "Description": "Deine Waffe sinkt unter die Linie, aus der du einen Gegenangriff führen könntest. Bis zum Beginn deines nächsten Zuges kannst du keine Reaktionen einsetzen, für die du einen Nahkampfangriff ausführen musst."
+      },
+      "EyesOnTheWeapon": {
+        "Title": "Blick auf die Waffe",
+        "Description": "Du beobachtest deine eigene Waffe statt das Schlachtfeld. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf Wahrnehmung und deinen Wahrnehmungs-SG."
+      },
+      "TunnelVision": {
+        "Title": "Tunnelblick",
+        "Description": "Du konzentrierst dich so vollständig auf das Ziel, dass der Rest des Schlachtfelds verschwindet. Bis zum Beginn deines nächsten Zuges bist du gegenüber Angriffen anderer Kreaturen als dem Ziel auf dem falschen Fuß."
+      },
+      "MissedThreat": {
+        "Title": "Übersehene Bedrohung",
+        "Description": "Dein Fehlschlag verdeckt eine andere Gefahr. Die nächste Kreatur außer dem Ziel, die sich vor Beginn deines nächsten Zuges in deine Reichweite hinein- oder aus ihr herausbewegt, löst keine Reaktionen von dir aus."
+      },
+      "FalseOpening": {
+        "Title": "Falsche Öffnung",
+        "Description": "Du legst dich auf eine Öffnung fest, die nie existiert hat. Das Ziel erhält gegen deinen nächsten Angriff auf es vor Ende deines nächsten Zuges einen Umstandsbonus von +1 auf seine RK."
+      },
+      "ExposedFlank": {
+        "Title": "Offene Flanke",
+        "Description": "Dein Fehlschlag lässt eine Seite völlig offen. Das Ziel darf sofort einen Schritt auf ein anderes sicheres Feld neben dir ausführen. Diese Bewegung löst keine Reaktionen von dir aus."
+      },
+      "ReactionBait": {
+        "Title": "Einladung zum Konter",
+        "Description": "Deine Erholung lädt geradezu zu einem Gegenangriff ein. Bis zum Beginn deines nächsten Zuges erhält das Ziel eine zusätzliche Reaktion, die es nur einsetzen kann, wenn eine deiner Aktionen den normalen Auslöser und alle Voraussetzungen der Reaktion erfüllt."
+      },
+      "GuardedTheWrongSide": {
+        "Title": "Die falsche Seite gedeckt",
+        "Description": "Du wappnest dich gegen die falsche Art von Gefahr. Das Ziel wählt Nahkampf- oder Fernkampfangriffe. Bis zum Beginn deines nächsten Zuges erhältst du gegen Angriffe der gewählten Art einen Umstandsmalus von -1 auf deine RK."
       }
     },
     "Effects": {
@@ -119,6 +159,12 @@
       },
       "ForcedReset": {
         "Name": "Erzwungener Neustart"
+      },
+      "GuardTooHigh": {
+        "Name": "Deckung zu hoch"
+      },
+      "EyesOnTheWeapon": {
+        "Name": "Blick auf die Waffe"
       }
     }
   }

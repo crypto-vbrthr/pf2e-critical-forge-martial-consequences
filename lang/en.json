@@ -96,6 +96,46 @@
       "WeaponOutOfLine": {
         "Title": "Weapon Out of Line",
         "Description": "Your attack leaves the weapon far outside its fighting line. The next Strike you make with the same weapon or unarmed attack before the end of your next turn takes a -2 circumstance penalty. A different weapon or unarmed attack is unaffected."
+      },
+      "AwkwardRegrip": {
+        "Title": "Awkward Regrip",
+        "Description": "Your quick weapon slips into an awkward grip. The next Strike you make with the same weapon or unarmed attack before the end of your next turn does not benefit from the agile trait when calculating its multiple attack penalty."
+      },
+      "GuardTooHigh": {
+        "Title": "Guard Too High",
+        "Description": "Your guard rises too far and leaves your balance exposed. You take a -1 circumstance penalty to your Reflex DC for 1 round."
+      },
+      "GuardTooLow": {
+        "Title": "Guard Too Low",
+        "Description": "Your weapon drops below the line needed to answer an incoming attack. Until the start of your next turn, you cannot use reactions that require you to make a melee Strike."
+      },
+      "EyesOnTheWeapon": {
+        "Title": "Eyes on the Weapon",
+        "Description": "You watch your own weapon instead of the battlefield. You take a -1 circumstance penalty to Perception and Perception DC for 1 round."
+      },
+      "TunnelVision": {
+        "Title": "Tunnel Vision",
+        "Description": "You focus so completely on the target that the rest of the battlefield disappears. Until the start of your next turn, you are off-guard to attacks made by creatures other than the target."
+      },
+      "MissedThreat": {
+        "Title": "Missed Threat",
+        "Description": "Your failed attack hides another threat from view. Before the start of your next turn, the next creature other than the target that moves within or leaves your reach does not trigger reactions from you."
+      },
+      "FalseOpening": {
+        "Title": "False Opening",
+        "Description": "You commit to an opening that was never there. The target gains a +1 circumstance bonus to AC against the next attack you make against it before the end of your next turn."
+      },
+      "ExposedFlank": {
+        "Title": "Exposed Flank",
+        "Description": "Your miss leaves one side completely open. The target may immediately Step to another safe space adjacent to you. This movement does not trigger reactions from you."
+      },
+      "ReactionBait": {
+        "Title": "Reaction Bait",
+        "Description": "Your recovery practically invites a counter. Until the start of your next turn, the target gains one additional reaction that it can use only when one of your actions satisfies the reaction's normal trigger and requirements."
+      },
+      "GuardedTheWrongSide": {
+        "Title": "Guarded the Wrong Side",
+        "Description": "You brace against the wrong kind of threat. The target chooses melee or ranged attacks. You take a -1 circumstance penalty to AC against attacks of the chosen kind until the start of your next turn."
       }
     },
     "Effects": {
@@ -119,6 +159,12 @@
       },
       "ForcedReset": {
         "Name": "Forced Reset"
+      },
+      "GuardTooHigh": {
+        "Name": "Guard Too High"
+      },
+      "EyesOnTheWeapon": {
+        "Name": "Eyes on the Weapon"
       }
     }
   }

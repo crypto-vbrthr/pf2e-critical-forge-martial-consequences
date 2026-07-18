@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.2
+
+- Added Martial Attack Fumbles MAF-021 through MAF-030.
+- Completed the first 30-card Martial Attack Fumbles set.
+- Added two new automated effects: Guard Too High and Eyes on the Weapon.
+- Added agile-weapon, awareness, conditional-defense, reaction-economy, and target-repositioning consequences.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+- Marked Martial Attack Fumbles as ready for its full mechanical review.
+
 ## 0.1.1
 
 - Added Martial Attack Fumbles MAF-011 through MAF-020.

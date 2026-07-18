@@ -4,9 +4,9 @@
 
 ### Current Status
 
-- 20 of 30 planned cards
-- Blocks MAF-001 through MAF-020 implemented
-- Full mechanical review scheduled after MAF-030
+- 30 of 30 planned cards
+- Blocks MAF-001 through MAF-030 implemented
+- Full mechanical review pending
 
 ### Purpose
 
@@ -23,7 +23,9 @@ Critical failure on a weapon attack. Cards exclude attacks carrying the syntheti
 - disrupted combat rhythm
 - action taxes and impaired follow-up attacks
 - forced or permitted repositioning
-- temporary attack, AC, Reflex, sense, or movement penalties
+- lapses in awareness and battlefield attention
+- temporary restrictions on reactions
+- short-lived tactical benefits for the target
 
 ### Not Included
 
@@ -39,7 +41,7 @@ Critical failure on a weapon attack. Cards exclude attacks carrying the syntheti
 
 This pack describes general martial failure. **Ranged Mishaps** will later cover failures unique to bows, crossbows, firearms, thrown weapons, aiming, ammunition handling, and firing positions.
 
-Some mechanical overlap is intentionally tolerated while the pack grows. At 30 cards, the complete pack receives a mechanical review that replaces redundant effects and sharpens its identity.
+Some mechanical overlap was intentionally tolerated while the pack grew. Now that it contains 30 cards, the complete pack is ready for a mechanical review that will replace redundant effects and sharpen its identity.
 
 ## Planned Packs
 

@@ -34,13 +34,30 @@ Each pack grows in blocks of ten cards. At 30 cards, it receives a full mechanic
 | MAF-019 | Crowded Position | Light | Manual | -1 to attacks while adjacent to an ally |
 | MAF-020 | Weapon Out of Line | Moderate | Manual | -2 to next Strike with the same weapon or unarmed attack |
 
-### Known Review Candidates
+## Martial Attack Fumbles — Block 3
 
-- MAF-001 and MAF-009 both weaken defense.
-- MAF-004, MAF-007, MAF-014, MAF-019, and MAF-020 all impair later attacks in different ways.
-- MAF-002 and MAF-016 both grant movement to the target.
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| MAF-021 | Awkward Regrip | Moderate | Manual | Next attack with the same agile attack loses agile for MAP |
+| MAF-022 | Guard Too High | Light | Effect | -1 circumstance penalty to Reflex DC |
+| MAF-023 | Guard Too Low | Light | Manual | Cannot use reactions requiring a melee Strike |
+| MAF-024 | Eyes on the Weapon | Moderate | Effect | -1 to Perception and Perception DC |
+| MAF-025 | Tunnel Vision | Strong | Manual | Off-guard to creatures other than the target |
+| MAF-026 | Missed Threat | Moderate | Manual | Next other creature moving through reach avoids reactions |
+| MAF-027 | False Opening | Moderate | Manual | Target gains +1 AC against the source's next attack |
+| MAF-028 | Exposed Flank | Moderate | Manual | Target Steps around the source without triggering reactions |
+| MAF-029 | Reaction Bait | Strong | Manual | Target gains a restricted additional reaction |
+| MAF-030 | Guarded the Wrong Side | Moderate | Manual | Target chooses melee or ranged AC vulnerability |
+
+## Full-Set Review Candidates
+
+- MAF-001, MAF-009, MAF-022, MAF-025, MAF-027, and MAF-030 all weaken defense in different ways.
+- MAF-004, MAF-007, MAF-014, MAF-019, MAF-020, MAF-021, and MAF-027 all influence later attacks.
+- MAF-002, MAF-016, and MAF-028 all grant movement to the target.
 - MAF-006, MAF-017, and MAF-018 all reposition the source.
-- MAF-005 and MAF-013 both interfere with action economy.
+- MAF-005, MAF-023, MAF-026, and MAF-029 all interact with reactions or reaction economy.
+- MAF-008 and MAF-024 both impair battlefield awareness.
 - MAF-010 and MAF-011 both restrict movement.
+- MAF-025 and MAF-030 both create conditional defensive vulnerabilities.
 
-These overlaps are accepted during development and will be reassessed during the 30-card mechanical review.
+The pack has now reached 30 cards. These clusters are the starting point for the full mechanical review rather than automatic deletion targets. Cards should be judged by tactical role, narrative identity, severity, and table usability as well as by their underlying rule element.

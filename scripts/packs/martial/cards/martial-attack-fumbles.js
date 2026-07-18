@@ -129,5 +129,70 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
     tone: "serious", impact: "moderate", fallbackTitle: "Weapon Out of Line",
     fallbackDescription: "Your attack leaves the weapon far outside its fighting line. The next Strike you make with the same weapon or unarmed attack before the end of your next turn takes a -2 circumstance penalty. A different weapon or unarmed attack is unaffected.",
     tags: ["weapon-control", "tactical-choice", "manual"]
+  }),
+  defineMartialAttackFumble({
+    id: "maf-021-awkward-regrip", localizationKey: "AwkwardRegrip",
+    tone: "neutral", impact: "moderate", fallbackTitle: "Awkward Regrip",
+    fallbackDescription: "Your quick weapon slips into an awkward grip. The next Strike you make with the same weapon or unarmed attack before the end of your next turn does not benefit from the agile trait when calculating its multiple attack penalty.",
+    tags: ["weapon-control", "multiple-attack-penalty", "manual"], filters: { attackTraits: ["agile"] }
+  }),
+  defineMartialAttackFumble({
+    id: "maf-022-guard-too-high", localizationKey: "GuardTooHigh",
+    tone: "serious", impact: "light", fallbackTitle: "Guard Too High",
+    fallbackDescription: "Your guard rises too far and leaves your balance exposed. You take a -1 circumstance penalty to your Reflex DC for 1 round.",
+    weight: 2, tags: ["defense", "stance", "debuff"], filters: { excludedSourceTraits: ["incorporeal"] },
+    effect: { duration: ONE_ROUND, components: [{ type: "modifier", selector: "reflex-dc", value: -1, modifierType: "circumstance", predicate: [] }] }
+  }),
+  defineMartialAttackFumble({
+    id: "maf-023-guard-too-low", localizationKey: "GuardTooLow",
+    tone: "serious", impact: "light", fallbackTitle: "Guard Too Low",
+    fallbackDescription: "Your weapon drops below the line needed to answer an incoming attack. Until the start of your next turn, you cannot use reactions that require you to make a melee Strike.",
+    weight: 2, tags: ["defense", "reaction", "manual"], filters: { attackTraits: ["melee"] }
+  }),
+  defineMartialAttackFumble({
+    id: "maf-024-eyes-on-the-weapon", localizationKey: "EyesOnTheWeapon",
+    tone: "neutral", impact: "moderate", fallbackTitle: "Eyes on the Weapon",
+    fallbackDescription: "You watch your own weapon instead of the battlefield. You take a -1 circumstance penalty to Perception and Perception DC for 1 round.",
+    tags: ["attention", "perception", "debuff"],
+    effect: { duration: ONE_ROUND, components: [
+      { type: "modifier", selector: "perception", value: -1, modifierType: "circumstance", predicate: [] },
+      { type: "modifier", selector: "perception-dc", value: -1, modifierType: "circumstance", predicate: [] }
+    ] }
+  }),
+  defineMartialAttackFumble({
+    id: "maf-025-tunnel-vision", localizationKey: "TunnelVision",
+    tone: "dramatic", impact: "strong", fallbackTitle: "Tunnel Vision",
+    fallbackDescription: "You focus so completely on the target that the rest of the battlefield disappears. Until the start of your next turn, you are off-guard to attacks made by creatures other than the target.",
+    tags: ["attention", "defense", "conditional", "manual"]
+  }),
+  defineMartialAttackFumble({
+    id: "maf-026-missed-threat", localizationKey: "MissedThreat",
+    tone: "serious", impact: "moderate", fallbackTitle: "Missed Threat",
+    fallbackDescription: "Your failed attack hides another threat from view. Before the start of your next turn, the next creature other than the target that moves within or leaves your reach does not trigger reactions from you.",
+    tags: ["attention", "reaction", "movement", "manual"], filters: { attackTraits: ["melee"] }
+  }),
+  defineMartialAttackFumble({
+    id: "maf-027-false-opening", localizationKey: "FalseOpening",
+    tone: "dramatic", impact: "moderate", fallbackTitle: "False Opening",
+    fallbackDescription: "You commit to an opening that was never there. The target gains a +1 circumstance bonus to AC against the next attack you make against it before the end of your next turn.",
+    tags: ["timing", "target-defense", "one-use", "manual"]
+  }),
+  defineMartialAttackFumble({
+    id: "maf-028-exposed-flank", localizationKey: "ExposedFlank",
+    tone: "dramatic", impact: "moderate", fallbackTitle: "Exposed Flank",
+    fallbackDescription: "Your miss leaves one side completely open. The target may immediately Step to another safe space adjacent to you. This movement does not trigger reactions from you.",
+    tags: ["positioning", "enemy-movement", "manual"], filters: { attackTraits: ["melee"] }
+  }),
+  defineMartialAttackFumble({
+    id: "maf-029-reaction-bait", localizationKey: "ReactionBait",
+    tone: "dramatic", impact: "strong", fallbackTitle: "Reaction Bait",
+    fallbackDescription: "Your recovery practically invites a counter. Until the start of your next turn, the target gains one additional reaction that it can use only when one of your actions satisfies the reaction's normal trigger and requirements.",
+    tags: ["action-economy", "target-benefit", "reaction", "manual"]
+  }),
+  defineMartialAttackFumble({
+    id: "maf-030-guarded-the-wrong-side", localizationKey: "GuardedTheWrongSide",
+    tone: "serious", impact: "moderate", fallbackTitle: "Guarded the Wrong Side",
+    fallbackDescription: "You brace against the wrong kind of threat. The target chooses melee or ranged attacks. You take a -1 circumstance penalty to AC against attacks of the chosen kind until the start of your next turn.",
+    tags: ["defense", "choice", "conditional", "manual"]
   })
 ]);
