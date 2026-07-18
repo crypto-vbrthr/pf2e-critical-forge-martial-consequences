@@ -4,11 +4,11 @@
 
 Martial Consequences is an extension module for **PF2E Critical Forge**. It adds card packs focused on stance, timing, positioning, openings, and battlefield momentum.
 
-## Version 0.1.0
+## Version 0.1.1
 
-The first release contains one optional pack:
+The current release contains one optional pack:
 
-- **Martial Attack Fumbles** — 10 cards for critical failures on non-spell weapon attacks.
+- **Martial Attack Fumbles** — 20 cards for critical failures on non-spell weapon attacks.
 
 The pack deliberately avoids damage-type-specific injuries. Those belong to **PF2E Critical Forge: Arsenal**. Martial Consequences instead asks how the failed attack changes the next few moments of the fight.
 
@@ -23,7 +23,9 @@ Then enable **Martial Attack Fumbles** in the module settings.
 
 ## Automation
 
-Five cards currently create applicable Critical Forge effects. Five cards describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate Steps, one-use bonuses, or temporary reaction restrictions.
+Seven cards create applicable Critical Forge effects. Thirteen cards describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use modifiers, action taxes, multiple-attack-penalty changes, conditional adjacency, or temporary reaction restrictions.
+
+**Forced Reset** creates an automated effect that may be removed manually when the affected creature spends the action described by the card.
 
 ## Planned Packs
 

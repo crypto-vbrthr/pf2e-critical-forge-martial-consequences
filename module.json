@@ -2,21 +2,47 @@
   "id": "pf2e-critical-forge-martial-consequences",
   "title": "PF2E Critical Forge: Martial Consequences",
   "description": "Tactical card packs for PF2E Critical Forge that reshape the flow of martial combat.",
-  "version": "0.1.0",
-  "authors": [{ "name": "Bully" }],
-  "compatibility": { "minimum": "14", "verified": "14" },
-  "relationships": {
-    "requires": [{
-      "id": "pf2e-critical-forge",
-      "type": "module",
-      "compatibility": { "minimum": "0.9.0-dev" }
-    }],
-    "systems": [{ "id": "pf2e", "type": "system" }]
+  "version": "0.1.1",
+  "authors": [
+    {
+      "name": "Bully"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
   },
-  "esmodules": ["scripts/main.js"],
+  "relationships": {
+    "requires": [
+      {
+        "id": "pf2e-critical-forge",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.9.0-dev"
+        }
+      }
+    ],
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
   "languages": [
-    { "lang": "de", "name": "Deutsch", "path": "lang/de.json" },
-    { "lang": "en", "name": "English", "path": "lang/en.json" }
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
   ],
   "readme": "README.md",
   "license": "LICENSE"

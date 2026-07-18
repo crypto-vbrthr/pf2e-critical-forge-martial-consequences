@@ -25,7 +25,7 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.1.0");
+assert.equal(manifest.version, "0.1.1");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
@@ -38,14 +38,14 @@ assert.equal(disabled.length, 1);
 assert.equal(disabled[0].id, MARTIAL_PACK_IDS.martialAttackFumbles);
 assert.equal(disabled[0].enabled, false);
 assert.equal(enabled[0].enabled, true);
-assert.equal(disabled[0].cards.length, 10);
+assert.equal(disabled[0].cards.length, 20);
 
 const ids = new Set();
 let automated = 0;
 let manual = 0;
 for (const pack of disabled) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.1.0");
+  assert.equal(pack.version, "0.1.1");
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
     assert.ok(getLocalization(dictionary, pack.descriptionKey), pack.descriptionKey);
@@ -78,9 +78,23 @@ for (const pack of disabled) {
   }
 }
 
-assert.equal(ids.size, 10);
-assert.equal(automated, 5);
-assert.equal(manual, 5);
+assert.equal(ids.size, 20);
+
+const martialCards = disabled[0].cards;
+const byId = new Map(martialCards.map((card) => [card.id.split(".").at(-1), card]));
+assert.ok(byId.has("maf-011-twisted-stance"));
+assert.ok(byId.has("maf-020-weapon-out-of-line"));
+assert.deepEqual(byId.get("maf-012-weight-on-the-wrong-foot").effect.definition.components[0], {
+  type: "modifier", selector: "reflex", value: -1, modifierType: "circumstance", predicate: []
+});
+assert.deepEqual(byId.get("maf-015-forced-reset").effect.definition.components[0], {
+  type: "condition", slug: "clumsy", value: 1
+});
+for (const slug of ["maf-006-wild-follow-through", "maf-016-open-lane", "maf-017-driven-aside", "maf-018-lost-ground"]) {
+  assert.ok(byId.get(slug).filters.attackTraits.includes("melee"), `${slug} must require melee.`);
+}
+assert.equal(automated, 7);
+assert.equal(manual, 13);
 
 const settingsScript = await readFile(path.join(root, "scripts/settings.js"), "utf8");
 assert.match(settingsScript, /game\.settings\.register/);
@@ -91,4 +105,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.1.0 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.1.1 structural validation passed.");

@@ -52,6 +52,6 @@ export function defineMartialAttackFumble({
     tags: Object.freeze(["weapon", "martial", "critical-fumble", ...tags]),
     filters: freezeFilters({ excludedAttackTraits: ["spell"], ...filters }),
     effect: freezeEffect(effect, localizationKey, fallbackTitle),
-    metadata: Object.freeze({ collection: "martial-attack-fumbles-1" })
+    metadata: Object.freeze({ collection: "martial-attack-fumbles" })
   });
 }

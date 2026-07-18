@@ -2,6 +2,12 @@
 
 ## Martial Attack Fumbles
 
+### Current Status
+
+- 20 of 30 planned cards
+- Blocks MAF-001 through MAF-020 implemented
+- Full mechanical review scheduled after MAF-030
+
 ### Purpose
 
 General critical-fumble consequences for non-spell weapon attacks.
@@ -12,11 +18,12 @@ Critical failure on a weapon attack. Cards exclude attacks carrying the syntheti
 
 ### Typical Effects
 
-- lost footing
+- lost footing and unstable stances
 - exposed defenses
 - disrupted combat rhythm
+- action taxes and impaired follow-up attacks
 - forced or permitted repositioning
-- temporary attack, AC, sense, or movement penalties
+- temporary attack, AC, Reflex, sense, or movement penalties
 
 ### Not Included
 
@@ -31,6 +38,8 @@ Critical failure on a weapon attack. Cards exclude attacks carrying the syntheti
 ### Boundary
 
 This pack describes general martial failure. **Ranged Mishaps** will later cover failures unique to bows, crossbows, firearms, thrown weapons, aiming, ammunition handling, and firing positions.
+
+Some mechanical overlap is intentionally tolerated while the pack grows. At 30 cards, the complete pack receives a mechanical review that replaces redundant effects and sharpens its identity.
 
 ## Planned Packs
 

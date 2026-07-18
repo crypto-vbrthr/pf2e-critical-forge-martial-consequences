@@ -17,23 +17,109 @@
       "PackSelectionUpdated": "Die Kartenpaket-Auswahl von Martial Consequences wurde aktualisiert."
     },
     "Cards": {
-      "LostFooting": { "Title": "Unsicherer Stand", "Description": "Im ungünstigsten Moment rutscht dir der Stand weg. Du bist 1 Runde lang auf dem falschen Fuß." },
-      "OverextendedSwing": { "Title": "Überzogener Angriff", "Description": "Dein Angriff trägt dich zu weit. Das Ziel darf sofort als freie Aktion einen Schritt ausführen." },
-      "BrokenGuard": { "Title": "Gebrochene Deckung", "Description": "Deine Waffe endet weit außerhalb der Deckung. Der nächste Angriff gegen dich vor Beginn deines nächsten Zuges erhält einen Umstandsbonus von +1." },
-      "SlipperyGrip": { "Title": "Verrutschter Griff", "Description": "Dein Griff verrutscht unerwartet. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf Angriffswürfe." },
-      "LostRhythm": { "Title": "Verlorener Rhythmus", "Description": "Der Fehlschlag unterbricht deinen Kampfrhythmus. Bis zum Beginn deines nächsten Zuges kannst du keine Reaktionen einsetzen." },
-      "WildFollowThrough": { "Title": "Wilder Nachschwung", "Description": "Der Schwung zieht dich aus der Position. Falls möglich, führe 1,5 Meter in Richtung des versuchten Angriffs einen Schritt aus." },
-      "Hesitation": { "Title": "Zögern", "Description": "Du zweifelst an deiner nächsten Bewegung. Der erste Angriff vor Ende deines nächsten Zuges erhält einen Umstandsmalus von -1." },
-      "DistractedRecovery": { "Title": "Abgelenkte Erholung", "Description": "Die Erholung vom Fehlschlag raubt dir den Blick für das Schlachtfeld. Du bist 1 Runde lang geblendet." },
-      "DefensiveCollapse": { "Title": "Zusammengebrochene Deckung", "Description": "Der Fehlschlag bringt deine Verteidigung aus der Linie. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf deine RK." },
-      "UnsteadyRecovery": { "Title": "Wacklige Erholung", "Description": "Du brauchst länger als erwartet, um wieder festen Stand zu gewinnen. Alle deine Bewegungsraten sind 1 Runde lang um 1,5 Meter reduziert." }
+      "LostFooting": {
+        "Title": "Unsicherer Stand",
+        "Description": "Im ungünstigsten Moment rutscht dir der Stand weg. Du bist 1 Runde lang auf dem falschen Fuß."
+      },
+      "OverextendedSwing": {
+        "Title": "Überzogener Angriff",
+        "Description": "Dein Angriff trägt dich zu weit. Das Ziel darf sofort als freie Aktion einen Schritt ausführen."
+      },
+      "BrokenGuard": {
+        "Title": "Gebrochene Deckung",
+        "Description": "Deine Waffe endet weit außerhalb der Deckung. Der nächste Angriff gegen dich vor Beginn deines nächsten Zuges erhält einen Umstandsbonus von +1."
+      },
+      "SlipperyGrip": {
+        "Title": "Verrutschter Griff",
+        "Description": "Dein Griff verrutscht unerwartet. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf Angriffswürfe."
+      },
+      "LostRhythm": {
+        "Title": "Verlorener Rhythmus",
+        "Description": "Der Fehlschlag unterbricht deinen Kampfrhythmus. Bis zum Beginn deines nächsten Zuges kannst du keine Reaktionen einsetzen."
+      },
+      "WildFollowThrough": {
+        "Title": "Wilder Nachschwung",
+        "Description": "Der Schwung zieht dich aus der Position. Falls möglich, führe 1,5 Meter in Richtung des versuchten Angriffs einen Schritt aus."
+      },
+      "Hesitation": {
+        "Title": "Zögern",
+        "Description": "Du zweifelst an deiner nächsten Bewegung. Der erste Angriff vor Ende deines nächsten Zuges erhält einen Umstandsmalus von -1."
+      },
+      "DistractedRecovery": {
+        "Title": "Abgelenkte Erholung",
+        "Description": "Die Erholung vom Fehlschlag raubt dir den Blick für das Schlachtfeld. Du bist 1 Runde lang geblendet."
+      },
+      "DefensiveCollapse": {
+        "Title": "Zusammengebrochene Deckung",
+        "Description": "Der Fehlschlag bringt deine Verteidigung aus der Linie. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf deine RK."
+      },
+      "UnsteadyRecovery": {
+        "Title": "Wacklige Erholung",
+        "Description": "Du brauchst länger als erwartet, um wieder festen Stand zu gewinnen. Alle deine Bewegungsraten sind 1 Runde lang um 1,5 Meter reduziert."
+      },
+      "TwistedStance": {
+        "Title": "Verdrehte Haltung",
+        "Description": "Nach dem Fehlschlag ist dein Körper ungünstig verdreht. Bis zum Ende deines nächsten Zuges kannst du keinen Schritt ausführen."
+      },
+      "WeightOnTheWrongFoot": {
+        "Title": "Gewicht auf dem falschen Fuß",
+        "Description": "Du verlagerst dein Gewicht ungünstig. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf Reflexwürfe."
+      },
+      "LateRecovery": {
+        "Title": "Verspätete Erholung",
+        "Description": "Du bringst deinen Angriff zu langsam wieder unter Kontrolle. Bevor du in diesem Zug erneut angreifen kannst, musst du eine Aktion zum Interagieren aufwenden, um deine Haltung neu auszurichten. Diese Einschränkung endet zu Beginn deines nächsten Zuges."
+      },
+      "TempoBroken": {
+        "Title": "Gebrochenes Tempo",
+        "Description": "Deine Angriffsfolge fällt auseinander. Behandle deinen nächsten Angriff vor Ende deines nächsten Zuges für den Mehrfachangriffsmalus so, als hättest du in diesem Zug bereits einen zusätzlichen Angriff ausgeführt."
+      },
+      "ForcedReset": {
+        "Title": "Erzwungener Neustart",
+        "Description": "Du musst deine Haltung vollständig neu aufbauen. Du bist 1 Runde lang unbeholfen 1. Du kannst eine einzelne Aktion aufwenden, um dich zu stabilisieren und diesen Effekt vorzeitig zu entfernen."
+      },
+      "OpenLane": {
+        "Title": "Offene Bahn",
+        "Description": "Dein Fehlschlag öffnet einen Weg an dir vorbei. Das Ziel darf sich sofort als freie Aktion bis zu 3 Meter weit bewegen. Diese Bewegung löst keine Reaktionen von dir aus."
+      },
+      "DrivenAside": {
+        "Title": "Beiseite gedrängt",
+        "Description": "Das Ziel bestimmt, wohin deine Erholung dich trägt. Falls möglich, wählt es ein sicheres, unbesetztes Feld neben dir, auf das du einen Schritt ausführst."
+      },
+      "LostGround": {
+        "Title": "Boden verloren",
+        "Description": "Du gibst Raum preis, um dein Gleichgewicht wiederzugewinnen. Falls möglich, führe einen Schritt von 1,5 Metern direkt vom Ziel weg aus."
+      },
+      "CrowdedPosition": {
+        "Title": "Beengte Position",
+        "Description": "Deine unbeholfene Erholung behindert den Kampfraum deiner Verbündeten. Solange du neben einem Verbündeten stehst, erhältst du bis zum Beginn deines nächsten Zuges einen Umstandsmalus von -1 auf Angriffswürfe."
+      },
+      "WeaponOutOfLine": {
+        "Title": "Waffe außer Linie",
+        "Description": "Dein Angriff bringt die Waffe weit aus ihrer Kampflinie. Dein nächster Angriff mit derselben Waffe oder demselben unbewaffneten Angriff vor Ende deines nächsten Zuges erhält einen Umstandsmalus von -2. Eine andere Waffe oder ein anderer unbewaffneter Angriff ist nicht betroffen."
+      }
     },
     "Effects": {
-      "LostFooting": { "Name": "Unsicherer Stand" },
-      "SlipperyGrip": { "Name": "Verrutschter Griff" },
-      "DistractedRecovery": { "Name": "Abgelenkte Erholung" },
-      "DefensiveCollapse": { "Name": "Zusammengebrochene Deckung" },
-      "UnsteadyRecovery": { "Name": "Wacklige Erholung" }
+      "LostFooting": {
+        "Name": "Unsicherer Stand"
+      },
+      "SlipperyGrip": {
+        "Name": "Verrutschter Griff"
+      },
+      "DistractedRecovery": {
+        "Name": "Abgelenkte Erholung"
+      },
+      "DefensiveCollapse": {
+        "Name": "Zusammengebrochene Deckung"
+      },
+      "UnsteadyRecovery": {
+        "Name": "Wacklige Erholung"
+      },
+      "WeightOnTheWrongFoot": {
+        "Name": "Gewicht auf dem falschen Fuß"
+      },
+      "ForcedReset": {
+        "Name": "Erzwungener Neustart"
+      }
     }
   }
 }

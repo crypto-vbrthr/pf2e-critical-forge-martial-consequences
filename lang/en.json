@@ -17,23 +17,109 @@
       "PackSelectionUpdated": "Martial Consequences card-pack selection updated."
     },
     "Cards": {
-      "LostFooting": { "Title": "Lost Footing", "Description": "Your footing slips at the worst possible moment. You are off-guard for 1 round." },
-      "OverextendedSwing": { "Title": "Overextended Swing", "Description": "Your attack carries you too far. The target may immediately Step as a free action." },
-      "BrokenGuard": { "Title": "Broken Guard", "Description": "Your weapon finishes wide. The next attack made against you before the start of your next turn gains a +1 circumstance bonus." },
-      "SlipperyGrip": { "Title": "Slippery Grip", "Description": "Your grip shifts unexpectedly. You take a -1 circumstance penalty to attack rolls for 1 round." },
-      "LostRhythm": { "Title": "Lost Rhythm", "Description": "The failed strike disrupts your combat rhythm. You cannot use reactions until the start of your next turn." },
-      "WildFollowThrough": { "Title": "Wild Follow-Through", "Description": "The momentum pulls you out of position. If possible, Step 5 feet in the direction of the attempted attack." },
-      "Hesitation": { "Title": "Hesitation", "Description": "You second-guess your next move. The first Strike you make before the end of your next turn takes a -1 circumstance penalty." },
-      "DistractedRecovery": { "Title": "Distracted Recovery", "Description": "Recovering from the miss steals your attention from the battlefield. You are dazzled for 1 round." },
-      "DefensiveCollapse": { "Title": "Defensive Collapse", "Description": "Your failed attack leaves your defenses out of position. You take a -1 circumstance penalty to AC for 1 round." },
-      "UnsteadyRecovery": { "Title": "Unsteady Recovery", "Description": "It takes longer than expected to regain your footing. All your Speeds are reduced by 5 feet for 1 round." }
+      "LostFooting": {
+        "Title": "Lost Footing",
+        "Description": "Your footing slips at the worst possible moment. You are off-guard for 1 round."
+      },
+      "OverextendedSwing": {
+        "Title": "Overextended Swing",
+        "Description": "Your attack carries you too far. The target may immediately Step as a free action."
+      },
+      "BrokenGuard": {
+        "Title": "Broken Guard",
+        "Description": "Your weapon finishes wide. The next attack made against you before the start of your next turn gains a +1 circumstance bonus."
+      },
+      "SlipperyGrip": {
+        "Title": "Slippery Grip",
+        "Description": "Your grip shifts unexpectedly. You take a -1 circumstance penalty to attack rolls for 1 round."
+      },
+      "LostRhythm": {
+        "Title": "Lost Rhythm",
+        "Description": "The failed strike disrupts your combat rhythm. You cannot use reactions until the start of your next turn."
+      },
+      "WildFollowThrough": {
+        "Title": "Wild Follow-Through",
+        "Description": "The momentum pulls you out of position. If possible, Step 5 feet in the direction of the attempted attack."
+      },
+      "Hesitation": {
+        "Title": "Hesitation",
+        "Description": "You second-guess your next move. The first Strike you make before the end of your next turn takes a -1 circumstance penalty."
+      },
+      "DistractedRecovery": {
+        "Title": "Distracted Recovery",
+        "Description": "Recovering from the miss steals your attention from the battlefield. You are dazzled for 1 round."
+      },
+      "DefensiveCollapse": {
+        "Title": "Defensive Collapse",
+        "Description": "Your failed attack leaves your defenses out of position. You take a -1 circumstance penalty to AC for 1 round."
+      },
+      "UnsteadyRecovery": {
+        "Title": "Unsteady Recovery",
+        "Description": "It takes longer than expected to regain your footing. All your Speeds are reduced by 5 feet for 1 round."
+      },
+      "TwistedStance": {
+        "Title": "Twisted Stance",
+        "Description": "Your body turns awkwardly after the miss. You cannot Step until the end of your next turn."
+      },
+      "WeightOnTheWrongFoot": {
+        "Title": "Weight on the Wrong Foot",
+        "Description": "You settle your weight badly. You take a -1 circumstance penalty to Reflex saves for 1 round."
+      },
+      "LateRecovery": {
+        "Title": "Late Recovery",
+        "Description": "Your attack recovers too slowly. Before you can Strike again this turn, you must spend an Interact action to reset your stance. This restriction ends at the start of your next turn."
+      },
+      "TempoBroken": {
+        "Title": "Tempo Broken",
+        "Description": "Your attack sequence falls apart. Treat the next Strike you make before the end of your next turn as though you had already made one additional attack that turn for the purpose of your multiple attack penalty."
+      },
+      "ForcedReset": {
+        "Title": "Forced Reset",
+        "Description": "You must rebuild your stance from the ground up. You are clumsy 1 for 1 round. You may spend a single action to steady yourself and remove this effect early."
+      },
+      "OpenLane": {
+        "Title": "Open Lane",
+        "Description": "Your miss opens a route past you. The target may immediately Stride up to 10 feet as a free action. This movement does not trigger reactions from you."
+      },
+      "DrivenAside": {
+        "Title": "Driven Aside",
+        "Description": "The target controls your recovery. If possible, it chooses a safe, unoccupied space adjacent to you, and you Step into that space."
+      },
+      "LostGround": {
+        "Title": "Lost Ground",
+        "Description": "You surrender ground to regain your balance. If possible, Step 5 feet directly away from the target."
+      },
+      "CrowdedPosition": {
+        "Title": "Crowded Position",
+        "Description": "Your recovery crowds your allies' fighting space. Until the start of your next turn, you take a -1 circumstance penalty to attack rolls while adjacent to an ally."
+      },
+      "WeaponOutOfLine": {
+        "Title": "Weapon Out of Line",
+        "Description": "Your attack leaves the weapon far outside its fighting line. The next Strike you make with the same weapon or unarmed attack before the end of your next turn takes a -2 circumstance penalty. A different weapon or unarmed attack is unaffected."
+      }
     },
     "Effects": {
-      "LostFooting": { "Name": "Lost Footing" },
-      "SlipperyGrip": { "Name": "Slippery Grip" },
-      "DistractedRecovery": { "Name": "Distracted Recovery" },
-      "DefensiveCollapse": { "Name": "Defensive Collapse" },
-      "UnsteadyRecovery": { "Name": "Unsteady Recovery" }
+      "LostFooting": {
+        "Name": "Lost Footing"
+      },
+      "SlipperyGrip": {
+        "Name": "Slippery Grip"
+      },
+      "DistractedRecovery": {
+        "Name": "Distracted Recovery"
+      },
+      "DefensiveCollapse": {
+        "Name": "Defensive Collapse"
+      },
+      "UnsteadyRecovery": {
+        "Name": "Unsteady Recovery"
+      },
+      "WeightOnTheWrongFoot": {
+        "Name": "Weight on the Wrong Foot"
+      },
+      "ForcedReset": {
+        "Name": "Forced Reset"
+      }
     }
   }
 }
