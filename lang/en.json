@@ -151,7 +151,7 @@
       },
       "RevealingShot": {
         "Title": "Revealing Shot",
-        "Description": "The failed shot reveals your exact firing position. Until the start of your next turn, you cannot be hidden or undetected from the target. Concealment still applies normally."
+        "Description": "The failed shot gives away the habits of your firing position. Until the start of your next turn, you cannot Hide from the target while you remain in your current space. If another effect makes you undetected from the target while you remain there, the target gains a +2 circumstance bonus to Seek you. Moving to a different space ends both effects."
       },
       "AwkwardRelease": {
         "Title": "Awkward Release",
@@ -159,23 +159,23 @@
       },
       "BrokenFiringRhythm": {
         "Title": "Broken Firing Rhythm",
-        "Description": "The failed shot breaks your firing rhythm. Until the start of your next turn, you cannot use reactions that require or include a ranged Strike."
+        "Description": "The failed shot breaks the cadence between one attack and the next. The next time you make a ranged Strike before the end of your next turn, your immediately following action cannot include another ranged Strike."
       },
       "ForcedReposition": {
         "Title": "Forced Reposition",
-        "Description": "Your current firing position no longer feels usable. Before you can make another ranged attack against the same target before the end of your next turn, you must move to a different space."
+        "Description": "Your current firing lane becomes predictable. Until the end of your next turn, the target gains a one-use reaction: after you complete a ranged Strike against it from your current space, it may Stride up to 10 feet toward cover or away from you. If it cannot move, it may Take Cover instead if able. Moving to a different space ends this effect."
       },
       "TargetFindsCover": {
         "Title": "Target Finds Cover",
-        "Description": "The miss makes the danger angle obvious. The target may immediately Step as a free action. If possible, it must end that Step closer to cover from you."
+        "Description": "The miss makes the danger angle obvious. The target may immediately Take Cover as a free action, following the normal requirements. If it cannot, it gains a +1 circumstance bonus to AC against your next ranged attack before the start of your next turn as it flattens itself against whatever protection is available."
       },
       "PoorFollowThrough": {
         "Title": "Poor Follow-Through",
-        "Description": "Your weapon or throwing arm finishes outside the line needed for another shot. The next action you use before the end of your next turn cannot require or include a ranged Strike."
+        "Description": "Your weapon or throwing arm finishes across your guard. Until the start of your next turn, you cannot Raise a Shield, Take Cover, or use a weapon's parry trait. Existing bonuses already in place are unaffected."
       },
       "ObstructedArc": {
         "Title": "Obstructed Arc",
-        "Description": "The errant projectile forces someone in its path to shift. One creature between you and the target may immediately Step as a free action."
+        "Description": "The projectile tangles with the scenery. The GM chooses one suitable space crossed by or adjacent to its path. A lodged projectile, swinging strap, loose shutter, or similar obstruction causes your ranged attacks passing through that space to grant lesser cover until the end of your next turn. If the environment offers no suitable feature, the target gains lesser cover against your next ranged attack from your current space."
       },
       "ExposedToReturnFire": {
         "Title": "Exposed to Return Fire",
@@ -199,11 +199,11 @@
       },
       "FollowTheShot": {
         "Title": "Follow the Shot",
-        "Description": "The impact points straight back to you. The target may immediately Point Out you as a free action to creatures that can see or hear it. If all of the target's allies already observe you, the target instead chooses one ally; that ally gains a +1 circumstance bonus to its next ranged attack against you before the start of your next turn."
+        "Description": "The impact points straight back to you. The target chooses itself or one ally that can see or hear it. Until the start of your next turn, the chosen creature gains a one-use +1 circumstance bonus to either its next Seek check to locate you or its next ranged attack against you. The creature chooses which use consumes the bonus."
       },
       "ReadTheAngle": {
         "Title": "Read the Angle",
-        "Description": "The target reads the line of your failed shot. Until the end of your next turn, it gains a one-use reaction: when you begin a ranged Strike against it from your current space, it Steps before the attack roll. The Strike continues if the target remains valid; recalculate cover and range after the Step."
+        "Description": "The target reads the line of your failed shot. Until the end of your next turn, it gains a one-use reaction: when you begin a ranged Strike against it from your current space, it may Step before the attack roll, but only to a space where it remains a valid target for the Strike. Recalculate cover and range after the Step. If no such space is available, the reaction cannot be used."
       },
       "DeadGround": {
         "Title": "Dead Ground",
@@ -211,7 +211,7 @@
       },
       "AVeryEncouragingMiss": {
         "Title": "A Very Encouraging Miss",
-        "Description": "The target's confidence improves dramatically. Before the end of your next turn, it gains a +1 circumstance bonus to its next attempt to Demoralize or Feint against you."
+        "Description": "The target's confidence improves dramatically. The first time it Strides before the start of your next turn, it may move 5 feet farther, provided it ends that movement either closer to you or with cover from you."
       },
       "ScenicDetour": {
         "Title": "Scenic Detour",
@@ -219,11 +219,11 @@
       },
       "HelpfulWarning": {
         "Title": "Helpful Warning",
-        "Description": "The miss warns everyone near the target. One creature adjacent to the target gains a one-use reaction until the start of your next turn. It may use that reaction to Aid the target's AC against your next ranged attack, without having prepared to Aid; all other Aid rules apply normally."
+        "Description": "The miss warns everyone near the target. One creature adjacent to the target gains a one-use reaction until the start of your next turn. Trigger: you begin a ranged Strike against the target. Effect: the creature warns, shields, or pulls the target aside, granting it a +1 circumstance bonus to AC against the triggering Strike. The creature must be able to perceive both you and the target."
       },
       "RangeFound": {
         "Title": "Range Found",
-        "Description": "The target watches the projectile and learns the distance. For its next ranged Strike against you before the start of your next turn, it treats you as one range increment closer when determining its range penalty."
+        "Description": "The target watches the projectile and learns the distance. It chooses itself or one ally it can see that has a ranged attack. For the chosen creature's next ranged Strike against you before the start of your next turn, treat you as one range increment closer when determining its range penalty. If this would not reduce a range penalty, the Strike instead gains a +1 circumstance bonus. If no eligible creature exists, the target may move 5 feet farther on its next Stride toward you before the start of your next turn."
       },
       "ShieldMeetWarning": {
         "Title": "Shield, Meet Warning",
@@ -243,7 +243,7 @@
       },
       "InsideTheArc": {
         "Title": "Inside the Arc",
-        "Description": "The miss invites the target inside your comfortable firing line. If the target is adjacent to you, it may immediately Step to another space adjacent to you. Otherwise, it may immediately Step toward you. This movement does not trigger reactions from you."
+        "Description": "The miss invites the target inside your comfortable firing line. If the target is adjacent to you, it may immediately Step to another space adjacent to you. Otherwise, it may immediately Step toward you."
       },
       "AmmunitionArgument": {
         "Title": "Ammunition Argument",
@@ -255,7 +255,7 @@
       },
       "ScatterFormation": {
         "Title": "Scatter Formation",
-        "Description": "The near miss convinces the target's formation to spread out. The target and one willing ally adjacent to it may each immediately Step as free actions, in either order, but they must end these Steps non-adjacent to each other. Neither Step triggers reactions from you. If no eligible ally participates, the target may Step normally."
+        "Description": "The near miss convinces the target's formation to spread out. The target and one willing ally adjacent to it may each immediately Step as free actions, in either order, but they must end these Steps non-adjacent to each other. If no eligible ally participates, the target may Step normally."
       },
       "DustSignature": {
         "Title": "Dust Signature",
@@ -263,7 +263,7 @@
       },
       "ReturnAddressIncluded": {
         "Title": "Return Address Included",
-        "Description": "The miss arrives with a remarkably clear return address. The target chooses one ally that can see it and has a ranged attack. That ally may immediately Step as a free action and, if possible, must end with line of effect to you. This movement does not trigger reactions from you. If no eligible ally exists, the target may immediately Step instead."
+        "Description": "The miss arrives with a remarkably clear return address. The target chooses one ally that can see it and has a ranged attack. That ally may immediately Step as a free action and, if possible, must end with line of effect to you. If no eligible ally exists, the target may immediately Step instead."
       }
     },
     "Effects": {

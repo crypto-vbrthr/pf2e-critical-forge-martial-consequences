@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.3
+
+- Completed the first full mechanical review of Ranged Mishaps.
+- Redesigned RM-002, RM-004, RM-005, RM-006, RM-007, RM-008, RM-014, RM-017, and RM-019.
+- Replaced redundant free Steps, generic action delays, narrow ranged-reaction restrictions, invalid Point Out and Aid usage, and several conditional no-result outcomes.
+- Added same-position Hide restrictions, Seek support, delayed target Strides, immediate Take Cover, defensive follow-through restrictions, environmental trajectory obstructions, self-contained counterfire information, confidence-driven Strides, and a custom protective reaction.
+- Reclassified RM-009 as Light and RM-010 as Moderate, and restored RM-010 to normal draw weight.
+- Clarified RM-015 so its reactive Step must leave the target valid for the triggering Strike.
+- Expanded RM-020 with ally selection and reliable counterfire or movement fallbacks.
+- Removed redundant reaction wording from RM-025, RM-028, and RM-030.
+- Added the Ranged Mishaps mechanical review report.
+- Updated German and English localization, the Card Bible, pack documentation, README, and validation tests.
+- Mechanical Review: Passed after revision.
+
 ## 0.2.2
 
 - Added Ranged Mishaps RM-021 through RM-030.

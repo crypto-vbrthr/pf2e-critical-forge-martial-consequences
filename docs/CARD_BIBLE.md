@@ -78,15 +78,15 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | ID | Card | Impact | Automation | Core Idea |
 |---|---|---|---|---|
 | RM-001 | Lost Sightline | Light | Manual | Target gains lesser cover against the next ranged attack unless the source relocates or re-aims |
-| RM-002 | Revealing Shot | Moderate | Manual | Source cannot remain hidden or undetected from the target |
+| RM-002 | Revealing Shot | Moderate | Manual | Source cannot Hide from the same firing space; target gains +2 to Seek if another effect makes the source undetected there |
 | RM-003 | Awkward Release | Light | Manual | Next ranged attack must originate elsewhere or take -1 |
-| RM-004 | Broken Firing Rhythm | Light | Manual | No reactions that require or include a ranged Strike |
-| RM-005 | Forced Reposition | Moderate | Manual | Source must change spaces before attacking the same target at range again |
-| RM-006 | Target Finds Cover | Moderate | Manual | Target immediately Steps toward cover |
-| RM-007 | Poor Follow-Through | Moderate | Manual | Source's next action cannot include a ranged Strike |
-| RM-008 | Obstructed Arc | Light | Manual | A creature between source and target may immediately Step |
-| RM-009 | Exposed to Return Fire | Moderate | Manual | Current cover is reduced by one degree against the next ranged attack |
-| RM-010 | Misjudged Distance | Light | Manual | Next target counts as one range increment farther unless the source re-estimates |
+| RM-004 | Broken Firing Rhythm | Light | Manual | After the next ranged Strike, the immediately following action cannot include another ranged Strike |
+| RM-005 | Forced Reposition | Moderate | Manual | Target gains a one-use reaction to Stride after another shot from the same firing space |
+| RM-006 | Target Finds Cover | Moderate | Manual | Target Takes Cover immediately or gains +1 AC against the source’s next ranged attack |
+| RM-007 | Poor Follow-Through | Moderate | Manual | Source cannot Raise a Shield, Take Cover, or use parry until its next turn |
+| RM-008 | Obstructed Arc | Light | Manual | The projectile creates a temporary cover obstruction along its path, with a lesser-cover fallback |
+| RM-009 | Exposed to Return Fire | Light | Manual | Current cover is reduced by one degree against the next ranged attack |
+| RM-010 | Misjudged Distance | Moderate | Manual | Next target counts as one range increment farther unless the source re-estimates |
 
 ## Ranged Mishaps — Block 2
 
@@ -95,13 +95,13 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | RM-011 | Ducking Lesson | Moderate | Manual | Target may immediately Drop Prone and Take Cover |
 | RM-012 | Closing the Distance | Strong | Manual | Target advances up to 10 feet without reactions from the source |
 | RM-013 | Borrowed Silhouette | Moderate | Manual | Adjacent creatures provide lesser cover against the source |
-| RM-014 | Follow the Shot | Moderate | Manual | Target Points Out the source or grants an ally a counterfire bonus |
-| RM-015 | Read the Angle | Strong | Manual | Target gains a one-use Step reaction before the next ranged attack roll |
+| RM-014 | Follow the Shot | Moderate | Manual | Target or ally gains a one-use bonus to Seek the source or make counterfire |
+| RM-015 | Read the Angle | Strong | Manual | Target may Step before the next attack roll only while remaining a valid target |
 | RM-016 | Dead Ground | Moderate | Manual | Target claims an adjacent blind-spot square against fire from the current position |
-| RM-017 | A Very Encouraging Miss | Light | Manual | Target gains +1 to its next Demoralize or Feint against the source |
+| RM-017 | A Very Encouraging Miss | Light | Manual | Target’s next Stride may move 5 feet farther toward the source or cover |
 | RM-018 | Scenic Detour | Moderate | Manual | The miss creates one square of difficult terrain, with a Step fallback |
-| RM-019 | Helpful Warning | Moderate | Manual | An adjacent creature may Aid the target's AC without preparation |
-| RM-020 | Range Found | Moderate | Manual | Target treats the source as one range increment closer for counterfire |
+| RM-019 | Helpful Warning | Moderate | Manual | Adjacent creature gains a one-use reaction granting +1 AC against the source’s next shot |
+| RM-020 | Range Found | Moderate | Manual | Target or ally improves counterfire range, gains +1 if already close, or advances farther as fallback |
 
 ## Ranged Mishaps — Block 3
 
@@ -111,13 +111,41 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | RM-022 | Look Over There | Strong | Manual | Target immediately Hides with cover or concealment, with a Step fallback |
 | RM-023 | Committed Aim | Light | Manual | First ranged attack against a different target takes -1 unless the source repositions or reassesses |
 | RM-024 | Friendly Fire Drill | Light | Manual | An ally in the line may Step; otherwise a later shot through an ally takes -1 |
-| RM-025 | Inside the Arc | Moderate | Manual | Target Steps around or toward the source without triggering its reactions |
+| RM-025 | Inside the Arc | Moderate | Manual | Target Steps around or toward the source |
 | RM-026 | Ammunition Argument | Moderate | Manual | Source resets the attack with one action or changes weapons before the next ranged Strike |
 | RM-027 | Heckler's Range | Moderate | Manual | Target immediately Demoralizes the source, with a Step fallback |
-| RM-028 | Scatter Formation | Strong | Manual | Target and an adjacent ally Step apart without triggering source reactions |
+| RM-028 | Scatter Formation | Strong | Manual | Target and an adjacent ally Step apart |
 | RM-029 | Dust Signature | Moderate | Manual | Environmental debris conceals the target from the source, with a Step fallback |
 | RM-030 | Return Address Included | Moderate | Manual | A ranged ally Steps into counterfire position, with a target Step fallback |
 
-### Development Status
+## Ranged Mishaps Mechanical Review
 
-Ranged Mishaps has reached its planned 30-card size. Similar, conditional, or overlapping mechanics intentionally remain eligible for correction during the upcoming full mechanical review.
+### Complete Redesigns
+
+The following cards were redesigned in version 0.2.3:
+
+- RM-002 Revealing Shot
+- RM-004 Broken Firing Rhythm
+- RM-005 Forced Reposition
+- RM-006 Target Finds Cover
+- RM-007 Poor Follow-Through
+- RM-008 Obstructed Arc
+- RM-014 Follow the Shot
+- RM-017 A Very Encouraging Miss
+- RM-019 Helpful Warning
+
+The revisions replaced redundant free Steps, generic action delays, narrow reaction restrictions, invalid Point Out and Aid usage, and conditional cards that often produced no result.
+
+### Targeted Adjustments
+
+- RM-009 is now rated Light because it depends on existing cover.
+- RM-010 is now rated Moderate and no longer has increased draw weight.
+- RM-015 restricts its reactive Step to spaces where the target remains valid.
+- RM-020 now supports an eligible ally and includes reliable counterfire or movement fallbacks.
+- RM-025, RM-028, and RM-030 no longer repeat the normal rule that Step avoids movement-triggered reactions.
+
+### Review Status
+
+**Mechanical Review: Passed after revision**
+
+Future reviews will examine pack identity, narrative consistency, translation quality, and statistical distribution across all four planned packs.

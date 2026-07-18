@@ -4,7 +4,7 @@
 
 Martial Consequences is an extension module for **PF2E Critical Forge**. It adds card packs focused on stance, timing, positioning, openings, and battlefield momentum.
 
-## Version 0.2.2
+## Version 0.2.3
 
 The current release contains two optional packs:
 
@@ -30,20 +30,20 @@ Then enable the desired card packs in the module settings. Each pack can be acti
 
 ## Automation
 
-Four Martial Attack Fumbles create applicable Critical Forge effects. The remaining 26 Martial Attack Fumbles and all 30 current Ranged Mishaps describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, claimed spaces, extra reactions, temporary reaction restrictions, cover changes, visibility changes, range-increment changes, or action sequencing.
+Four Martial Attack Fumbles create applicable Critical Forge effects. The remaining 26 Martial Attack Fumbles and all 30 Ranged Mishaps describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, claimed spaces, extra reactions, temporary reaction restrictions, cover changes, visibility changes, range-increment changes, or action sequencing.
 
 **Forced Reset** creates an automated effect that may be removed manually when the affected creature spends the action described by the card.
 
 ## Review Status
 
-Martial Attack Fumbles completed its first full mechanical review in version 0.1.3. Nine redundant or impractical cards were redesigned, and five additional cards received targeted clarity, weight, or reliability adjustments.
+**Martial Attack Fumbles** completed its first full mechanical review in version 0.1.3. Nine redundant or impractical cards were redesigned, and five additional cards received targeted clarity, weight, or reliability adjustments.
 
-Ranged Mishaps now contains its complete first 30-card set and is ready for its dedicated mechanical review.
+**Ranged Mishaps** completed its first full mechanical review in version 0.2.3. Nine cards were redesigned to remove cross-pack overlap, invalid action usage, and empty conditional outcomes. Seven additional cards received targeted rules, reliability, impact, or wording adjustments.
 
 ## Planned Packs
 
 - Martial Attack Fumbles — 30/30, mechanical review passed
-- Ranged Mishaps — 30/30, mechanical review pending
+- Ranged Mishaps — 30/30, mechanical review passed
 - Martial Openings — planned
 - Combat Momentum — planned
 

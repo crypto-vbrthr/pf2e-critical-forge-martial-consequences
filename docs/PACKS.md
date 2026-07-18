@@ -49,7 +49,7 @@ The completed pack received a full mechanical review after reaching 30 cards. Ve
 
 - 30 of 30 planned cards
 - Blocks RM-001 through RM-030 implemented
-- Full mechanical review pending
+- Full mechanical review completed in 0.2.3
 
 ### Purpose
 
@@ -93,6 +93,8 @@ filters: {
 ### Boundary
 
 This pack is not a second general fumble deck. A card belongs here only when its fiction and mechanics require a ranged weapon attack. General loss of stance, defense, or combat rhythm remains the domain of **Martial Attack Fumbles**. Injuries caused by piercing, slashing, or bludgeoning projectiles remain the domain of **Arsenal**.
+
+The completed pack received a full mechanical review after reaching 30 cards. Version 0.2.3 replaced redundant movement delays, generic free Steps, narrow reaction restrictions, invalid Point Out and Aid usage, and several conditional no-result outcomes. The pack now leans more strongly into firing-position exposure, cover decisions, predictable firing lanes, delayed target reactions, environmental trajectory complications, counterfire information, and defensive coordination.
 
 ## Planned Packs
 

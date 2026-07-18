@@ -10,8 +10,8 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-002-revealing-shot", localizationKey: "RevealingShot",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Revealing Shot",
-    fallbackDescription: "The failed shot reveals your exact firing position. Until the start of your next turn, you cannot be hidden or undetected from the target. Concealment still applies normally.",
-    tags: ["position", "stealth", "revealed", "manual"]
+    fallbackDescription: "The failed shot gives away the habits of your firing position. Until the start of your next turn, you cannot Hide from the target while you remain in your current space. If another effect makes you undetected from the target while you remain there, the target gains a +2 circumstance bonus to Seek you. Moving to a different space ends both effects.",
+    tags: ["position", "stealth", "seek", "manual"]
   }),
   defineRangedMishap({
     id: "rm-003-awkward-release", localizationKey: "AwkwardRelease",
@@ -22,44 +22,44 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-004-broken-firing-rhythm", localizationKey: "BrokenFiringRhythm",
     tone: "serious", impact: "light", fallbackTitle: "Broken Firing Rhythm",
-    fallbackDescription: "The failed shot breaks your firing rhythm. Until the start of your next turn, you cannot use reactions that require or include a ranged Strike.",
-    weight: 2, tags: ["timing", "reaction", "conditional", "manual"]
+    fallbackDescription: "The failed shot breaks the cadence between one attack and the next. The next time you make a ranged Strike before the end of your next turn, your immediately following action cannot include another ranged Strike.",
+    weight: 2, tags: ["timing", "action-sequencing", "tempo", "manual"]
   }),
   defineRangedMishap({
     id: "rm-005-forced-reposition", localizationKey: "ForcedReposition",
     tone: "serious", impact: "moderate", fallbackTitle: "Forced Reposition",
-    fallbackDescription: "Your current firing position no longer feels usable. Before you can make another ranged attack against the same target before the end of your next turn, you must move to a different space.",
-    tags: ["positioning", "movement", "target-lock", "manual"]
+    fallbackDescription: "Your current firing lane becomes predictable. Until the end of your next turn, the target gains a one-use reaction: after you complete a ranged Strike against it from your current space, it may Stride up to 10 feet toward cover or away from you. If it cannot move, it may Take Cover instead if able. Moving to a different space ends this effect.",
+    tags: ["positioning", "target-reaction", "stride", "cover", "manual"]
   }),
   defineRangedMishap({
     id: "rm-006-target-finds-cover", localizationKey: "TargetFindsCover",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Target Finds Cover",
-    fallbackDescription: "The miss makes the danger angle obvious. The target may immediately Step as a free action. If possible, it must end that Step closer to cover from you.",
-    tags: ["target-movement", "cover", "free-action", "manual"]
+    fallbackDescription: "The miss makes the danger angle obvious. The target may immediately Take Cover as a free action, following the normal requirements. If it cannot, it gains a +1 circumstance bonus to AC against your next ranged attack before the start of your next turn as it flattens itself against whatever protection is available.",
+    tags: ["target-defense", "cover", "free-action", "fallback-ac", "manual"]
   }),
   defineRangedMishap({
     id: "rm-007-poor-follow-through", localizationKey: "PoorFollowThrough",
     tone: "serious", impact: "moderate", fallbackTitle: "Poor Follow-Through",
-    fallbackDescription: "Your weapon or throwing arm finishes outside the line needed for another shot. The next action you use before the end of your next turn cannot require or include a ranged Strike.",
-    tags: ["follow-through", "action-sequencing", "tempo", "manual"]
+    fallbackDescription: "Your weapon or throwing arm finishes across your guard. Until the start of your next turn, you cannot Raise a Shield, Take Cover, or use a weapon's parry trait. Existing bonuses already in place are unaffected.",
+    tags: ["follow-through", "defense", "shield", "cover", "parry", "manual"]
   }),
   defineRangedMishap({
     id: "rm-008-obstructed-arc", localizationKey: "ObstructedArc",
     tone: "neutral", impact: "light", fallbackTitle: "Obstructed Arc",
-    fallbackDescription: "The errant projectile forces someone in its path to shift. One creature between you and the target may immediately Step as a free action.",
-    tags: ["trajectory", "bystander", "conditional", "manual"]
+    fallbackDescription: "The projectile tangles with the scenery. The GM chooses one suitable space crossed by or adjacent to its path. A lodged projectile, swinging strap, loose shutter, or similar obstruction causes your ranged attacks passing through that space to grant lesser cover until the end of your next turn. If the environment offers no suitable feature, the target gains lesser cover against your next ranged attack from your current space.",
+    weight: 2, tags: ["trajectory", "environment", "cover", "fallback-cover", "manual"]
   }),
   defineRangedMishap({
     id: "rm-009-exposed-to-return-fire", localizationKey: "ExposedToReturnFire",
-    tone: "serious", impact: "moderate", fallbackTitle: "Exposed to Return Fire",
+    tone: "serious", impact: "light", fallbackTitle: "Exposed to Return Fire",
     fallbackDescription: "Trying to save the shot pulls you out of your protected firing posture. Against the next ranged attack made against you before the start of your next turn, reduce the cover granted by your current space by one degree. Moving to a different space ends this effect.",
-    tags: ["cover", "defense", "return-fire", "manual"]
+    tags: ["cover", "defense", "return-fire", "conditional", "manual"]
   }),
   defineRangedMishap({
     id: "rm-010-misjudged-distance", localizationKey: "MisjudgedDistance",
-    tone: "neutral", impact: "light", fallbackTitle: "Misjudged Distance",
+    tone: "neutral", impact: "moderate", fallbackTitle: "Misjudged Distance",
     fallbackDescription: "You misread the distance, movement, or projectile path. For your next ranged Strike before the end of your next turn, treat the target as one range increment farther away when determining the range penalty. You may spend a single action to gauge the distance and end this effect.",
-    weight: 2, tags: ["range", "aiming", "manual-removal", "manual"]
+    tags: ["range", "aiming", "manual-removal", "manual"]
   }),
   defineRangedMishap({
     id: "rm-011-ducking-lesson", localizationKey: "DuckingLesson",
@@ -82,13 +82,13 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-014-follow-the-shot", localizationKey: "FollowTheShot",
     tone: "serious", impact: "moderate", fallbackTitle: "Follow the Shot",
-    fallbackDescription: "The impact points straight back to you. The target may immediately Point Out you as a free action to creatures that can see or hear it. If all of the target's allies already observe you, the target instead chooses one ally; that ally gains a +1 circumstance bonus to its next ranged attack against you before the start of your next turn.",
-    tags: ["position", "point-out", "ally-support", "manual"]
+    fallbackDescription: "The impact points straight back to you. The target chooses itself or one ally that can see or hear it. Until the start of your next turn, the chosen creature gains a one-use +1 circumstance bonus to either its next Seek check to locate you or its next ranged attack against you. The creature chooses which use consumes the bonus.",
+    tags: ["position", "seek", "counterfire", "ally-support", "manual"]
   }),
   defineRangedMishap({
     id: "rm-015-read-the-angle", localizationKey: "ReadTheAngle",
     tone: "serious", impact: "strong", fallbackTitle: "Read the Angle",
-    fallbackDescription: "The target reads the line of your failed shot. Until the end of your next turn, it gains a one-use reaction: when you begin a ranged Strike against it from your current space, it Steps before the attack roll. The Strike continues if the target remains valid; recalculate cover and range after the Step.",
+    fallbackDescription: "The target reads the line of your failed shot. Until the end of your next turn, it gains a one-use reaction: when you begin a ranged Strike against it from your current space, it may Step before the attack roll, but only to a space where it remains a valid target for the Strike. Recalculate cover and range after the Step. If no such space is available, the reaction cannot be used.",
     tags: ["target-reaction", "step", "trajectory", "manual"]
   }),
   defineRangedMishap({
@@ -100,8 +100,8 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-017-a-very-encouraging-miss", localizationKey: "AVeryEncouragingMiss",
     tone: "humorous", impact: "light", fallbackTitle: "A Very Encouraging Miss",
-    fallbackDescription: "The target's confidence improves dramatically. Before the end of your next turn, it gains a +1 circumstance bonus to its next attempt to Demoralize or Feint against you.",
-    weight: 2, tags: ["confidence", "demoralize", "feint", "manual"]
+    fallbackDescription: "The target's confidence improves dramatically. The first time it Strides before the start of your next turn, it may move 5 feet farther, provided it ends that movement either closer to you or with cover from you.",
+    weight: 2, tags: ["confidence", "stride", "cover", "manual"]
   }),
   defineRangedMishap({
     id: "rm-018-scenic-detour", localizationKey: "ScenicDetour",
@@ -112,14 +112,14 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-019-helpful-warning", localizationKey: "HelpfulWarning",
     tone: "neutral", impact: "moderate", fallbackTitle: "Helpful Warning",
-    fallbackDescription: "The miss warns everyone near the target. One creature adjacent to the target gains a one-use reaction until the start of your next turn. It may use that reaction to Aid the target's AC against your next ranged attack, without having prepared to Aid; all other Aid rules apply normally.",
-    tags: ["ally-support", "aid", "reaction", "manual"]
+    fallbackDescription: "The miss warns everyone near the target. One creature adjacent to the target gains a one-use reaction until the start of your next turn. Trigger: you begin a ranged Strike against the target. Effect: the creature warns, shields, or pulls the target aside, granting it a +1 circumstance bonus to AC against the triggering Strike. The creature must be able to perceive both you and the target.",
+    tags: ["ally-support", "protective-reaction", "ac", "reaction", "manual"]
   }),
   defineRangedMishap({
     id: "rm-020-range-found", localizationKey: "RangeFound",
     tone: "serious", impact: "moderate", fallbackTitle: "Range Found",
-    fallbackDescription: "The target watches the projectile and learns the distance. For its next ranged Strike against you before the start of your next turn, it treats you as one range increment closer when determining its range penalty.",
-    tags: ["range", "counterfire", "target-benefit", "manual"]
+    fallbackDescription: "The target watches the projectile and learns the distance. It chooses itself or one ally it can see that has a ranged attack. For the chosen creature's next ranged Strike against you before the start of your next turn, treat you as one range increment closer when determining its range penalty. If this would not reduce a range penalty, the Strike instead gains a +1 circumstance bonus. If no eligible creature exists, the target may move 5 feet farther on its next Stride toward you before the start of your next turn.",
+    tags: ["range", "counterfire", "ally-support", "fallback-stride", "manual"]
   }),
   defineRangedMishap({
     id: "rm-021-shield-meet-warning", localizationKey: "ShieldMeetWarning",
@@ -148,7 +148,7 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-025-inside-the-arc", localizationKey: "InsideTheArc",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Inside the Arc",
-    fallbackDescription: "The miss invites the target inside your comfortable firing line. If the target is adjacent to you, it may immediately Step to another space adjacent to you. Otherwise, it may immediately Step toward you. This movement does not trigger reactions from you.",
+    fallbackDescription: "The miss invites the target inside your comfortable firing line. If the target is adjacent to you, it may immediately Step to another space adjacent to you. Otherwise, it may immediately Step toward you.",
     tags: ["close-quarters", "target-movement", "free-action", "manual"]
   }),
   defineRangedMishap({
@@ -166,7 +166,7 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-028-scatter-formation", localizationKey: "ScatterFormation",
     tone: "serious", impact: "strong", fallbackTitle: "Scatter Formation",
-    fallbackDescription: "The near miss convinces the target's formation to spread out. The target and one willing ally adjacent to it may each immediately Step as free actions, in either order, but they must end these Steps non-adjacent to each other. Neither Step triggers reactions from you. If no eligible ally participates, the target may Step normally.",
+    fallbackDescription: "The near miss convinces the target's formation to spread out. The target and one willing ally adjacent to it may each immediately Step as free actions, in either order, but they must end these Steps non-adjacent to each other. If no eligible ally participates, the target may Step normally.",
     tags: ["formation", "target-movement", "ally-movement", "free-action", "manual"]
   }),
   defineRangedMishap({
@@ -178,7 +178,7 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
   defineRangedMishap({
     id: "rm-030-return-address-included", localizationKey: "ReturnAddressIncluded",
     tone: "humorous", impact: "moderate", fallbackTitle: "Return Address Included",
-    fallbackDescription: "The miss arrives with a remarkably clear return address. The target chooses one ally that can see it and has a ranged attack. That ally may immediately Step as a free action and, if possible, must end with line of effect to you. This movement does not trigger reactions from you. If no eligible ally exists, the target may immediately Step instead.",
+    fallbackDescription: "The miss arrives with a remarkably clear return address. The target chooses one ally that can see it and has a ranged attack. That ally may immediately Step as a free action and, if possible, must end with line of effect to you. If no eligible ally exists, the target may immediately Step instead.",
     tags: ["counterfire", "ally-movement", "line-of-effect", "fallback-step", "manual"]
   })
 ]);

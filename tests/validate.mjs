@@ -25,7 +25,7 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.2.2");
+assert.equal(manifest.version, "0.2.3");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
@@ -50,7 +50,7 @@ let automated = 0;
 let manual = 0;
 for (const pack of disabled) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.2.2");
+  assert.equal(pack.version, "0.2.3");
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
     assert.ok(getLocalization(dictionary, pack.descriptionKey), pack.descriptionKey);
@@ -136,25 +136,44 @@ for (const card of rangedCards) {
 }
 assert.equal(rangedById.get("rm-001-lost-sightline").impact, "light");
 assert.equal(rangedById.get("rm-002-revealing-shot").impact, "moderate");
-assert.ok(rangedById.get("rm-008-obstructed-arc").tags.includes("conditional"));
+assert.ok(rangedById.get("rm-002-revealing-shot").tags.includes("seek"));
+assert.ok(rangedById.get("rm-004-broken-firing-rhythm").tags.includes("action-sequencing"));
+assert.ok(rangedById.get("rm-005-forced-reposition").tags.includes("target-reaction"));
+assert.ok(rangedById.get("rm-006-target-finds-cover").tags.includes("fallback-ac"));
+assert.ok(rangedById.get("rm-007-poor-follow-through").tags.includes("parry"));
+assert.ok(rangedById.get("rm-008-obstructed-arc").tags.includes("environment"));
+assert.ok(rangedById.get("rm-008-obstructed-arc").tags.includes("fallback-cover"));
+assert.equal(rangedById.get("rm-009-exposed-to-return-fire").impact, "light");
+assert.ok(rangedById.get("rm-009-exposed-to-return-fire").tags.includes("conditional"));
+assert.equal(rangedById.get("rm-010-misjudged-distance").impact, "moderate");
+assert.equal(rangedById.get("rm-010-misjudged-distance").weight, 1);
 assert.ok(rangedById.get("rm-010-misjudged-distance").tags.includes("manual-removal"));
 assert.equal(rangedById.get("rm-012-closing-the-distance").impact, "strong");
+assert.ok(rangedById.get("rm-014-follow-the-shot").tags.includes("seek"));
+assert.ok(!rangedById.get("rm-014-follow-the-shot").fallbackDescription.includes("Point Out"));
 assert.ok(rangedById.get("rm-015-read-the-angle").tags.includes("target-reaction"));
+assert.ok(rangedById.get("rm-015-read-the-angle").fallbackDescription.includes("remains a valid target"));
 assert.ok(rangedById.get("rm-016-dead-ground").tags.includes("claimed-space"));
 assert.equal(rangedById.get("rm-017-a-very-encouraging-miss").weight, 2);
+assert.ok(rangedById.get("rm-017-a-very-encouraging-miss").tags.includes("stride"));
 assert.ok(rangedById.get("rm-018-scenic-detour").tags.includes("fallback-step"));
-assert.ok(rangedById.get("rm-019-helpful-warning").tags.includes("aid"));
+assert.ok(rangedById.get("rm-019-helpful-warning").tags.includes("protective-reaction"));
+assert.ok(!rangedById.get("rm-019-helpful-warning").fallbackDescription.includes("Aid"));
 assert.ok(rangedById.get("rm-020-range-found").tags.includes("counterfire"));
+assert.ok(rangedById.get("rm-020-range-found").tags.includes("fallback-stride"));
 assert.ok(rangedById.get("rm-021-shield-meet-warning").tags.includes("shield"));
 assert.equal(rangedById.get("rm-022-look-over-there").impact, "strong");
 assert.equal(rangedById.get("rm-023-committed-aim").weight, 2);
 assert.ok(rangedById.get("rm-024-friendly-fire-drill").tags.includes("fallback-penalty"));
 assert.ok(rangedById.get("rm-025-inside-the-arc").tags.includes("close-quarters"));
+assert.ok(!rangedById.get("rm-025-inside-the-arc").fallbackDescription.includes("does not trigger reactions"));
 assert.ok(rangedById.get("rm-026-ammunition-argument").tags.includes("action-tax"));
 assert.ok(rangedById.get("rm-027-hecklers-range").tags.includes("demoralize"));
 assert.equal(rangedById.get("rm-028-scatter-formation").impact, "strong");
+assert.ok(!rangedById.get("rm-028-scatter-formation").fallbackDescription.includes("triggers reactions"));
 assert.ok(rangedById.get("rm-029-dust-signature").tags.includes("concealment"));
 assert.ok(rangedById.get("rm-030-return-address-included").tags.includes("line-of-effect"));
+assert.ok(!rangedById.get("rm-030-return-address-included").fallbackDescription.includes("does not trigger reactions"));
 
 assert.equal(automated, 4);
 assert.equal(manual, 56);
@@ -169,4 +188,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.2.2 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.2.3 structural validation passed.");

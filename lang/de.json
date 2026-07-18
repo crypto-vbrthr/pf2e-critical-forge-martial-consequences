@@ -151,7 +151,7 @@
       },
       "RevealingShot": {
         "Title": "Verräterischer Schuss",
-        "Description": "Der misslungene Schuss verrät deine genaue Feuerstellung. Bis zum Beginn deines nächsten Zuges kannst du vor dem Ziel weder Versteckt noch Unentdeckt sein. Verborgenheit gilt weiterhin normal."
+        "Description": "Der Fehlschuss verrät die Eigenheiten deiner Schussposition. Bis zum Beginn deines nächsten Zuges kannst du dich vor dem Ziel nicht Verstecken, solange du in deinem aktuellen Feld bleibst. Falls du durch einen anderen Effekt vom Ziel Unbemerkt wirst, solange du dort bleibst, erhält das Ziel einen Umstandsbonus von +2, um dich zu Suchen. Sobald du dich auf ein anderes Feld bewegst, enden beide Effekte."
       },
       "AwkwardRelease": {
         "Title": "Unsaubere Freigabe",
@@ -159,23 +159,23 @@
       },
       "BrokenFiringRhythm": {
         "Title": "Gebrochener Schussrhythmus",
-        "Description": "Der Fehlschuss unterbricht deinen Schussrhythmus. Bis zum Beginn deines nächsten Zuges kannst du keine Reaktionen einsetzen, die einen Fernkampfangriff erfordern oder enthalten."
+        "Description": "Der Fehlschuss zerreißt den Rhythmus zwischen zwei Angriffen. Wenn du vor dem Ende deines nächsten Zuges das nächste Mal einen Fernkampfangriff ausführst, darf deine unmittelbar folgende Aktion keinen weiteren Fernkampfangriff enthalten."
       },
       "ForcedReposition": {
         "Title": "Erzwungener Stellungswechsel",
-        "Description": "Deine aktuelle Feuerstellung fühlt sich nicht mehr brauchbar an. Bevor du dasselbe Ziel bis zum Ende deines nächsten Zuges erneut mit einem Fernkampfangriff angreifen kannst, musst du dich auf ein anderes Feld bewegen."
+        "Description": "Deine aktuelle Schusslinie wird vorhersehbar. Bis zum Ende deines nächsten Zuges erhält das Ziel eine einmalige Reaktion: Nachdem du von deinem aktuellen Feld einen Fernkampfangriff gegen es abgeschlossen hast, darf es bis zu 3 Meter in Richtung Deckung oder von dir weg Laufen. Kann es sich nicht bewegen, darf es stattdessen Deckung suchen, sofern möglich. Sobald du dich auf ein anderes Feld bewegst, endet dieser Effekt."
       },
       "TargetFindsCover": {
         "Title": "Ziel sucht Deckung",
-        "Description": "Der Fehlschuss macht den gefährlichen Winkel offensichtlich. Das Ziel darf sofort als freie Aktion einen Schritt ausführen. Wenn möglich, muss es diesen Schritt näher an Deckung vor dir beenden."
+        "Description": "Der Fehlschuss macht den Gefahrenwinkel offensichtlich. Das Ziel darf sofort als Freie Aktion Deckung suchen, sofern es die normalen Voraussetzungen erfüllt. Kann es das nicht, erhält es gegen deinen nächsten Fernkampfangriff vor Beginn deines nächsten Zuges einen Umstandsbonus von +1 auf seine RK, während es sich an den verfügbaren Schutz presst."
       },
       "PoorFollowThrough": {
         "Title": "Schlechte Nachführung",
-        "Description": "Deine Waffe oder dein Wurfarm endet außerhalb der Linie, die für den nächsten Schuss nötig wäre. Deine nächste Aktion bis zum Ende deines nächsten Zuges darf keinen Fernkampfangriff erfordern oder enthalten."
+        "Description": "Deine Waffe oder dein Wurfarm endet quer vor deiner Deckung. Bis zum Beginn deines nächsten Zuges kannst du weder einen Schild heben noch Deckung suchen oder das Merkmal Parade einer Waffe einsetzen. Bereits bestehende Boni bleiben bestehen."
       },
       "ObstructedArc": {
         "Title": "Gestörte Flugbahn",
-        "Description": "Das fehlgeleitete Geschoss zwingt jemanden auf seiner Flugbahn auszuweichen. Eine Kreatur zwischen dir und dem Ziel darf sofort als freie Aktion einen Schritt ausführen."
+        "Description": "Das Geschoss verheddert sich in der Umgebung. Die SL wählt ein geeignetes Feld, das von der Flugbahn durchquert wurde oder daran angrenzt. Ein steckengebliebenes Geschoss, ein schwingender Riemen, ein loser Fensterladen oder ein ähnliches Hindernis verleiht Zielen bei deinen Fernkampfangriffen durch dieses Feld bis zum Ende deines nächsten Zuges Geringe Deckung. Bietet die Umgebung nichts Geeignetes, erhält das Ziel gegen deinen nächsten Fernkampfangriff von deinem aktuellen Feld Geringe Deckung."
       },
       "ExposedToReturnFire": {
         "Title": "Dem Gegenfeuer ausgesetzt",
@@ -199,11 +199,11 @@
       },
       "FollowTheShot": {
         "Title": "Der Flugbahn gefolgt",
-        "Description": "Der Einschlag weist direkt auf dich zurück. Das Ziel darf sofort als freie Aktion alle Kreaturen, die es sehen oder hören können, auf dich hinweisen. Wirst du bereits von allen Verbündeten des Ziels beobachtet, wählt das Ziel stattdessen einen Verbündeten; dieser erhält einen Umstandsbonus von +1 auf seinen nächsten Fernkampfangriff gegen dich vor Beginn deines nächsten Zuges."
+        "Description": "Der Einschlag weist direkt auf dich zurück. Das Ziel wählt sich selbst oder einen Verbündeten, der es sehen oder hören kann. Bis zum Beginn deines nächsten Zuges erhält die gewählte Kreatur einen einmaligen Umstandsbonus von +1 entweder auf ihren nächsten Wurf zum Suchen nach dir oder auf ihren nächsten Fernkampfangriff gegen dich. Die Kreatur entscheidet, welche Verwendung den Bonus verbraucht."
       },
       "ReadTheAngle": {
         "Title": "Den Winkel gelesen",
-        "Description": "Das Ziel liest die Linie deines Fehlschusses. Bis zum Ende deines nächsten Zuges erhält es eine einmalige Reaktion: Wenn du von deinem aktuellen Feld einen Fernkampfangriff gegen das Ziel beginnst, führt es vor dem Angriffswurf einen Schritt aus. Der Angriff wird fortgesetzt, falls das Ziel weiterhin gültig ist; Deckung und Reichweite werden nach dem Schritt neu bestimmt."
+        "Description": "Das Ziel liest die Linie deines Fehlschusses. Bis zum Ende deines nächsten Zuges erhält es eine einmalige Reaktion: Wenn du von deinem aktuellen Feld einen Fernkampfangriff gegen das Ziel beginnst, darf es vor dem Angriffswurf einen Schritt ausführen, jedoch nur auf ein Feld, auf dem es ein gültiges Ziel des Angriffs bleibt. Deckung und Reichweite werden nach dem Schritt neu bestimmt. Ist kein solches Feld verfügbar, kann die Reaktion nicht eingesetzt werden."
       },
       "DeadGround": {
         "Title": "Toter Winkel",
@@ -211,7 +211,7 @@
       },
       "AVeryEncouragingMiss": {
         "Title": "Ein äußerst ermutigender Fehlschuss",
-        "Description": "Das Selbstvertrauen des Ziels steigt auffällig. Vor Ende deines nächsten Zuges erhält es einen Umstandsbonus von +1 auf seinen nächsten Versuch, dich zu demoralisieren oder zu täuschen."
+        "Description": "Das Selbstvertrauen des Ziels wächst dramatisch. Wenn es vor Beginn deines nächsten Zuges das erste Mal Läuft, darf es sich 1,5 Meter weiter bewegen, sofern es die Bewegung entweder näher bei dir oder mit Deckung vor dir beendet."
       },
       "ScenicDetour": {
         "Title": "Umweg durch die Kulisse",
@@ -219,11 +219,11 @@
       },
       "HelpfulWarning": {
         "Title": "Hilfreiche Warnung",
-        "Description": "Der Fehlschuss warnt alle in der Nähe des Ziels. Eine Kreatur neben dem Ziel erhält bis zum Beginn deines nächsten Zuges eine einmalige Reaktion. Sie darf diese Reaktion einsetzen, um den RK des Ziels gegen deinen nächsten Fernkampfangriff zu unterstützen, ohne Unterstützen vorbereitet zu haben; alle anderen Regeln für Unterstützen gelten normal."
+        "Description": "Der Fehlschuss warnt alle in der Nähe des Ziels. Eine Kreatur neben dem Ziel erhält bis zum Beginn deines nächsten Zuges eine einmalige Reaktion. Auslöser: Du beginnst einen Fernkampfangriff gegen das Ziel. Effekt: Die Kreatur warnt, schützt oder zieht das Ziel zur Seite und gewährt ihm gegen den auslösenden Angriff einen Umstandsbonus von +1 auf die RK. Die Kreatur muss sowohl dich als auch das Ziel wahrnehmen können."
       },
       "RangeFound": {
         "Title": "Reichweite bestimmt",
-        "Description": "Das Ziel beobachtet das Geschoss und lernt die Entfernung. Bei seinem nächsten Fernkampfangriff gegen dich vor Beginn deines nächsten Zuges behandelt es dich zur Bestimmung seines Reichweitenmalus als einen Reichweitenabschnitt näher."
+        "Description": "Das Ziel beobachtet das Geschoss und lernt die Entfernung. Es wählt sich selbst oder einen Verbündeten, den es sehen kann und der über einen Fernkampfangriff verfügt. Beim nächsten Fernkampfangriff der gewählten Kreatur gegen dich vor Beginn deines nächsten Zuges wirst du zur Bestimmung des Reichweitenmalus als einen Reichweitenabschnitt näher behandelt. Würde dies keinen Reichweitenmalus verringern, erhält der Angriff stattdessen einen Umstandsbonus von +1. Gibt es keine geeignete Kreatur, darf sich das Ziel bei seinem nächsten Laufen auf dich zu vor Beginn deines nächsten Zuges 1,5 Meter weiter bewegen."
       },
       "ShieldMeetWarning": {
         "Title": "Schild, bitte übernehmen",
@@ -243,7 +243,7 @@
       },
       "InsideTheArc": {
         "Title": "Unter dem Schussbogen",
-        "Description": "Der Fehlschuss lädt das Ziel ein, in den unbequemen Nahbereich deiner Schusslinie vorzurücken. Befindet es sich neben dir, darf es sofort einen Schritt auf ein anderes an dich angrenzendes Feld ausführen. Andernfalls darf es sofort einen Schritt auf dich zu machen. Diese Bewegung löst deine Reaktionen nicht aus."
+        "Description": "Der Fehlschuss lädt das Ziel in deine angenehme Schussdistanz ein. Ist das Ziel neben dir, darf es sofort einen Schritt auf ein anderes Feld neben dir ausführen. Andernfalls darf es sofort einen Schritt auf dich zu ausführen."
       },
       "AmmunitionArgument": {
         "Title": "Munition mit eigener Meinung",
@@ -255,7 +255,7 @@
       },
       "ScatterFormation": {
         "Title": "Formation auflösen!",
-        "Description": "Der Beinahetreffer überzeugt die Formation des Ziels, sich besser zu verteilen. Das Ziel und ein bereitwilliger Verbündeter neben ihm dürfen in beliebiger Reihenfolge jeweils sofort als Freie Aktion einen Schritt ausführen, müssen diese Schritte jedoch auf nicht aneinander angrenzenden Feldern beenden. Keiner der Schritte löst deine Reaktionen aus. Nimmt kein geeigneter Verbündeter teil, darf das Ziel normal einen Schritt ausführen."
+        "Description": "Der Beinahetreffer überzeugt die Formation des Ziels, sich zu verteilen. Das Ziel und ein bereitwilliger Verbündeter neben ihm dürfen jeweils sofort als Freie Aktionen einen Schritt ausführen, in beliebiger Reihenfolge, müssen diese Schritte aber nicht nebeneinander beenden. Nimmt kein geeigneter Verbündeter teil, darf das Ziel normal einen Schritt ausführen."
       },
       "DustSignature": {
         "Title": "Staubige Signatur",
@@ -263,7 +263,7 @@
       },
       "ReturnAddressIncluded": {
         "Title": "Rücksendeadresse inklusive",
-        "Description": "Der Fehlschuss trifft mit bemerkenswert deutlicher Rücksendeadresse ein. Das Ziel wählt einen Verbündeten, der es sehen kann und über einen Fernkampfangriff verfügt. Dieser Verbündete darf sofort als Freie Aktion einen Schritt ausführen und muss diesen, wenn möglich, mit Wirkungslinie zu dir beenden. Diese Bewegung löst deine Reaktionen nicht aus. Gibt es keinen geeigneten Verbündeten, darf das Ziel stattdessen sofort einen Schritt ausführen."
+        "Description": "Der Fehlschuss trifft mit bemerkenswert deutlicher Rücksendeadresse ein. Das Ziel wählt einen Verbündeten, der es sehen kann und über einen Fernkampfangriff verfügt. Dieser Verbündete darf sofort als Freie Aktion einen Schritt ausführen und muss diesen, wenn möglich, mit Wirkungslinie zu dir beenden. Gibt es keinen geeigneten Verbündeten, darf das Ziel stattdessen sofort einen Schritt ausführen."
       }
     },
     "Effects": {
