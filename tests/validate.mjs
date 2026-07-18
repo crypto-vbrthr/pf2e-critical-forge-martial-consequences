@@ -25,7 +25,7 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.1.2");
+assert.equal(manifest.version, "0.1.3");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
@@ -45,7 +45,7 @@ let automated = 0;
 let manual = 0;
 for (const pack of disabled) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.1.2");
+  assert.equal(pack.version, "0.1.3");
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
     assert.ok(getLocalization(dictionary, pack.descriptionKey), pack.descriptionKey);
@@ -103,8 +103,18 @@ assert.deepEqual(byId.get("maf-024-eyes-on-the-weapon").effect.definition.compon
   { type: "modifier", selector: "perception-dc", value: -1, modifierType: "circumstance", predicate: [] }
 ]);
 assert.ok(byId.get("maf-021-awkward-regrip").filters.attackTraits.includes("agile"));
-assert.equal(automated, 9);
-assert.equal(manual, 21);
+assert.ok(byId.get("maf-001-lost-footing").tags.includes("manual"));
+assert.ok(byId.get("maf-001-lost-footing").filters.excludedSourceTraits.includes("incorporeal"));
+assert.ok(byId.get("maf-004-slippery-grip").tags.includes("action-sequencing"));
+assert.ok(byId.get("maf-009-defensive-collapse").filters.attackTraits.includes("melee"));
+assert.equal(byId.get("maf-022-guard-too-high").weight, 1);
+assert.equal(byId.get("maf-026-missed-threat").impact, "light");
+assert.equal(byId.get("maf-030-guarded-the-wrong-side").impact, "light");
+for (const slug of ["maf-001-lost-footing", "maf-004-slippery-grip", "maf-008-distracted-recovery", "maf-009-defensive-collapse", "maf-010-unsteady-recovery"]) {
+  assert.equal(byId.get(slug).effect, null, `${slug} should use manual tactical resolution after review.`);
+}
+assert.equal(automated, 4);
+assert.equal(manual, 26);
 
 const settingsScript = await readFile(path.join(root, "scripts/settings.js"), "utf8");
 assert.match(settingsScript, /game\.settings\.register/);
@@ -115,4 +125,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.1.2 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.1.3 structural validation passed.");

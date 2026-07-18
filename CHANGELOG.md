@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.3
+
+- Completed the first full mechanical review of Martial Attack Fumbles.
+- Redesigned MAF-001, MAF-004, MAF-006, MAF-008, MAF-009, MAF-010, MAF-027, MAF-028, and MAF-030.
+- Replaced duplicate Core-style Off-Guard, Dazzled, AC, attack-roll, and Speed penalties with tactical movement, action sequencing, target actions, claimed space, delayed movement, and flanking consequences.
+- Corrected Wild Follow-Through so it resolves at ordinary adjacent melee range.
+- Adjusted MAF-013 for unarmed and natural attacks by replacing the Interact requirement with a generic recovery action.
+- Adjusted MAF-021 so a Strike without a multiple attack penalty does not consume the effect.
+- Reduced the weight of MAF-022 and clarified common uses of Reflex DC.
+- Reclassified MAF-026 as Light due to its conditional trigger.
+- Added a reliable fallback reaction to MAF-029.
+- Updated German and English localization, the Card Bible, pack documentation, README, and validation tests.
+- Reduced automated effects from nine to four as the pack shifted toward distinctive tactical consequences.
+
 ## 0.1.2
 
 - Added Martial Attack Fumbles MAF-021 through MAF-030.

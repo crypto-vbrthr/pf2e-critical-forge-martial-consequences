@@ -27,7 +27,7 @@ export function buildMartialConsequencesPacks(isEnabled = () => false) {
     descriptionKey: config.descriptionKey,
     fallbackTitle: config.fallbackTitle,
     fallbackDescription: config.fallbackDescription,
-    version: "0.1.2",
+    version: "0.1.3",
     priority: 10,
     enabled: Boolean(isEnabled(config.settingKey)),
     metadata: config.metadata,

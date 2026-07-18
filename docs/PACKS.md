@@ -6,7 +6,7 @@
 
 - 30 of 30 planned cards
 - Blocks MAF-001 through MAF-030 implemented
-- Full mechanical review pending
+- Full mechanical review completed in 0.1.3
 
 ### Purpose
 
@@ -41,7 +41,7 @@ Critical failure on a weapon attack. Cards exclude attacks carrying the syntheti
 
 This pack describes general martial failure. **Ranged Mishaps** will later cover failures unique to bows, crossbows, firearms, thrown weapons, aiming, ammunition handling, and firing positions.
 
-Some mechanical overlap was intentionally tolerated while the pack grew. Now that it contains 30 cards, the complete pack is ready for a mechanical review that will replace redundant effects and sharpen its identity.
+The completed pack received a full mechanical review after reaching 30 cards. Version 0.1.3 replaced generic Off-Guard, Dazzled, AC, attack-roll, and Speed penalties with more distinctive tactical consequences. The pack now leans more strongly into movement, timing, claimed space, flanking, action sequencing, and reaction economy.
 
 ## Planned Packs
 

@@ -19,7 +19,7 @@
     "Cards": {
       "LostFooting": {
         "Title": "Unsicherer Stand",
-        "Description": "Im ungünstigsten Moment rutscht dir der Stand weg. Du bist 1 Runde lang auf dem falschen Fuß."
+        "Description": "Beim Abfangen des Fehlschlags rutscht dir der Stand weg. Das erste Feld, das du vor Ende deines nächsten Zuges betrittst, kostet dich 1,5 Meter zusätzliche Bewegung."
       },
       "OverextendedSwing": {
         "Title": "Überzogener Angriff",
@@ -31,7 +31,7 @@
       },
       "SlipperyGrip": {
         "Title": "Verrutschter Griff",
-        "Description": "Dein Griff verrutscht unerwartet. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf Angriffswürfe."
+        "Description": "Dein Griff verrutscht unerwartet. Dein nächster Angriff mit derselben Waffe oder demselben unbewaffneten Angriff vor Ende deines nächsten Zuges muss entweder deine erste oder deine letzte Aktion in diesem Zug sein."
       },
       "LostRhythm": {
         "Title": "Verlorener Rhythmus",
@@ -39,7 +39,7 @@
       },
       "WildFollowThrough": {
         "Title": "Wilder Nachschwung",
-        "Description": "Der Schwung zieht dich aus der Position. Falls möglich, führe 1,5 Meter in Richtung des versuchten Angriffs einen Schritt aus."
+        "Description": "Das Ziel darf sofort einen Schritt direkt von dir weg ausführen. Tut es dies und kannst du ein von ihm geräumtes Feld betreten, musst du einen Schritt auf eines dieser Felder ausführen."
       },
       "Hesitation": {
         "Title": "Zögern",
@@ -47,15 +47,15 @@
       },
       "DistractedRecovery": {
         "Title": "Abgelenkte Erholung",
-        "Description": "Die Erholung vom Fehlschlag raubt dir den Blick für das Schlachtfeld. Du bist 1 Runde lang geblendet."
+        "Description": "Die Erholung vom Fehlschlag raubt dir den Blick für das Schlachtfeld. Das Ziel darf sofort als Freie Aktion versuchen, dich zu täuschen."
       },
       "DefensiveCollapse": {
         "Title": "Zusammengebrochene Deckung",
-        "Description": "Der Fehlschlag bringt deine Verteidigung aus der Linie. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf deine RK."
+        "Description": "Der Fehlschlag reißt deine Verteidigung im Nahkampf auf. Bis zum Beginn deines nächsten Zuges darf sich das Ziel ohne Hindurchturnen durch dein Feld bewegen und behandelt dein Feld dabei als schwieriges Gelände."
       },
       "UnsteadyRecovery": {
         "Title": "Wacklige Erholung",
-        "Description": "Du brauchst länger als erwartet, um wieder festen Stand zu gewinnen. Alle deine Bewegungsraten sind 1 Runde lang um 1,5 Meter reduziert."
+        "Description": "Du brauchst länger als erwartet, um wieder festen Stand zu gewinnen. Die erste Bewegungsaktion, die du vor Ende deines nächsten Zuges einsetzt, muss nach Möglichkeit weiter vom Ziel entfernt enden, als sie begonnen hat."
       },
       "TwistedStance": {
         "Title": "Verdrehte Haltung",
@@ -67,7 +67,7 @@
       },
       "LateRecovery": {
         "Title": "Verspätete Erholung",
-        "Description": "Du bringst deinen Angriff zu langsam wieder unter Kontrolle. Bevor du in diesem Zug erneut angreifen kannst, musst du eine Aktion zum Interagieren aufwenden, um deine Haltung neu auszurichten. Diese Einschränkung endet zu Beginn deines nächsten Zuges."
+        "Description": "Du bringst deinen Angriff zu langsam wieder unter Kontrolle. Bevor du in diesem Zug erneut angreifen kannst, musst du eine Aktion aufwenden, um deine Haltung wiederherzustellen. Diese Einschränkung endet zu Beginn deines nächsten Zuges."
       },
       "TempoBroken": {
         "Title": "Gebrochenes Tempo",
@@ -99,11 +99,11 @@
       },
       "AwkwardRegrip": {
         "Title": "Ungünstig nachgefasst",
-        "Description": "Deine schnelle Waffe rutscht in einen ungünstigen Griff. Dein nächster Angriff mit derselben Waffe oder demselben unbewaffneten Angriff vor Ende deines nächsten Zuges profitiert bei der Berechnung des Mehrfachangriffsmalus nicht vom Merkmal Agil."
+        "Description": "Deine schnelle Waffe rutscht in einen ungünstigen Griff. Dein nächster Angriff mit derselben Waffe oder demselben unbewaffneten Angriff vor Ende deines nächsten Zuges, der einem Mehrfachangriffsmalus unterliegt, profitiert nicht vom Merkmal Agil. Ein Angriff ohne Mehrfachangriffsmalus verbraucht diesen Effekt nicht."
       },
       "GuardTooHigh": {
         "Title": "Deckung zu hoch",
-        "Description": "Du hebst deine Deckung zu weit an und gibst dein Gleichgewicht preis. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf deinen Reflex-SG."
+        "Description": "Du hebst deine Deckung zu weit an und gibst dein Gleichgewicht preis. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf deinen Reflex-SG. Dies betrifft unter anderem Zu-Fall-Bringen und Hindurchturnen."
       },
       "GuardTooLow": {
         "Title": "Deckung zu tief",
@@ -123,37 +123,22 @@
       },
       "FalseOpening": {
         "Title": "Falsche Öffnung",
-        "Description": "Du legst dich auf eine Öffnung fest, die nie existiert hat. Das Ziel erhält gegen deinen nächsten Angriff auf es vor Ende deines nächsten Zuges einen Umstandsbonus von +1 auf seine RK."
+        "Description": "Du legst dich auf eine Öffnung fest, die nie existiert hat. Bis zum Ende deines nächsten Zuges erhält das Ziel eine einmalige Reaktion: Nachdem du einen Angriff gegen es abgeschlossen hast, führt das Ziel einen Schritt aus."
       },
       "ExposedFlank": {
         "Title": "Offene Flanke",
-        "Description": "Dein Fehlschlag lässt eine Seite völlig offen. Das Ziel darf sofort einen Schritt auf ein anderes sicheres Feld neben dir ausführen. Diese Bewegung löst keine Reaktionen von dir aus."
+        "Description": "Dein Fehlschlag lässt eine Seite völlig offen. Das Ziel wählt ein Feld neben dir. Bis zum Beginn deines nächsten Zuges kannst du dieses Feld nicht betreten und keine Reaktionen einsetzen, die durch Bewegung in dieses Feld hinein oder aus ihm heraus ausgelöst werden."
       },
       "ReactionBait": {
         "Title": "Einladung zum Konter",
-        "Description": "Deine Erholung lädt geradezu zu einem Gegenangriff ein. Bis zum Beginn deines nächsten Zuges erhält das Ziel eine zusätzliche Reaktion, die es nur einsetzen kann, wenn eine deiner Aktionen den normalen Auslöser und alle Voraussetzungen der Reaktion erfüllt."
+        "Description": "Deine Erholung lädt geradezu zu einem Gegenangriff ein. Bis zum Beginn deines nächsten Zuges erhält das Ziel eine zusätzliche Reaktion, die es nur einsetzen kann, wenn eine deiner Aktionen den normalen Auslöser und alle Voraussetzungen der Reaktion erfüllt. Besitzt das Ziel keine geeignete Reaktion, darf es diese Reaktion stattdessen für einen Schritt einsetzen, nachdem du eine Bewegungsaktion abgeschlossen hast."
       },
       "GuardedTheWrongSide": {
         "Title": "Die falsche Seite gedeckt",
-        "Description": "Du wappnest dich gegen die falsche Art von Gefahr. Das Ziel wählt Nahkampf- oder Fernkampfangriffe. Bis zum Beginn deines nächsten Zuges erhältst du gegen Angriffe der gewählten Art einen Umstandsmalus von -1 auf deine RK."
+        "Description": "Du deckst die falsche Seite des Kampfes. Bis zum Beginn deines nächsten Zuges giltst du für die Bestimmung, ob ein Verbündeter eine Kreatur in die Zange nimmt, als würdest du kein Feld bedrohen."
       }
     },
     "Effects": {
-      "LostFooting": {
-        "Name": "Unsicherer Stand"
-      },
-      "SlipperyGrip": {
-        "Name": "Verrutschter Griff"
-      },
-      "DistractedRecovery": {
-        "Name": "Abgelenkte Erholung"
-      },
-      "DefensiveCollapse": {
-        "Name": "Zusammengebrochene Deckung"
-      },
-      "UnsteadyRecovery": {
-        "Name": "Wacklige Erholung"
-      },
       "WeightOnTheWrongFoot": {
         "Name": "Gewicht auf dem falschen Fuß"
       },

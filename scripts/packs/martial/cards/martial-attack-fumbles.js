@@ -6,9 +6,8 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
   defineMartialAttackFumble({
     id: "maf-001-lost-footing", localizationKey: "LostFooting",
     tone: "neutral", impact: "light", fallbackTitle: "Lost Footing",
-    fallbackDescription: "Your footing slips at the worst possible moment. You are off-guard for 1 round.",
-    weight: 2, tags: ["stance", "defense"],
-    effect: { duration: ONE_ROUND, components: [{ type: "condition", slug: "off-guard" }] }
+    fallbackDescription: "Your footing slips as you recover. The first square you enter before the end of your next turn costs 5 additional feet of movement.",
+    weight: 2, tags: ["stance", "movement", "manual"], filters: { excludedSourceTraits: ["incorporeal"] }
   }),
   defineMartialAttackFumble({
     id: "maf-002-overextended-swing", localizationKey: "OverextendedSwing",
@@ -25,9 +24,8 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
   defineMartialAttackFumble({
     id: "maf-004-slippery-grip", localizationKey: "SlipperyGrip",
     tone: "neutral", impact: "light", fallbackTitle: "Slippery Grip",
-    fallbackDescription: "Your grip shifts unexpectedly. You take a -1 circumstance penalty to attack rolls for 1 round.",
-    weight: 2, tags: ["weapon-control", "debuff"],
-    effect: { duration: ONE_ROUND, components: [{ type: "modifier", selector: "attack-roll", value: -1, modifierType: "circumstance", predicate: [] }] }
+    fallbackDescription: "Your grip shifts unexpectedly. The next Strike you make with the same weapon or unarmed attack before the end of your next turn must be either your first action or your last action of that turn.",
+    weight: 2, tags: ["weapon-control", "action-sequencing", "manual"]
   }),
   defineMartialAttackFumble({
     id: "maf-005-lost-rhythm", localizationKey: "LostRhythm",
@@ -38,8 +36,8 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
   defineMartialAttackFumble({
     id: "maf-006-wild-follow-through", localizationKey: "WildFollowThrough",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Wild Follow-Through",
-    fallbackDescription: "The momentum pulls you out of position. If possible, Step 5 feet in the direction of the attempted attack.",
-    tags: ["positioning", "manual"], filters: { attackTraits: ["melee"] }
+    fallbackDescription: "The target may immediately Step directly away from you. If it does and you can enter a square it vacated, you must Step into one such square.",
+    tags: ["positioning", "enemy-movement", "forced-movement", "manual"], filters: { attackTraits: ["melee"] }
   }),
   defineMartialAttackFumble({
     id: "maf-007-hesitation", localizationKey: "Hesitation",
@@ -50,23 +48,20 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
   defineMartialAttackFumble({
     id: "maf-008-distracted-recovery", localizationKey: "DistractedRecovery",
     tone: "serious", impact: "moderate", fallbackTitle: "Distracted Recovery",
-    fallbackDescription: "Recovering from the miss steals your attention from the battlefield. You are dazzled for 1 round.",
-    tags: ["senses", "control"],
-    effect: { duration: ONE_ROUND, components: [{ type: "condition", slug: "dazzled" }] }
+    fallbackDescription: "Recovering from the miss steals your attention from the battlefield. The target may immediately attempt to Feint against you as a free action.",
+    tags: ["attention", "target-action", "manual"]
   }),
   defineMartialAttackFumble({
     id: "maf-009-defensive-collapse", localizationKey: "DefensiveCollapse",
     tone: "serious", impact: "moderate", fallbackTitle: "Defensive Collapse",
-    fallbackDescription: "Your failed attack leaves your defenses out of position. You take a -1 circumstance penalty to AC for 1 round.",
-    tags: ["defense", "debuff"],
-    effect: { duration: ONE_ROUND, components: [{ type: "modifier", selector: "ac", value: -1, modifierType: "circumstance", predicate: [] }] }
+    fallbackDescription: "Your failed attack leaves your defense open at close range. Until the start of your next turn, the target may move through your space without attempting to Tumble Through, treating your space as difficult terrain.",
+    tags: ["defense", "positioning", "enemy-movement", "manual"], filters: { attackTraits: ["melee"] }
   }),
   defineMartialAttackFumble({
     id: "maf-010-unsteady-recovery", localizationKey: "UnsteadyRecovery",
     tone: "neutral", impact: "light", fallbackTitle: "Unsteady Recovery",
-    fallbackDescription: "It takes longer than expected to regain your footing. All your Speeds are reduced by 5 feet for 1 round.",
-    weight: 2, tags: ["movement", "recovery"], filters: { excludedSourceTraits: ["incorporeal"] },
-    effect: { duration: ONE_ROUND, components: [{ type: "movement", movementType: "all", value: -5, modifierType: "circumstance" }] }
+    fallbackDescription: "It takes longer than expected to regain your footing. The first move action you use before the end of your next turn must end farther from the target than you began, if possible.",
+    weight: 2, tags: ["movement", "recovery", "positioning", "manual"], filters: { excludedSourceTraits: ["incorporeal"] }
   }),
   defineMartialAttackFumble({
     id: "maf-011-twisted-stance", localizationKey: "TwistedStance",
@@ -84,7 +79,7 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
   defineMartialAttackFumble({
     id: "maf-013-late-recovery", localizationKey: "LateRecovery",
     tone: "dramatic", impact: "strong", fallbackTitle: "Late Recovery",
-    fallbackDescription: "Your attack recovers too slowly. Before you can Strike again this turn, you must spend an Interact action to reset your stance. This restriction ends at the start of your next turn.",
+    fallbackDescription: "Your attack recovers too slowly. Before you can Strike again this turn, you must spend one action to recover your stance. This restriction ends at the start of your next turn.",
     tags: ["recovery", "action-economy", "manual"]
   }),
   defineMartialAttackFumble({
@@ -133,14 +128,14 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
   defineMartialAttackFumble({
     id: "maf-021-awkward-regrip", localizationKey: "AwkwardRegrip",
     tone: "neutral", impact: "moderate", fallbackTitle: "Awkward Regrip",
-    fallbackDescription: "Your quick weapon slips into an awkward grip. The next Strike you make with the same weapon or unarmed attack before the end of your next turn does not benefit from the agile trait when calculating its multiple attack penalty.",
+    fallbackDescription: "Your quick weapon slips into an awkward grip. The next Strike you make with the same weapon or unarmed attack before the end of your next turn that is subject to a multiple attack penalty does not benefit from the agile trait. A Strike made with no multiple attack penalty does not consume this effect.",
     tags: ["weapon-control", "multiple-attack-penalty", "manual"], filters: { attackTraits: ["agile"] }
   }),
   defineMartialAttackFumble({
     id: "maf-022-guard-too-high", localizationKey: "GuardTooHigh",
     tone: "serious", impact: "light", fallbackTitle: "Guard Too High",
-    fallbackDescription: "Your guard rises too far and leaves your balance exposed. You take a -1 circumstance penalty to your Reflex DC for 1 round.",
-    weight: 2, tags: ["defense", "stance", "debuff"], filters: { excludedSourceTraits: ["incorporeal"] },
+    fallbackDescription: "Your guard rises too far and leaves your balance exposed. You take a -1 circumstance penalty to your Reflex DC for 1 round. This affects actions such as Trip and Tumble Through.",
+    tags: ["defense", "stance", "debuff"], filters: { excludedSourceTraits: ["incorporeal"] },
     effect: { duration: ONE_ROUND, components: [{ type: "modifier", selector: "reflex-dc", value: -1, modifierType: "circumstance", predicate: [] }] }
   }),
   defineMartialAttackFumble({
@@ -167,32 +162,32 @@ export const MARTIAL_ATTACK_FUMBLE_CARDS = Object.freeze([
   }),
   defineMartialAttackFumble({
     id: "maf-026-missed-threat", localizationKey: "MissedThreat",
-    tone: "serious", impact: "moderate", fallbackTitle: "Missed Threat",
+    tone: "serious", impact: "light", fallbackTitle: "Missed Threat",
     fallbackDescription: "Your failed attack hides another threat from view. Before the start of your next turn, the next creature other than the target that moves within or leaves your reach does not trigger reactions from you.",
     tags: ["attention", "reaction", "movement", "manual"], filters: { attackTraits: ["melee"] }
   }),
   defineMartialAttackFumble({
     id: "maf-027-false-opening", localizationKey: "FalseOpening",
     tone: "dramatic", impact: "moderate", fallbackTitle: "False Opening",
-    fallbackDescription: "You commit to an opening that was never there. The target gains a +1 circumstance bonus to AC against the next attack you make against it before the end of your next turn.",
-    tags: ["timing", "target-defense", "one-use", "manual"]
+    fallbackDescription: "You commit to an opening that was never there. Until the end of your next turn, the target gains a one-use reaction: after you complete an attack against it, the target Steps.",
+    tags: ["timing", "target-movement", "reaction", "one-use", "manual"]
   }),
   defineMartialAttackFumble({
     id: "maf-028-exposed-flank", localizationKey: "ExposedFlank",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Exposed Flank",
-    fallbackDescription: "Your miss leaves one side completely open. The target may immediately Step to another safe space adjacent to you. This movement does not trigger reactions from you.",
-    tags: ["positioning", "enemy-movement", "manual"], filters: { attackTraits: ["melee"] }
+    fallbackDescription: "Your miss leaves one side completely open. The target chooses one square adjacent to you. Until the start of your next turn, you cannot enter that square or use reactions triggered by movement into or out of it.",
+    tags: ["positioning", "claimed-space", "reaction", "manual"], filters: { attackTraits: ["melee"] }
   }),
   defineMartialAttackFumble({
     id: "maf-029-reaction-bait", localizationKey: "ReactionBait",
     tone: "dramatic", impact: "strong", fallbackTitle: "Reaction Bait",
-    fallbackDescription: "Your recovery practically invites a counter. Until the start of your next turn, the target gains one additional reaction that it can use only when one of your actions satisfies the reaction's normal trigger and requirements.",
+    fallbackDescription: "Your recovery practically invites a counter. Until the start of your next turn, the target gains one additional reaction that it can use only when one of your actions satisfies the reaction's normal trigger and requirements. If the target has no eligible reaction, it may instead use this reaction to Step after you complete a move action.",
     tags: ["action-economy", "target-benefit", "reaction", "manual"]
   }),
   defineMartialAttackFumble({
     id: "maf-030-guarded-the-wrong-side", localizationKey: "GuardedTheWrongSide",
-    tone: "serious", impact: "moderate", fallbackTitle: "Guarded the Wrong Side",
-    fallbackDescription: "You brace against the wrong kind of threat. The target chooses melee or ranged attacks. You take a -1 circumstance penalty to AC against attacks of the chosen kind until the start of your next turn.",
-    tags: ["defense", "choice", "conditional", "manual"]
+    tone: "serious", impact: "light", fallbackTitle: "Guarded the Wrong Side",
+    fallbackDescription: "You guard the wrong side of the engagement. Until the start of your next turn, you do not count as threatening any space for the purpose of helping an ally flank a creature.",
+    tags: ["defense", "flanking", "conditional", "manual"]
   })
 ]);

@@ -4,7 +4,7 @@
 
 Martial Consequences is an extension module for **PF2E Critical Forge**. It adds card packs focused on stance, timing, positioning, openings, and battlefield momentum.
 
-## Version 0.1.2
+## Version 0.1.3
 
 The current release contains one optional pack:
 
@@ -23,13 +23,15 @@ Then enable **Martial Attack Fumbles** in the module settings.
 
 ## Automation
 
-Nine cards create applicable Critical Forge effects. Twenty-one cards describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, conditional adjacency, extra reactions, or temporary reaction restrictions.
+Four cards create applicable Critical Forge effects. Twenty-six cards describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, claimed spaces, extra reactions, temporary reaction restrictions, or action sequencing.
 
 **Forced Reset** creates an automated effect that may be removed manually when the affected creature spends the action described by the card.
 
 ## Review Status
 
-Martial Attack Fumbles has reached its planned size of 30 cards. Its full mechanical review is the next development step. The review will identify redundant mechanics, excessive use of particular conditions or penalties, unclear card boundaries, and effects that need stronger narrative or tactical identities.
+Martial Attack Fumbles completed its first full mechanical review in version 0.1.3. Nine redundant or impractical cards were redesigned, and five additional cards received targeted clarity, weight, or reliability adjustments.
+
+The revised pack now emphasizes tactical movement, action sequencing, claimed space, flanking, and reaction timing instead of repeating generic one-round penalties from Critical Forge Core or Arsenal.
 
 ## Planned Packs
 
