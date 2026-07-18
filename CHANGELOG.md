@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.2
+
+- Added Ranged Mishaps RM-021 through RM-030.
+- Completed the first 30-card Ranged Mishaps set and expanded the module to 60 cards across two optional packs.
+- Added consequences involving shields, free-action Hide attempts, target fixation, friendly firing lanes, close-range pressure, weapon reset actions, immediate Demoralize attempts, formation changes, environmental concealment, and counterfire positioning.
+- Preserved ranged-only filtering and explicit spell-attack exclusion for every new card.
+- Kept all Ranged Mishaps manually resolved so source-specific, one-use, environmental, and immediate tactical consequences remain clear at the table.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+- Marked Ranged Mishaps as ready for its full mechanical review.
+
 ## 0.2.1
 
 - Added Ranged Mishaps RM-011 through RM-020.

@@ -25,7 +25,7 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.2.1");
+assert.equal(manifest.version, "0.2.2");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
@@ -43,14 +43,14 @@ assert.ok(enabled.every((pack) => pack.enabled === true));
 assert.equal(rangedOnly[0].enabled, false);
 assert.equal(rangedOnly[1].enabled, true);
 assert.equal(disabled[0].cards.length, 30);
-assert.equal(disabled[1].cards.length, 20);
+assert.equal(disabled[1].cards.length, 30);
 
 const ids = new Set();
 let automated = 0;
 let manual = 0;
 for (const pack of disabled) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.2.1");
+  assert.equal(pack.version, "0.2.2");
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
     assert.ok(getLocalization(dictionary, pack.descriptionKey), pack.descriptionKey);
@@ -83,7 +83,7 @@ for (const pack of disabled) {
   }
 }
 
-assert.equal(ids.size, 50);
+assert.equal(ids.size, 60);
 
 const martialCards = disabled[0].cards;
 const martialById = new Map(martialCards.map((card) => [card.id.split(".").at(-1), card]));
@@ -125,6 +125,8 @@ assert.ok(rangedById.has("rm-001-lost-sightline"));
 assert.ok(rangedById.has("rm-010-misjudged-distance"));
 assert.ok(rangedById.has("rm-011-ducking-lesson"));
 assert.ok(rangedById.has("rm-020-range-found"));
+assert.ok(rangedById.has("rm-021-shield-meet-warning"));
+assert.ok(rangedById.has("rm-030-return-address-included"));
 for (const card of rangedCards) {
   assert.ok(card.filters.attackTraits.includes("ranged"), `${card.id} must require ranged.`);
   assert.ok(card.filters.excludedAttackTraits.includes("spell"), `${card.id} must exclude spell.`);
@@ -143,9 +145,19 @@ assert.equal(rangedById.get("rm-017-a-very-encouraging-miss").weight, 2);
 assert.ok(rangedById.get("rm-018-scenic-detour").tags.includes("fallback-step"));
 assert.ok(rangedById.get("rm-019-helpful-warning").tags.includes("aid"));
 assert.ok(rangedById.get("rm-020-range-found").tags.includes("counterfire"));
+assert.ok(rangedById.get("rm-021-shield-meet-warning").tags.includes("shield"));
+assert.equal(rangedById.get("rm-022-look-over-there").impact, "strong");
+assert.equal(rangedById.get("rm-023-committed-aim").weight, 2);
+assert.ok(rangedById.get("rm-024-friendly-fire-drill").tags.includes("fallback-penalty"));
+assert.ok(rangedById.get("rm-025-inside-the-arc").tags.includes("close-quarters"));
+assert.ok(rangedById.get("rm-026-ammunition-argument").tags.includes("action-tax"));
+assert.ok(rangedById.get("rm-027-hecklers-range").tags.includes("demoralize"));
+assert.equal(rangedById.get("rm-028-scatter-formation").impact, "strong");
+assert.ok(rangedById.get("rm-029-dust-signature").tags.includes("concealment"));
+assert.ok(rangedById.get("rm-030-return-address-included").tags.includes("line-of-effect"));
 
 assert.equal(automated, 4);
-assert.equal(manual, 46);
+assert.equal(manual, 56);
 
 const settingsScript = await readFile(path.join(root, "scripts/settings.js"), "utf8");
 assert.match(settingsScript, /game\.settings\.register/);
@@ -157,4 +169,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.2.1 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.2.2 structural validation passed.");

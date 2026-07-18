@@ -103,6 +103,21 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | RM-019 | Helpful Warning | Moderate | Manual | An adjacent creature may Aid the target's AC without preparation |
 | RM-020 | Range Found | Moderate | Manual | Target treats the source as one range increment closer for counterfire |
 
+## Ranged Mishaps — Block 3
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| RM-021 | Shield, Meet Warning | Moderate | Manual | Target immediately Raises a Shield or Steps |
+| RM-022 | Look Over There | Strong | Manual | Target immediately Hides with cover or concealment, with a Step fallback |
+| RM-023 | Committed Aim | Light | Manual | First ranged attack against a different target takes -1 unless the source repositions or reassesses |
+| RM-024 | Friendly Fire Drill | Light | Manual | An ally in the line may Step; otherwise a later shot through an ally takes -1 |
+| RM-025 | Inside the Arc | Moderate | Manual | Target Steps around or toward the source without triggering its reactions |
+| RM-026 | Ammunition Argument | Moderate | Manual | Source resets the attack with one action or changes weapons before the next ranged Strike |
+| RM-027 | Heckler's Range | Moderate | Manual | Target immediately Demoralizes the source, with a Step fallback |
+| RM-028 | Scatter Formation | Strong | Manual | Target and an adjacent ally Step apart without triggering source reactions |
+| RM-029 | Dust Signature | Moderate | Manual | Environmental debris conceals the target from the source, with a Step fallback |
+| RM-030 | Return Address Included | Moderate | Manual | A ranged ally Steps into counterfire position, with a target Step fallback |
+
 ### Development Status
 
-Ranged Mishaps is currently at 20 of 30 planned cards. Similar or conditional mechanics may remain during development and will be assessed during the full mechanical review after RM-030.
+Ranged Mishaps has reached its planned 30-card size. Similar, conditional, or overlapping mechanics intentionally remain eligible for correction during the upcoming full mechanical review.

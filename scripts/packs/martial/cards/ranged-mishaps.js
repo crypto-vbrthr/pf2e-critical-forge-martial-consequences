@@ -120,5 +120,65 @@ export const RANGED_MISHAP_CARDS = Object.freeze([
     tone: "serious", impact: "moderate", fallbackTitle: "Range Found",
     fallbackDescription: "The target watches the projectile and learns the distance. For its next ranged Strike against you before the start of your next turn, it treats you as one range increment closer when determining its range penalty.",
     tags: ["range", "counterfire", "target-benefit", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-021-shield-meet-warning", localizationKey: "ShieldMeetWarning",
+    tone: "humorous", impact: "moderate", fallbackTitle: "Shield, Meet Warning",
+    fallbackDescription: "The miss gives the target exactly enough warning to brace. If it is wielding a shield that is not already raised, it may immediately Raise a Shield as a free action. Otherwise, it may immediately Step.",
+    tags: ["shield", "target-action", "free-action", "fallback-step", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-022-look-over-there", localizationKey: "LookOverThere",
+    tone: "dramatic", impact: "strong", fallbackTitle: "Look Over There",
+    fallbackDescription: "The projectile drags attention past the target. If the target has cover or concealment from you, it may immediately Hide as a free action, following the normal rules for Hide. If it cannot Hide, it may immediately Step toward cover or concealment instead.",
+    tags: ["hide", "cover", "concealment", "free-action", "fallback-step", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-023-committed-aim", localizationKey: "CommittedAim",
+    tone: "serious", impact: "light", fallbackTitle: "Committed Aim",
+    fallbackDescription: "You remain locked onto the creature you missed. The first ranged attack you make against a different target before the end of your next turn takes a -1 circumstance penalty. Moving to a different space or spending a single action to reassess the battlefield ends this effect.",
+    weight: 2, tags: ["aiming", "target-lock", "target-switch", "manual-removal", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-024-friendly-fire-drill", localizationKey: "FriendlyFireDrill",
+    tone: "humorous", impact: "light", fallbackTitle: "Friendly Fire Drill",
+    fallbackDescription: "The shot gives your allies a compelling reason to reconsider the line of fire. One ally between you and the target may immediately Step as a free action. If no such ally moves, the next ranged attack you make through an ally's space before the end of your next turn takes a -1 circumstance penalty.",
+    weight: 2, tags: ["ally-movement", "trajectory", "conditional", "fallback-penalty", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-025-inside-the-arc", localizationKey: "InsideTheArc",
+    tone: "dramatic", impact: "moderate", fallbackTitle: "Inside the Arc",
+    fallbackDescription: "The miss invites the target inside your comfortable firing line. If the target is adjacent to you, it may immediately Step to another space adjacent to you. Otherwise, it may immediately Step toward you. This movement does not trigger reactions from you.",
+    tags: ["close-quarters", "target-movement", "free-action", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-026-ammunition-argument", localizationKey: "AmmunitionArgument",
+    tone: "humorous", impact: "moderate", fallbackTitle: "Ammunition Argument",
+    fallbackDescription: "Your weapon, projectile, or throwing grip stops cooperating with your timing. Before your next ranged Strike before the end of your next turn, you must either spend a single action checking and resetting the attack or use a different weapon or unarmed attack. Nothing is broken; everything is merely being difficult.",
+    tags: ["weapon-handling", "action-tax", "recovery", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-027-hecklers-range", localizationKey: "HecklersRange",
+    tone: "humorous", impact: "moderate", fallbackTitle: "Heckler's Range",
+    fallbackDescription: "The miss passes close enough for immediate commentary. The target may attempt to Demoralize you as a free action, following the normal rules. If it cannot attempt to Demoralize you, it may immediately Step instead.",
+    tags: ["demoralize", "target-action", "free-action", "fallback-step", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-028-scatter-formation", localizationKey: "ScatterFormation",
+    tone: "serious", impact: "strong", fallbackTitle: "Scatter Formation",
+    fallbackDescription: "The near miss convinces the target's formation to spread out. The target and one willing ally adjacent to it may each immediately Step as free actions, in either order, but they must end these Steps non-adjacent to each other. Neither Step triggers reactions from you. If no eligible ally participates, the target may Step normally.",
+    tags: ["formation", "target-movement", "ally-movement", "free-action", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-029-dust-signature", localizationKey: "DustSignature",
+    tone: "dramatic", impact: "moderate", fallbackTitle: "Dust Signature",
+    fallbackDescription: "The projectile kicks up dust, splinters, sparks, or similar debris around the target. If the environment can plausibly produce such debris, the target is concealed from you until the start of your next turn or until it leaves its space. If the environment cannot support the effect, the target may immediately Step instead.",
+    tags: ["environment", "concealment", "debris", "fallback-step", "manual"]
+  }),
+  defineRangedMishap({
+    id: "rm-030-return-address-included", localizationKey: "ReturnAddressIncluded",
+    tone: "humorous", impact: "moderate", fallbackTitle: "Return Address Included",
+    fallbackDescription: "The miss arrives with a remarkably clear return address. The target chooses one ally that can see it and has a ranged attack. That ally may immediately Step as a free action and, if possible, must end with line of effect to you. This movement does not trigger reactions from you. If no eligible ally exists, the target may immediately Step instead.",
+    tags: ["counterfire", "ally-movement", "line-of-effect", "fallback-step", "manual"]
   })
 ]);
