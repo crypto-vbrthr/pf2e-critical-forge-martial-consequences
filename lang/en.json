@@ -1,0 +1,39 @@
+{
+  "PF2ECFMC": {
+    "Packs": {
+      "MartialAttackFumbles": {
+        "Title": "Martial Consequences: Martial Attack Fumbles",
+        "Description": "Critical fumbles for non-spell weapon attacks. This pack focuses on lost footing, broken rhythm, exposed defenses, and tactical displacement rather than damage-type-specific injuries."
+      }
+    },
+    "Settings": {
+      "MartialAttackFumbles": {
+        "Name": "Enable Martial Attack Fumbles",
+        "Hint": "Adds general martial critical-fumble cards for non-spell weapon attacks. These cards affect the attacker's stance, timing, positioning, and combat rhythm."
+      }
+    },
+    "Notifications": {
+      "RegistrationFailed": "PF2E Critical Forge: Martial Consequences could not register its card packs.",
+      "PackSelectionUpdated": "Martial Consequences card-pack selection updated."
+    },
+    "Cards": {
+      "LostFooting": { "Title": "Lost Footing", "Description": "Your footing slips at the worst possible moment. You are off-guard for 1 round." },
+      "OverextendedSwing": { "Title": "Overextended Swing", "Description": "Your attack carries you too far. The target may immediately Step as a free action." },
+      "BrokenGuard": { "Title": "Broken Guard", "Description": "Your weapon finishes wide. The next attack made against you before the start of your next turn gains a +1 circumstance bonus." },
+      "SlipperyGrip": { "Title": "Slippery Grip", "Description": "Your grip shifts unexpectedly. You take a -1 circumstance penalty to attack rolls for 1 round." },
+      "LostRhythm": { "Title": "Lost Rhythm", "Description": "The failed strike disrupts your combat rhythm. You cannot use reactions until the start of your next turn." },
+      "WildFollowThrough": { "Title": "Wild Follow-Through", "Description": "The momentum pulls you out of position. If possible, Step 5 feet in the direction of the attempted attack." },
+      "Hesitation": { "Title": "Hesitation", "Description": "You second-guess your next move. The first Strike you make before the end of your next turn takes a -1 circumstance penalty." },
+      "DistractedRecovery": { "Title": "Distracted Recovery", "Description": "Recovering from the miss steals your attention from the battlefield. You are dazzled for 1 round." },
+      "DefensiveCollapse": { "Title": "Defensive Collapse", "Description": "Your failed attack leaves your defenses out of position. You take a -1 circumstance penalty to AC for 1 round." },
+      "UnsteadyRecovery": { "Title": "Unsteady Recovery", "Description": "It takes longer than expected to regain your footing. All your Speeds are reduced by 5 feet for 1 round." }
+    },
+    "Effects": {
+      "LostFooting": { "Name": "Lost Footing" },
+      "SlipperyGrip": { "Name": "Slippery Grip" },
+      "DistractedRecovery": { "Name": "Distracted Recovery" },
+      "DefensiveCollapse": { "Name": "Defensive Collapse" },
+      "UnsteadyRecovery": { "Name": "Unsteady Recovery" }
+    }
+  }
+}

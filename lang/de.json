@@ -1,0 +1,39 @@
+{
+  "PF2ECFMC": {
+    "Packs": {
+      "MartialAttackFumbles": {
+        "Title": "Martial Consequences: Kampfpatzer",
+        "Description": "Kritische Fehlschläge bei nichtmagischen Waffenangriffen. Dieses Paket konzentriert sich auf verlorenen Stand, gebrochenen Rhythmus, offene Deckung und taktische Positionsveränderungen statt auf schadensartspezifische Verletzungen."
+      }
+    },
+    "Settings": {
+      "MartialAttackFumbles": {
+        "Name": "Kampfpatzer aktivieren",
+        "Hint": "Fügt allgemeine Karten für kritische Fehlschläge bei nichtmagischen Waffenangriffen hinzu. Die Karten betreffen Haltung, Timing, Position und Kampfrhythmus des Angreifers."
+      }
+    },
+    "Notifications": {
+      "RegistrationFailed": "PF2E Critical Forge: Martial Consequences konnte seine Kartenpakete nicht registrieren.",
+      "PackSelectionUpdated": "Die Kartenpaket-Auswahl von Martial Consequences wurde aktualisiert."
+    },
+    "Cards": {
+      "LostFooting": { "Title": "Unsicherer Stand", "Description": "Im ungünstigsten Moment rutscht dir der Stand weg. Du bist 1 Runde lang auf dem falschen Fuß." },
+      "OverextendedSwing": { "Title": "Überzogener Angriff", "Description": "Dein Angriff trägt dich zu weit. Das Ziel darf sofort als freie Aktion einen Schritt ausführen." },
+      "BrokenGuard": { "Title": "Gebrochene Deckung", "Description": "Deine Waffe endet weit außerhalb der Deckung. Der nächste Angriff gegen dich vor Beginn deines nächsten Zuges erhält einen Umstandsbonus von +1." },
+      "SlipperyGrip": { "Title": "Verrutschter Griff", "Description": "Dein Griff verrutscht unerwartet. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf Angriffswürfe." },
+      "LostRhythm": { "Title": "Verlorener Rhythmus", "Description": "Der Fehlschlag unterbricht deinen Kampfrhythmus. Bis zum Beginn deines nächsten Zuges kannst du keine Reaktionen einsetzen." },
+      "WildFollowThrough": { "Title": "Wilder Nachschwung", "Description": "Der Schwung zieht dich aus der Position. Falls möglich, führe 1,5 Meter in Richtung des versuchten Angriffs einen Schritt aus." },
+      "Hesitation": { "Title": "Zögern", "Description": "Du zweifelst an deiner nächsten Bewegung. Der erste Angriff vor Ende deines nächsten Zuges erhält einen Umstandsmalus von -1." },
+      "DistractedRecovery": { "Title": "Abgelenkte Erholung", "Description": "Die Erholung vom Fehlschlag raubt dir den Blick für das Schlachtfeld. Du bist 1 Runde lang geblendet." },
+      "DefensiveCollapse": { "Title": "Zusammengebrochene Deckung", "Description": "Der Fehlschlag bringt deine Verteidigung aus der Linie. Du erhältst 1 Runde lang einen Umstandsmalus von -1 auf deine RK." },
+      "UnsteadyRecovery": { "Title": "Wacklige Erholung", "Description": "Du brauchst länger als erwartet, um wieder festen Stand zu gewinnen. Alle deine Bewegungsraten sind 1 Runde lang um 1,5 Meter reduziert." }
+    },
+    "Effects": {
+      "LostFooting": { "Name": "Unsicherer Stand" },
+      "SlipperyGrip": { "Name": "Verrutschter Griff" },
+      "DistractedRecovery": { "Name": "Abgelenkte Erholung" },
+      "DefensiveCollapse": { "Name": "Zusammengebrochene Deckung" },
+      "UnsteadyRecovery": { "Name": "Wacklige Erholung" }
+    }
+  }
+}
