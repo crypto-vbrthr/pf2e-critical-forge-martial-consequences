@@ -3,7 +3,8 @@ import { MARTIAL_PACK_CONFIGS } from "./packs/martial-consequences.js";
 export const MODULE_ID = "pf2e-critical-forge-martial-consequences";
 
 const SETTING_LOCALIZATION = Object.freeze({
-  enableMartialAttackFumbles: "MartialAttackFumbles"
+  enableMartialAttackFumbles: "MartialAttackFumbles",
+  enableRangedMishaps: "RangedMishaps"
 });
 
 export function registerMartialConsequencesSettings(onPackSettingChanged) {

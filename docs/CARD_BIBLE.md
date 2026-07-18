@@ -72,3 +72,22 @@ The first full mechanical review was completed for version 0.1.3.
 **Mechanical Review: Passed after revision**
 
 Future reviews will examine pack identity, narrative consistency, translation quality, and statistical distribution across all four planned packs.
+
+## Ranged Mishaps — Block 1
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| RM-001 | Lost Sightline | Light | Manual | Target gains lesser cover against the next ranged attack unless the source relocates or re-aims |
+| RM-002 | Revealing Shot | Moderate | Manual | Source cannot remain hidden or undetected from the target |
+| RM-003 | Awkward Release | Light | Manual | Next ranged attack must originate elsewhere or take -1 |
+| RM-004 | Broken Firing Rhythm | Light | Manual | No reactions that require or include a ranged Strike |
+| RM-005 | Forced Reposition | Moderate | Manual | Source must change spaces before attacking the same target at range again |
+| RM-006 | Target Finds Cover | Moderate | Manual | Target immediately Steps toward cover |
+| RM-007 | Poor Follow-Through | Moderate | Manual | Source's next action cannot include a ranged Strike |
+| RM-008 | Obstructed Arc | Light | Manual | A creature between source and target may immediately Step |
+| RM-009 | Exposed to Return Fire | Moderate | Manual | Current cover is reduced by one degree against the next ranged attack |
+| RM-010 | Misjudged Distance | Light | Manual | Next target counts as one range increment farther unless the source re-estimates |
+
+### Development Status
+
+Ranged Mishaps is currently at 10 of 30 planned cards. Similar or conditional mechanics may remain during development and will be assessed during the full mechanical review after RM-030.

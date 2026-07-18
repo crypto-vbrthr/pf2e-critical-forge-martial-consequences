@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.0
+
+- Added the optional Ranged Mishaps card pack.
+- Added Ranged Mishaps RM-001 through RM-010.
+- Added ranged-only filtering through `attackTraits: ["ranged"]`.
+- Excluded spell attacks through `excludedAttackTraits: ["spell"]`.
+- Added tactical consequences for sightlines, firing positions, cover, projectile paths, shot rhythm, and range estimation.
+- Added independent module settings for Martial Attack Fumbles and Ranged Mishaps.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+- Expanded the module to 40 cards across two optional packs.
+
 ## 0.1.3
 
 - Completed the first full mechanical review of Martial Attack Fumbles.

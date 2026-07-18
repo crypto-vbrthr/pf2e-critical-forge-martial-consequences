@@ -4,12 +4,20 @@
       "MartialAttackFumbles": {
         "Title": "Martial Consequences: Martial Attack Fumbles",
         "Description": "Critical fumbles for non-spell weapon attacks. This pack focuses on lost footing, broken rhythm, exposed defenses, and tactical displacement rather than damage-type-specific injuries."
+      },
+      "RangedMishaps": {
+        "Title": "Martial Consequences: Ranged Mishaps",
+        "Description": "Critical fumbles unique to non-spell ranged weapon attacks. This pack focuses on sightlines, firing positions, cover, range, and shot rhythm rather than general martial errors or damage-type-specific injuries."
       }
     },
     "Settings": {
       "MartialAttackFumbles": {
         "Name": "Enable Martial Attack Fumbles",
         "Hint": "Adds general martial critical-fumble cards for non-spell weapon attacks. These cards affect the attacker's stance, timing, positioning, and combat rhythm."
+      },
+      "RangedMishaps": {
+        "Name": "Enable Ranged Mishaps",
+        "Hint": "Adds critical-fumble cards unique to non-spell ranged weapon attacks, including lost sightlines, exposed positions, disrupted shot rhythm, and range mistakes."
       }
     },
     "Notifications": {
@@ -136,6 +144,46 @@
       "GuardedTheWrongSide": {
         "Title": "Guarded the Wrong Side",
         "Description": "You guard the wrong side of the engagement. Until the start of your next turn, you do not count as threatening any space for the purpose of helping an ally flank a creature."
+      },
+      "LostSightline": {
+        "Title": "Lost Sightline",
+        "Description": "You lose the target behind movement, cover, or your own weapon arm. The target gains lesser cover against your next ranged attack before the end of your next turn. This benefit ends if you first move to a different space or spend a single action to re-establish your sightline."
+      },
+      "RevealingShot": {
+        "Title": "Revealing Shot",
+        "Description": "The failed shot reveals your exact firing position. Until the start of your next turn, you cannot be hidden or undetected from the target. Concealment still applies normally."
+      },
+      "AwkwardRelease": {
+        "Title": "Awkward Release",
+        "Description": "The projectile leaves at the wrong moment. Your next ranged attack before the end of your next turn must originate from a different space or take a -1 circumstance penalty."
+      },
+      "BrokenFiringRhythm": {
+        "Title": "Broken Firing Rhythm",
+        "Description": "The failed shot breaks your firing rhythm. Until the start of your next turn, you cannot use reactions that require or include a ranged Strike."
+      },
+      "ForcedReposition": {
+        "Title": "Forced Reposition",
+        "Description": "Your current firing position no longer feels usable. Before you can make another ranged attack against the same target before the end of your next turn, you must move to a different space."
+      },
+      "TargetFindsCover": {
+        "Title": "Target Finds Cover",
+        "Description": "The miss makes the danger angle obvious. The target may immediately Step as a free action. If possible, it must end that Step closer to cover from you."
+      },
+      "PoorFollowThrough": {
+        "Title": "Poor Follow-Through",
+        "Description": "Your weapon or throwing arm finishes outside the line needed for another shot. The next action you use before the end of your next turn cannot require or include a ranged Strike."
+      },
+      "ObstructedArc": {
+        "Title": "Obstructed Arc",
+        "Description": "The errant projectile forces someone in its path to shift. One creature between you and the target may immediately Step as a free action."
+      },
+      "ExposedToReturnFire": {
+        "Title": "Exposed to Return Fire",
+        "Description": "Trying to save the shot pulls you out of your protected firing posture. Against the next ranged attack made against you before the start of your next turn, reduce the cover granted by your current space by one degree. Moving to a different space ends this effect."
+      },
+      "MisjudgedDistance": {
+        "Title": "Misjudged Distance",
+        "Description": "You misread the distance, movement, or projectile path. For your next ranged Strike before the end of your next turn, treat the target as one range increment farther away when determining the range penalty. You may spend a single action to gauge the distance and end this effect."
       }
     },
     "Effects": {

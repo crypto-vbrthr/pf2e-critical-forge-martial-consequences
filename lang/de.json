@@ -4,12 +4,20 @@
       "MartialAttackFumbles": {
         "Title": "Martial Consequences: Kampfpatzer",
         "Description": "Kritische Fehlschläge bei nichtmagischen Waffenangriffen. Dieses Paket konzentriert sich auf verlorenen Stand, gebrochenen Rhythmus, offene Deckung und taktische Positionsveränderungen statt auf schadensartspezifische Verletzungen."
+      },
+      "RangedMishaps": {
+        "Title": "Martial Consequences: Fernkampfmissgeschicke",
+        "Description": "Kritische Fehlschläge, die nur bei nichtmagischen Fernkampfwaffenangriffen auftreten. Dieses Paket konzentriert sich auf Schusslinien, Feuerstellungen, Deckung, Reichweite und Schussrhythmus statt auf allgemeine Kampffehler oder schadensartspezifische Verletzungen."
       }
     },
     "Settings": {
       "MartialAttackFumbles": {
         "Name": "Kampfpatzer aktivieren",
         "Hint": "Fügt allgemeine Karten für kritische Fehlschläge bei nichtmagischen Waffenangriffen hinzu. Die Karten betreffen Haltung, Timing, Position und Kampfrhythmus des Angreifers."
+      },
+      "RangedMishaps": {
+        "Name": "Fernkampfmissgeschicke aktivieren",
+        "Hint": "Fügt Karten für kritische Fehlschläge hinzu, die nur bei nichtmagischen Fernkampfwaffenangriffen auftreten, darunter verlorene Schusslinien, offene Stellungen, unterbrochener Schussrhythmus und Reichweitenfehler."
       }
     },
     "Notifications": {
@@ -136,6 +144,46 @@
       "GuardedTheWrongSide": {
         "Title": "Die falsche Seite gedeckt",
         "Description": "Du deckst die falsche Seite des Kampfes. Bis zum Beginn deines nächsten Zuges giltst du für die Bestimmung, ob ein Verbündeter eine Kreatur in die Zange nimmt, als würdest du kein Feld bedrohen."
+      },
+      "LostSightline": {
+        "Title": "Verlorene Schusslinie",
+        "Description": "Du verlierst das Ziel hinter Bewegung, Deckung oder deinem eigenen Waffenarm aus dem Blick. Das Ziel erhält gegen deinen nächsten Fernkampfangriff bis zum Ende deines nächsten Zuges Geringe Deckung. Dieser Vorteil endet, wenn du dich vorher auf ein anderes Feld bewegst oder eine einzelne Aktion aufwendest, um deine Schusslinie neu auszurichten."
+      },
+      "RevealingShot": {
+        "Title": "Verräterischer Schuss",
+        "Description": "Der misslungene Schuss verrät deine genaue Feuerstellung. Bis zum Beginn deines nächsten Zuges kannst du vor dem Ziel weder Versteckt noch Unentdeckt sein. Verborgenheit gilt weiterhin normal."
+      },
+      "AwkwardRelease": {
+        "Title": "Unsaubere Freigabe",
+        "Description": "Das Geschoss löst sich im falschen Moment. Dein nächster Fernkampfangriff bis zum Ende deines nächsten Zuges muss von einem anderen Feld ausgehen oder erhält einen Umstandsmalus von -1."
+      },
+      "BrokenFiringRhythm": {
+        "Title": "Gebrochener Schussrhythmus",
+        "Description": "Der Fehlschuss unterbricht deinen Schussrhythmus. Bis zum Beginn deines nächsten Zuges kannst du keine Reaktionen einsetzen, die einen Fernkampfangriff erfordern oder enthalten."
+      },
+      "ForcedReposition": {
+        "Title": "Erzwungener Stellungswechsel",
+        "Description": "Deine aktuelle Feuerstellung fühlt sich nicht mehr brauchbar an. Bevor du dasselbe Ziel bis zum Ende deines nächsten Zuges erneut mit einem Fernkampfangriff angreifen kannst, musst du dich auf ein anderes Feld bewegen."
+      },
+      "TargetFindsCover": {
+        "Title": "Ziel sucht Deckung",
+        "Description": "Der Fehlschuss macht den gefährlichen Winkel offensichtlich. Das Ziel darf sofort als freie Aktion einen Schritt ausführen. Wenn möglich, muss es diesen Schritt näher an Deckung vor dir beenden."
+      },
+      "PoorFollowThrough": {
+        "Title": "Schlechte Nachführung",
+        "Description": "Deine Waffe oder dein Wurfarm endet außerhalb der Linie, die für den nächsten Schuss nötig wäre. Deine nächste Aktion bis zum Ende deines nächsten Zuges darf keinen Fernkampfangriff erfordern oder enthalten."
+      },
+      "ObstructedArc": {
+        "Title": "Gestörte Flugbahn",
+        "Description": "Das fehlgeleitete Geschoss zwingt jemanden auf seiner Flugbahn auszuweichen. Eine Kreatur zwischen dir und dem Ziel darf sofort als freie Aktion einen Schritt ausführen."
+      },
+      "ExposedToReturnFire": {
+        "Title": "Dem Gegenfeuer ausgesetzt",
+        "Description": "Beim Versuch, den Schuss noch zu retten, verlässt du deine geschützte Feuerhaltung. Gegen den nächsten Fernkampfangriff auf dich vor Beginn deines nächsten Zuges wird die Deckung deines aktuellen Feldes um eine Stufe reduziert. Bewegst du dich auf ein anderes Feld, endet dieser Effekt."
+      },
+      "MisjudgedDistance": {
+        "Title": "Entfernung falsch eingeschätzt",
+        "Description": "Du verschätzt dich bei Entfernung, Bewegung oder Flugbahn. Behandle das Ziel bei deinem nächsten Fernkampfangriff bis zum Ende deines nächsten Zuges zur Bestimmung des Reichweitenmalus als einen Reichweitenabschnitt weiter entfernt. Du kannst eine einzelne Aktion aufwenden, um die Entfernung neu einzuschätzen und diesen Effekt zu beenden."
       }
     },
     "Effects": {

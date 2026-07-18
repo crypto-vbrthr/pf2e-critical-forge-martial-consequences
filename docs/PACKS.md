@@ -39,14 +39,58 @@ Critical failure on a weapon attack. Cards exclude attacks carrying the syntheti
 
 ### Boundary
 
-This pack describes general martial failure. **Ranged Mishaps** will later cover failures unique to bows, crossbows, firearms, thrown weapons, aiming, ammunition handling, and firing positions.
+This pack describes general martial failure. **Ranged Mishaps** covers failures unique to bows, crossbows, firearms, thrown weapons, aiming, projectile paths, range, and firing positions.
 
 The completed pack received a full mechanical review after reaching 30 cards. Version 0.1.3 replaced generic Off-Guard, Dazzled, AC, attack-roll, and Speed penalties with more distinctive tactical consequences. The pack now leans more strongly into movement, timing, claimed space, flanking, action sequencing, and reaction economy.
 
-## Planned Packs
+## Ranged Mishaps
 
-### Ranged Mishaps
-Critical failures unique to non-spell ranged weapon attacks.
+### Current Status
+
+- 10 of 30 planned cards
+- Block RM-001 through RM-010 implemented
+- Full mechanical review scheduled after RM-030
+
+### Purpose
+
+Critical-fumble consequences that depend specifically on non-spell ranged weapon attacks.
+
+### Trigger
+
+Critical failure on an attack carrying the synthetic `ranged` attack trait. Every card excludes attacks carrying the synthetic `spell` attack trait.
+
+```js
+filters: {
+  attackTraits: ["ranged"],
+  excludedAttackTraits: ["spell"]
+}
+```
+
+### Typical Effects
+
+- lost or compromised sightlines
+- revealed firing positions
+- forced changes of firing position
+- disrupted shooting or throwing rhythm
+- targets moving toward cover
+- projectile-path complications
+- reduced protection against return fire
+- mistakes in range estimation
+
+### Not Included
+
+- spell attacks
+- general martial errors that work equally well in melee
+- damage-type-specific injuries
+- permanent weapon damage
+- automatic ammunition destruction
+- combat maneuvers and other skill actions
+
+### Boundary
+
+This pack is not a second general fumble deck. A card belongs here only when its fiction and mechanics require a ranged weapon attack. General loss of stance, defense, or combat rhythm remains the domain of **Martial Attack Fumbles**. Injuries caused by piercing, slashing, or bludgeoning projectiles remain the domain of **Arsenal**.
+
+## Planned Packs
 
 ### Martial Openings
 Critical successes that create an opening on the target or help allies exploit the target's defense.
