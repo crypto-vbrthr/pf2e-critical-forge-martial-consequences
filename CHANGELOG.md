@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1
+
+- Added Ranged Mishaps RM-011 through RM-020.
+- Expanded Ranged Mishaps to 20 cards and the module to 50 cards across two optional packs.
+- Added tactical consequences involving prone cover, closing distance, crowd cover, Point Out, reactive Steps, blind spots, confidence, terrain disruption, Aid, and counterfire range estimation.
+- Preserved ranged-only filtering and explicit spell-attack exclusion for every new card.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+
 ## 0.2.0
 
 - Added the optional Ranged Mishaps card pack.

@@ -184,6 +184,46 @@
       "MisjudgedDistance": {
         "Title": "Misjudged Distance",
         "Description": "You misread the distance, movement, or projectile path. For your next ranged Strike before the end of your next turn, treat the target as one range increment farther away when determining the range penalty. You may spend a single action to gauge the distance and end this effect."
+      },
+      "DuckingLesson": {
+        "Title": "Ducking Lesson",
+        "Description": "You miss high enough to teach the target the tactical value of being horizontal. The target may immediately Drop Prone as a free action. If it does, it may Take Cover as part of the same free action; the normal rules for Take Cover then apply."
+      },
+      "ClosingTheDistance": {
+        "Title": "Closing the Distance",
+        "Description": "The miss shows the target exactly when to advance. The target may immediately Stride up to 10 feet toward you as a free action. This movement does not trigger reactions from you."
+      },
+      "BorrowedSilhouette": {
+        "Title": "Borrowed Silhouette",
+        "Description": "The target learns to hide inside the crowd around it. Until the start of your next turn, it gains lesser cover against your ranged attacks while adjacent to at least one creature, even if that creature would not normally provide cover. Moving to a different space ends this effect."
+      },
+      "FollowTheShot": {
+        "Title": "Follow the Shot",
+        "Description": "The impact points straight back to you. The target may immediately Point Out you as a free action to creatures that can see or hear it. If all of the target's allies already observe you, the target instead chooses one ally; that ally gains a +1 circumstance bonus to its next ranged attack against you before the start of your next turn."
+      },
+      "ReadTheAngle": {
+        "Title": "Read the Angle",
+        "Description": "The target reads the line of your failed shot. Until the end of your next turn, it gains a one-use reaction: when you begin a ranged Strike against it from your current space, it Steps before the attack roll. The Strike continues if the target remains valid; recalculate cover and range after the Step."
+      },
+      "DeadGround": {
+        "Title": "Dead Ground",
+        "Description": "The failed shot exposes a blind spot in your current angle. The target chooses one unoccupied space adjacent to it. Until the start of your next turn, you cannot make ranged attacks from your current space against a creature occupying the chosen space. Moving to a different space ends this effect."
+      },
+      "AVeryEncouragingMiss": {
+        "Title": "A Very Encouraging Miss",
+        "Description": "The target's confidence improves dramatically. Before the end of your next turn, it gains a +1 circumstance bonus to its next attempt to Demoralize or Feint against you."
+      },
+      "ScenicDetour": {
+        "Title": "Scenic Detour",
+        "Description": "The projectile finds the scenery with admirable precision. The GM chooses one suitable space adjacent to the target, roughly beyond it along the shot's path; that space becomes difficult terrain until the end of your next turn. If no suitable scenery or space exists, the target may immediately Step instead."
+      },
+      "HelpfulWarning": {
+        "Title": "Helpful Warning",
+        "Description": "The miss warns everyone near the target. One creature adjacent to the target gains a one-use reaction until the start of your next turn. It may use that reaction to Aid the target's AC against your next ranged attack, without having prepared to Aid; all other Aid rules apply normally."
+      },
+      "RangeFound": {
+        "Title": "Range Found",
+        "Description": "The target watches the projectile and learns the distance. For its next ranged Strike against you before the start of your next turn, it treats you as one range increment closer when determining its range penalty."
       }
     },
     "Effects": {

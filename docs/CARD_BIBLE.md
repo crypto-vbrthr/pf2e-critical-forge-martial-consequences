@@ -88,6 +88,21 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | RM-009 | Exposed to Return Fire | Moderate | Manual | Current cover is reduced by one degree against the next ranged attack |
 | RM-010 | Misjudged Distance | Light | Manual | Next target counts as one range increment farther unless the source re-estimates |
 
+## Ranged Mishaps — Block 2
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| RM-011 | Ducking Lesson | Moderate | Manual | Target may immediately Drop Prone and Take Cover |
+| RM-012 | Closing the Distance | Strong | Manual | Target advances up to 10 feet without reactions from the source |
+| RM-013 | Borrowed Silhouette | Moderate | Manual | Adjacent creatures provide lesser cover against the source |
+| RM-014 | Follow the Shot | Moderate | Manual | Target Points Out the source or grants an ally a counterfire bonus |
+| RM-015 | Read the Angle | Strong | Manual | Target gains a one-use Step reaction before the next ranged attack roll |
+| RM-016 | Dead Ground | Moderate | Manual | Target claims an adjacent blind-spot square against fire from the current position |
+| RM-017 | A Very Encouraging Miss | Light | Manual | Target gains +1 to its next Demoralize or Feint against the source |
+| RM-018 | Scenic Detour | Moderate | Manual | The miss creates one square of difficult terrain, with a Step fallback |
+| RM-019 | Helpful Warning | Moderate | Manual | An adjacent creature may Aid the target's AC without preparation |
+| RM-020 | Range Found | Moderate | Manual | Target treats the source as one range increment closer for counterfire |
+
 ### Development Status
 
-Ranged Mishaps is currently at 10 of 30 planned cards. Similar or conditional mechanics may remain during development and will be assessed during the full mechanical review after RM-030.
+Ranged Mishaps is currently at 20 of 30 planned cards. Similar or conditional mechanics may remain during development and will be assessed during the full mechanical review after RM-030.

@@ -47,8 +47,8 @@ The completed pack received a full mechanical review after reaching 30 cards. Ve
 
 ### Current Status
 
-- 10 of 30 planned cards
-- Block RM-001 through RM-010 implemented
+- 20 of 30 planned cards
+- Blocks RM-001 through RM-020 implemented
 - Full mechanical review scheduled after RM-030
 
 ### Purpose
@@ -76,6 +76,9 @@ filters: {
 - projectile-path complications
 - reduced protection against return fire
 - mistakes in range estimation
+- targets exploiting posture, crowds, blind spots, and counterfire
+- nearby allies reacting to the warning provided by a miss
+- projectile impacts that reshape a small piece of terrain
 
 ### Not Included
 

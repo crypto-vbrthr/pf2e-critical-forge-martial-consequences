@@ -25,7 +25,7 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.2.0");
+assert.equal(manifest.version, "0.2.1");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
@@ -43,14 +43,14 @@ assert.ok(enabled.every((pack) => pack.enabled === true));
 assert.equal(rangedOnly[0].enabled, false);
 assert.equal(rangedOnly[1].enabled, true);
 assert.equal(disabled[0].cards.length, 30);
-assert.equal(disabled[1].cards.length, 10);
+assert.equal(disabled[1].cards.length, 20);
 
 const ids = new Set();
 let automated = 0;
 let manual = 0;
 for (const pack of disabled) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.2.0");
+  assert.equal(pack.version, "0.2.1");
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
     assert.ok(getLocalization(dictionary, pack.descriptionKey), pack.descriptionKey);
@@ -83,7 +83,7 @@ for (const pack of disabled) {
   }
 }
 
-assert.equal(ids.size, 40);
+assert.equal(ids.size, 50);
 
 const martialCards = disabled[0].cards;
 const martialById = new Map(martialCards.map((card) => [card.id.split(".").at(-1), card]));
@@ -123,20 +123,29 @@ const rangedCards = disabled[1].cards;
 const rangedById = new Map(rangedCards.map((card) => [card.id.split(".").at(-1), card]));
 assert.ok(rangedById.has("rm-001-lost-sightline"));
 assert.ok(rangedById.has("rm-010-misjudged-distance"));
+assert.ok(rangedById.has("rm-011-ducking-lesson"));
+assert.ok(rangedById.has("rm-020-range-found"));
 for (const card of rangedCards) {
   assert.ok(card.filters.attackTraits.includes("ranged"), `${card.id} must require ranged.`);
   assert.ok(card.filters.excludedAttackTraits.includes("spell"), `${card.id} must exclude spell.`);
   assert.ok(card.tags.includes("ranged"), `${card.id} must carry the ranged tag.`);
   assert.equal(card.metadata.collection, "ranged-mishaps");
-  assert.equal(card.effect, null, `${card.id} should use manual tactical resolution in block 1.`);
+  assert.equal(card.effect, null, `${card.id} should use manual tactical resolution in the current Ranged Mishaps blocks.`);
 }
 assert.equal(rangedById.get("rm-001-lost-sightline").impact, "light");
 assert.equal(rangedById.get("rm-002-revealing-shot").impact, "moderate");
 assert.ok(rangedById.get("rm-008-obstructed-arc").tags.includes("conditional"));
 assert.ok(rangedById.get("rm-010-misjudged-distance").tags.includes("manual-removal"));
+assert.equal(rangedById.get("rm-012-closing-the-distance").impact, "strong");
+assert.ok(rangedById.get("rm-015-read-the-angle").tags.includes("target-reaction"));
+assert.ok(rangedById.get("rm-016-dead-ground").tags.includes("claimed-space"));
+assert.equal(rangedById.get("rm-017-a-very-encouraging-miss").weight, 2);
+assert.ok(rangedById.get("rm-018-scenic-detour").tags.includes("fallback-step"));
+assert.ok(rangedById.get("rm-019-helpful-warning").tags.includes("aid"));
+assert.ok(rangedById.get("rm-020-range-found").tags.includes("counterfire"));
 
 assert.equal(automated, 4);
-assert.equal(manual, 36);
+assert.equal(manual, 46);
 
 const settingsScript = await readFile(path.join(root, "scripts/settings.js"), "utf8");
 assert.match(settingsScript, /game\.settings\.register/);
@@ -148,4 +157,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.2.0 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.2.1 structural validation passed.");

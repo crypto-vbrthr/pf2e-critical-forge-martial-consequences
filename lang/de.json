@@ -184,6 +184,46 @@
       "MisjudgedDistance": {
         "Title": "Entfernung falsch eingeschätzt",
         "Description": "Du verschätzt dich bei Entfernung, Bewegung oder Flugbahn. Behandle das Ziel bei deinem nächsten Fernkampfangriff bis zum Ende deines nächsten Zuges zur Bestimmung des Reichweitenmalus als einen Reichweitenabschnitt weiter entfernt. Du kannst eine einzelne Aktion aufwenden, um die Entfernung neu einzuschätzen und diesen Effekt zu beenden."
+      },
+      "DuckingLesson": {
+        "Title": "Lektion im Ducken",
+        "Description": "Du verfehlst hoch genug, dass das Ziel den taktischen Wert der Waagerechten entdeckt. Das Ziel darf sich sofort als freie Aktion hinwerfen. Tut es das, darf es als Teil derselben freien Aktion Deckung suchen; anschließend gelten die normalen Regeln für Deckung suchen."
+      },
+      "ClosingTheDistance": {
+        "Title": "Die Distanz geschlossen",
+        "Description": "Der Fehlschuss zeigt dem Ziel genau, wann es vorrücken kann. Das Ziel darf sich sofort als freie Aktion bis zu 3 Meter auf dich zu bewegen. Diese Bewegung löst keine Reaktionen von dir aus."
+      },
+      "BorrowedSilhouette": {
+        "Title": "Geliehene Silhouette",
+        "Description": "Das Ziel lernt, in der Menge um sich herum zu verschwinden. Bis zum Beginn deines nächsten Zuges erhält es gegen deine Fernkampfangriffe Geringe Deckung, solange es an mindestens eine Kreatur angrenzt, selbst wenn diese normalerweise keine Deckung gewähren würde. Bewegst du dich auf ein anderes Feld, endet dieser Effekt."
+      },
+      "FollowTheShot": {
+        "Title": "Der Flugbahn gefolgt",
+        "Description": "Der Einschlag weist direkt auf dich zurück. Das Ziel darf sofort als freie Aktion alle Kreaturen, die es sehen oder hören können, auf dich hinweisen. Wirst du bereits von allen Verbündeten des Ziels beobachtet, wählt das Ziel stattdessen einen Verbündeten; dieser erhält einen Umstandsbonus von +1 auf seinen nächsten Fernkampfangriff gegen dich vor Beginn deines nächsten Zuges."
+      },
+      "ReadTheAngle": {
+        "Title": "Den Winkel gelesen",
+        "Description": "Das Ziel liest die Linie deines Fehlschusses. Bis zum Ende deines nächsten Zuges erhält es eine einmalige Reaktion: Wenn du von deinem aktuellen Feld einen Fernkampfangriff gegen das Ziel beginnst, führt es vor dem Angriffswurf einen Schritt aus. Der Angriff wird fortgesetzt, falls das Ziel weiterhin gültig ist; Deckung und Reichweite werden nach dem Schritt neu bestimmt."
+      },
+      "DeadGround": {
+        "Title": "Toter Winkel",
+        "Description": "Der Fehlschuss offenbart einen blinden Fleck in deinem aktuellen Winkel. Das Ziel wählt ein unbesetztes Feld neben sich. Bis zum Beginn deines nächsten Zuges kannst du von deinem aktuellen Feld aus keine Fernkampfangriffe gegen eine Kreatur auf dem gewählten Feld ausführen. Bewegst du dich auf ein anderes Feld, endet dieser Effekt."
+      },
+      "AVeryEncouragingMiss": {
+        "Title": "Ein äußerst ermutigender Fehlschuss",
+        "Description": "Das Selbstvertrauen des Ziels steigt auffällig. Vor Ende deines nächsten Zuges erhält es einen Umstandsbonus von +1 auf seinen nächsten Versuch, dich zu demoralisieren oder zu täuschen."
+      },
+      "ScenicDetour": {
+        "Title": "Umweg durch die Kulisse",
+        "Description": "Das Geschoss findet mit bewundernswerter Präzision die Umgebung. Die SL wählt ein passendes Feld neben dem Ziel, ungefähr hinter ihm entlang der Flugbahn; dieses Feld wird bis zum Ende deines nächsten Zuges zu schwierigem Gelände. Gibt es keine geeignete Umgebung oder kein passendes Feld, darf das Ziel stattdessen sofort einen Schritt ausführen."
+      },
+      "HelpfulWarning": {
+        "Title": "Hilfreiche Warnung",
+        "Description": "Der Fehlschuss warnt alle in der Nähe des Ziels. Eine Kreatur neben dem Ziel erhält bis zum Beginn deines nächsten Zuges eine einmalige Reaktion. Sie darf diese Reaktion einsetzen, um den RK des Ziels gegen deinen nächsten Fernkampfangriff zu unterstützen, ohne Unterstützen vorbereitet zu haben; alle anderen Regeln für Unterstützen gelten normal."
+      },
+      "RangeFound": {
+        "Title": "Reichweite bestimmt",
+        "Description": "Das Ziel beobachtet das Geschoss und lernt die Entfernung. Bei seinem nächsten Fernkampfangriff gegen dich vor Beginn deines nächsten Zuges behandelt es dich zur Bestimmung seines Reichweitenmalus als einen Reichweitenabschnitt näher."
       }
     },
     "Effects": {
