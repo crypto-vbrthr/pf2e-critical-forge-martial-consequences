@@ -100,9 +100,9 @@ The completed pack received a full mechanical review after reaching 30 cards. Ve
 
 ### Current Status
 
-- 20 of 30 planned cards
-- Blocks MO-001 through MO-020 implemented
-- Full mechanical review scheduled after MO-030
+- 30 of 30 planned cards
+- Blocks MO-001 through MO-030 implemented
+- Full mechanical review is the next development step
 
 ### Purpose
 
@@ -129,6 +129,7 @@ filters: {
 - safe manipulate actions, equipment adjustments, and reloading windows
 - free Stand, Escape, Interact, Recall Knowledge, and engagement opportunities
 - formation disruption, reduced flanking support, and concealment counterplay
+- shield and parry openings, coordinated exchanges, item hand-offs, defensive setup, containment, and chained team actions
 
 ### Not Included
 
@@ -142,7 +143,7 @@ filters: {
 
 **Martial Openings** changes what allies can do because the target's defense has been disrupted. **Combat Momentum** will instead change what the attacker can do because the attacker has seized the rhythm of the fight. Arsenal remains responsible for physical injuries and damage-type-specific consequences.
 
-The first two blocks deliberately use manual one-use effects, immediate movement, reaction windows, free actions, and source-specific opportunities. These mechanics preserve the pack's teamplay identity more clearly than broad automated penalties would.
+All three blocks deliberately use manual one-use effects, immediate movement, reaction windows, free actions, and source-specific opportunities. These mechanics preserve the pack's teamplay identity more clearly than broad automated penalties would.
 
 ## Planned Packs
 

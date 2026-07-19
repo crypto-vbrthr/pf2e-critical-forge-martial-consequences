@@ -181,9 +181,24 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | MO-019 | While They're Busy | Moderate | Manual | One ally may Step or Interact when the target uses a reaction |
 | MO-020 | Marked by Motion | Light | Manual | One ally ignores concealment's flat check for its next attack |
 
+## Martial Openings — Block 3
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| MO-021 | Shield Turned | Moderate | Manual | One ally ignores the target's Shield, Parry, or similar circumstance AC bonus once |
+| MO-022 | Passing the Breach | Moderate | Manual | One ally's hit passes a free Step to a second ally |
+| MO-023 | Coordinated Exchange | Strong | Manual | Two allies exchange adjacent spaces while the target is disrupted |
+| MO-024 | Instant Coordination | Moderate | Manual | One ally gains a reaction to grant +1 to another ally's attack |
+| MO-025 | Open Hand-Off | Light | Manual | One ally passes a held item to an adjacent ally as a free action |
+| MO-026 | Borrowed Defense | Moderate | Manual | One ally immediately Raises a Shield or uses a parry action |
+| MO-027 | Pinned Between Threats | Moderate | Manual | Target cannot Step farther from both the source and one adjacent ally |
+| MO-028 | Call and Response | Moderate | Manual | A successful tactical skill action grants another ally a Step |
+| MO-029 | Break Their Focus | Moderate | Manual | One ally may Step or Take Cover when the target Concentrates |
+| MO-030 | Seize the Moment | Strong | Manual | One ally immediately Feints, Demoralizes, or Seeks |
+
 ### Development Status
 
-- 20 of 30 planned cards implemented.
-- All twenty cards exclude spell attacks and support weapon, unarmed, and natural Strikes.
-- The first two blocks are intentionally team-focused and manually resolved.
-- Redundancy, balance, and cross-pack identity will receive a full mechanical review after MO-030.
+- 30 of 30 planned cards implemented.
+- All thirty cards exclude spell attacks and support weapon, unarmed, and natural Strikes.
+- All three blocks are intentionally team-focused and manually resolved.
+- Redundancy, balance, and cross-pack identity are ready for the full mechanical review.

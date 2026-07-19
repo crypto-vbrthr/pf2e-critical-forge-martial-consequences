@@ -352,6 +352,46 @@
       "MarkedByMotion": {
         "Title": "Durch Bewegung markiert",
         "Description": "Die Bewegung des Ziels nach dem Treffer verrät seine Kontur. Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Beim nächsten Angriff dieses Verbündeten gegen das Ziel vor Beginn deines nächsten Zuges wird nur der durch den Zustand Verborgen verursachte verdeckte Wurf ignoriert. Dies wirkt nicht gegen Versteckte oder Unbemerkte Ziele."
+      },
+      "ShieldTurned": {
+        "Title": "Schild herumgerissen",
+        "Description": "Das Ziel reißt seine Deckung zum Einschlag herum und entblößt die andere Seite. Wähle einen Verbündeten außer dir. Gegen den nächsten Angriff dieses Verbündeten auf das Ziel vor Beginn deines nächsten Zuges erhält das Ziel keinen Umstandsbonus auf RK durch Schild heben, Parieren oder eine vergleichbare Verteidigungsaktion. Andere Umstandsboni gelten weiterhin."
+      },
+      "PassingTheBreach": {
+        "Title": "Die Bresche weiterreichen",
+        "Description": "Die Öffnung lässt sich durch die Reihe weitergeben. Wähle einen Verbündeten außer dir. Wenn dieser Verbündete das Ziel vor Beginn deines nächsten Zuges das nächste Mal trifft, darf ein zweiter bereitwilliger Verbündeter innerhalb von 3 Metern um das Ziel sofort als Freie Aktion einen Schritt ausführen."
+      },
+      "CoordinatedExchange": {
+        "Title": "Koordinierter Wechsel",
+        "Description": "Wähle zwei bereitwillige Verbündete außer dir, die aneinander angrenzen, wobei mindestens einer an das Ziel angrenzen muss. Sie dürfen sofort als Freie Aktion ihre Plätze tauschen, sofern beide den Platz des jeweils anderen einnehmen können und der Weg frei ist. Diese Bewegung löst beim Ziel keine Reaktionen aus."
+      },
+      "InstantCoordination": {
+        "Title": "Sofortige Koordination",
+        "Description": "Wähle einen Verbündeten außer dir. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Ein anderer Verbündeter versucht einen Angriff gegen das Ziel. Effekt: Der gewählte Verbündete ruft die Öffnung aus und verleiht dem auslösenden Wurf einen Umstandsbonus von +1. Er muss sowohl den Angreifer als auch das Ziel wahrnehmen können."
+      },
+      "OpenHandOff": {
+        "Title": "Freie Übergabe",
+        "Description": "Das Ziel ist kurz zu beschäftigt, um die Logistik zu beanstanden. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion Interagieren, um einen gehaltenen Gegenstand an einen bereitwilligen angrenzenden Verbündeten mit einer freien Hand zu übergeben. Der Empfänger nimmt den Gegenstand als Teil derselben Freien Aktion entgegen. Die normalen Anforderungen an Reichweite und Hände gelten."
+      },
+      "BorrowedDefense": {
+        "Title": "Geliehene Verteidigung",
+        "Description": "Die gestörte Offensive des Ziels gibt jemand anderem Zeit, seine Deckung aufzubauen. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion Schild heben oder eine einzelne Aktion einsetzen, die ihm durch ein Merkmal zum Parieren gewährt wird. Er muss alle normalen Voraussetzungen der gewählten Aktion erfüllen."
+      },
+      "PinnedBetweenThreats": {
+        "Title": "Zwischen Bedrohungen festgesetzt",
+        "Description": "Wähle einen Verbündeten außer dir, der an das Ziel angrenzt. Bis zum Beginn deines nächsten Zuges kann das Ziel keinen Schritt auf ein Feld ausführen, das seine Entfernung sowohl zu dir als auch zum gewählten Verbündeten vergrößert. Andere Bewegungen sind nicht betroffen."
+      },
+      "CallAndResponse": {
+        "Title": "Ruf und Antwort",
+        "Description": "Wähle einen Verbündeten außer dir. Wenn dieser Verbündete vor Beginn deines nächsten Zuges das nächste Mal erfolgreich Täuschen, Demoralisieren, Ergreifen, Fortbewegen, Stoßen oder Zu-Fall-Bringen gegen das Ziel einsetzt, darf ein anderer bereitwilliger Verbündeter innerhalb von 3 Metern um das Ziel sofort als Freie Aktion einen Schritt ausführen."
+      },
+      "BreakTheirFocus": {
+        "Title": "Konzentration brechen",
+        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel beginnt eine Aktion mit dem Merkmal Konzentration. Effekt: Der Verbündete führt nach den normalen Regeln einen Schritt aus oder sucht Deckung."
+      },
+      "SeizeTheMoment": {
+        "Title": "Den Moment nutzen",
+        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Dieser Verbündete darf sofort als Freie Aktion nach den normalen Regeln versuchen, das Ziel zu Täuschen oder zu Demoralisieren oder nach ihm zu Suchen."
       }
     },
     "Effects": {

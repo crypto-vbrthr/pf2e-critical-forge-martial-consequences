@@ -46,8 +46,8 @@ assert.equal(registeredPackBatches.length, 1);
 assert.equal(registeredPackBatches[0].packs.length, 3);
 assert.equal(registeredPackBatches[0].packs[0].cards.length, 30);
 assert.equal(registeredPackBatches[0].packs[1].cards.length, 30);
-assert.equal(registeredPackBatches[0].packs[2].cards.length, 20);
+assert.equal(registeredPackBatches[0].packs[2].cards.length, 30);
 assert.ok(registeredPackBatches[0].packs.every((pack) => pack.enabled === false));
 assert.equal(registeredPackBatches[0].options.replace, false);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.3.1 startup-order validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.3.2 startup-order validation passed.");

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.2
+
+- Added Martial Openings MO-021 through MO-030.
+- Completed the initial 30-card Martial Openings set and expanded the module to 90 cards across three optional packs.
+- Added team opportunities involving shield and parry openings, chained follow-ups, coordinated space exchanges, improvised Aid-like coordination, item hand-offs, defensive setup, paired containment, skill-action follow-through, reactions to concentrate actions, and immediate Feint, Demoralize, or Seek attempts.
+- Preserved support for weapon, unarmed, and natural Strikes while excluding spell attacks.
+- Kept all third-block Martial Openings manually resolved so ally-specific, one-use, reaction-based, and immediate tactical effects remain precise at the table.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+- Marked Martial Openings as ready for its full mechanical review.
+
 ## 0.3.1
 
 - Added Martial Openings MO-011 through MO-020.

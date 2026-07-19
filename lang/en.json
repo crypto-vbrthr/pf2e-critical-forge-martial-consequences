@@ -352,6 +352,46 @@
       "MarkedByMotion": {
         "Title": "Marked by Motion",
         "Description": "The target's movement after the hit gives away its outline. Choose one ally other than you that can perceive the target. For that ally's next attack against the target before the start of your next turn, ignore the flat check caused only by the target being concealed. This does not affect hidden or undetected targets."
+      },
+      "ShieldTurned": {
+        "Title": "Shield Turned",
+        "Description": "The target drags its guard toward the impact and leaves the far side exposed. Choose one ally other than you. For that ally's next attack against the target before the start of your next turn, the target gains no circumstance bonus to AC from Raise a Shield, Parry, or a similar defensive action. Other circumstance bonuses still apply."
+      },
+      "PassingTheBreach": {
+        "Title": "Passing the Breach",
+        "Description": "The opening can be handed down the line. Choose one ally other than you. The next time that ally hits the target before the start of your next turn, a second willing ally within 10 feet of the target may immediately Step as a free action."
+      },
+      "CoordinatedExchange": {
+        "Title": "Coordinated Exchange",
+        "Description": "Choose two willing allies other than you that are adjacent to each other, with at least one adjacent to the target. They may immediately exchange spaces as a free action if both can occupy the other's space and the route is clear. This movement does not trigger reactions from the target."
+      },
+      "InstantCoordination": {
+        "Title": "Instant Coordination",
+        "Description": "Choose one ally other than you. Until the start of your next turn, that ally gains a one-use reaction. Trigger: another ally attempts an attack against the target. Effect: the chosen ally calls the opening and grants a +1 circumstance bonus to the triggering roll. It must perceive both the attacker and the target."
+      },
+      "OpenHandOff": {
+        "Title": "Open Hand-Off",
+        "Description": "The target is briefly too occupied to contest the logistics. Choose one ally other than you. That ally may immediately Interact as a free action to pass one held item to a willing adjacent ally with a free hand. The receiver takes the item as part of the same free action. Normal reach and hand requirements apply."
+      },
+      "BorrowedDefense": {
+        "Title": "Borrowed Defense",
+        "Description": "The target's disrupted offense gives someone else time to set a guard. Choose one ally other than you. That ally may immediately Raise a Shield or use a single action granted by a parry trait as a free action. It must meet all normal requirements for the chosen action."
+      },
+      "PinnedBetweenThreats": {
+        "Title": "Pinned Between Threats",
+        "Description": "Choose one ally other than you that is adjacent to the target. Until the start of your next turn, the target cannot Step to a space that increases its distance from both you and the chosen ally. Other movement is unaffected."
+      },
+      "CallAndResponse": {
+        "Title": "Call and Response",
+        "Description": "Choose one ally other than you. The next time that ally succeeds at a Feint, Demoralize, Grapple, Reposition, Shove, or Trip against the target before the start of your next turn, one other willing ally within 10 feet of the target may immediately Step as a free action."
+      },
+      "BreakTheirFocus": {
+        "Title": "Break Their Focus",
+        "Description": "Choose one ally other than you that can perceive the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: the target begins an action with the concentrate trait. Effect: the ally Steps or Takes Cover, following the normal rules for the chosen action."
+      },
+      "SeizeTheMoment": {
+        "Title": "Seize the Moment",
+        "Description": "Choose one ally other than you that can perceive the target. That ally may immediately attempt to Feint or Demoralize the target, or Seek for it, as a free action, following the normal rules for the chosen action."
       }
     },
     "Effects": {
