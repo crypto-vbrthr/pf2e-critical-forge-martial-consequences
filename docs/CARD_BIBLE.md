@@ -149,3 +149,26 @@ The revisions replaced redundant free Steps, generic action delays, narrow react
 **Mechanical Review: Passed after revision**
 
 Future reviews will examine pack identity, narrative consistency, translation quality, and statistical distribution across all four planned packs.
+
+
+## Martial Openings — Block 1
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| MO-001 | Guard Drawn Wide | Light | Manual | Next Strike by an ally other than the source gains +1 |
+| MO-002 | Clear Line | Light | Manual | One ally ignores cover from intervening creatures for its next attack |
+| MO-003 | Split Attention | Moderate | Manual | Target cannot react to one chosen ally's movement |
+| MO-004 | A Choice, Technically | Moderate | Manual | Target chooses between its own Step and an ally's Step |
+| MO-005 | Read the Defense | Light | Manual | One ally gains +1 to a selected tactical skill action against the target |
+| MO-006 | Crowd the Gap | Strong | Manual | Up to two adjacent allies Step around the target |
+| MO-007 | No Safe Retreat | Moderate | Manual | One ally gains a pursuit Step reaction after the target moves |
+| MO-008 | Open Passage | Moderate | Manual | One ally may move through the target's space without Tumble Through |
+| MO-009 | Keep It Going | Moderate | Manual | Next ally to hit may Step after resolving the attack |
+| MO-010 | Eyes on Me | Moderate | Manual | One ally may Take Cover and possibly Hide while the target focuses on the source |
+
+### Development Status
+
+- 10 of 30 planned cards implemented.
+- All ten cards exclude spell attacks and support weapon, unarmed, and natural Strikes.
+- The first block is intentionally team-focused and manually resolved.
+- Redundancy, balance, and cross-pack identity will receive a full mechanical review after MO-030.

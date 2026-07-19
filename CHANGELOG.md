@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.0
+
+- Added the optional Martial Openings card pack.
+- Added Martial Openings MO-001 through MO-010.
+- Added critical-hit support for non-spell Strikes, including weapon, unarmed, and natural attacks.
+- Added team-focused openings involving one-use attack and skill bonuses, creature-provided cover, ally movement, reaction denial, pursuit, formation changes, movement through the target's space, Take Cover, and Hide.
+- Kept all first-block Martial Openings manually resolved so one-use, ally-specific, immediate, and reaction-based effects remain precise at the table.
+- Added an independent module setting for Martial Openings.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+- Expanded the module to 70 cards across three optional packs.
+
 ## 0.2.3
 
 - Completed the first full mechanical review of Ranged Mishaps.

@@ -1,7 +1,8 @@
 export const MARTIAL_CARD_ID_PREFIX = "pf2e-critical-forge-martial-consequences";
 export const MARTIAL_PACK_IDS = Object.freeze({
   martialAttackFumbles: `${MARTIAL_CARD_ID_PREFIX}.martial-attack-fumbles`,
-  rangedMishaps: `${MARTIAL_CARD_ID_PREFIX}.ranged-mishaps`
+  rangedMishaps: `${MARTIAL_CARD_ID_PREFIX}.ranged-mishaps`,
+  martialOpenings: `${MARTIAL_CARD_ID_PREFIX}.martial-openings`
 });
 
 export const DURATIONS = Object.freeze({
@@ -24,10 +25,10 @@ function freezeFilters(filters = {}) {
   return Object.freeze(result);
 }
 
-function freezeEffect(effect, localizationKey, fallbackTitle) {
+function freezeEffect(effect, localizationKey, fallbackTitle, defaultTarget) {
   if (!effect) return null;
   return Object.freeze({
-    target: effect.target ?? "source",
+    target: effect.target ?? defaultTarget,
     nameKey: `PF2ECFMC.Effects.${localizationKey}.Name`,
     fallbackName: effect.fallbackName ?? fallbackTitle,
     definition: Object.freeze({
@@ -38,15 +39,15 @@ function freezeEffect(effect, localizationKey, fallbackTitle) {
   });
 }
 
-function defineCriticalFumble({
-  id, packId, collection, localizationKey, tone, impact, fallbackTitle, fallbackDescription,
-  weight = 1, tags = [], filters = {}, effect = null, requiredAttackTraits = []
+function defineMartialCard({
+  id, packId, collection, category, localizationKey, tone, impact, fallbackTitle, fallbackDescription,
+  weight = 1, tags = [], baseTags = [], filters = {}, effect = null, requiredAttackTraits = [], defaultEffectTarget
 }) {
   return Object.freeze({
     schemaVersion: 1,
     id: `${MARTIAL_CARD_ID_PREFIX}.${id}`,
     packId,
-    category: "criticalFumble",
+    category,
     tone,
     impact,
     titleKey: `PF2ECFMC.Cards.${localizationKey}.Title`,
@@ -54,14 +55,23 @@ function defineCriticalFumble({
     fallbackTitle,
     fallbackDescription,
     weight,
-    tags: Object.freeze(["weapon", "martial", "critical-fumble", ...tags]),
+    tags: Object.freeze([...baseTags, ...tags]),
     filters: freezeFilters({
       ...filters,
       attackTraits: unique([...requiredAttackTraits, ...(filters.attackTraits ?? [])]),
       excludedAttackTraits: unique(["spell", ...(filters.excludedAttackTraits ?? [])])
     }),
-    effect: freezeEffect(effect, localizationKey, fallbackTitle),
+    effect: freezeEffect(effect, localizationKey, fallbackTitle, defaultEffectTarget),
     metadata: Object.freeze({ collection })
+  });
+}
+
+function defineCriticalFumble(options) {
+  return defineMartialCard({
+    ...options,
+    category: "criticalFumble",
+    baseTags: ["weapon", "martial", "critical-fumble"],
+    defaultEffectTarget: "source"
   });
 }
 
@@ -80,5 +90,16 @@ export function defineRangedMishap(card) {
     collection: "ranged-mishaps",
     requiredAttackTraits: ["ranged"],
     tags: ["ranged", ...(card.tags ?? [])]
+  });
+}
+
+export function defineMartialOpening(card) {
+  return defineMartialCard({
+    ...card,
+    packId: MARTIAL_PACK_IDS.martialOpenings,
+    collection: "martial-openings",
+    category: "criticalHit",
+    baseTags: ["martial", "critical-hit", "opening", "teamwork"],
+    defaultEffectTarget: "target"
   });
 }

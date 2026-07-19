@@ -96,10 +96,52 @@ This pack is not a second general fumble deck. A card belongs here only when its
 
 The completed pack received a full mechanical review after reaching 30 cards. Version 0.2.3 replaced redundant movement delays, generic free Steps, narrow reaction restrictions, invalid Point Out and Aid usage, and several conditional no-result outcomes. The pack now leans more strongly into firing-position exposure, cover decisions, predictable firing lanes, delayed target reactions, environmental trajectory complications, counterfire information, and defensive coordination.
 
-## Planned Packs
+## Martial Openings
 
-### Martial Openings
-Critical successes that create an opening on the target or help allies exploit the target's defense.
+### Current Status
+
+- 10 of 30 planned cards
+- Block MO-001 through MO-010 implemented
+- Full mechanical review scheduled after MO-030
+
+### Purpose
+
+Critical-hit consequences that turn a successful non-spell Strike into a tactical opportunity for allies.
+
+### Trigger
+
+Critical success on a non-spell Strike. The pack does not require a weapon trait and therefore includes weapon attacks, unarmed attacks, and natural attacks. Every card excludes attacks carrying the synthetic `spell` attack trait.
+
+```js
+filters: {
+  excludedAttackTraits: ["spell"]
+}
+```
+
+### Typical Effects
+
+- one-use bonuses for an ally's follow-up attack or skill action
+- ally movement and formation changes
+- temporary limits on reactions against an ally
+- cleared lines of fire and reduced creature-provided cover
+- pursuit reactions and movement through the target's space
+- opportunities to Take Cover or Hide while the target is distracted
+
+### Not Included
+
+- additional damage or damage-type-specific injuries
+- persistent wounds, bleeding, or broken equipment
+- spell attacks
+- bonuses that primarily benefit the attacker; those belong to **Combat Momentum**
+- generic target debuffs that do not create a recognizable team opportunity
+
+### Boundary
+
+**Martial Openings** changes what allies can do because the target's defense has been disrupted. **Combat Momentum** will instead change what the attacker can do because the attacker has seized the rhythm of the fight. Arsenal remains responsible for physical injuries and damage-type-specific consequences.
+
+The first block deliberately uses manual one-use effects, immediate movement, reaction windows, and source-specific opportunities. These mechanics preserve the pack's teamplay identity more clearly than broad automated penalties would.
+
+## Planned Packs
 
 ### Combat Momentum
 Critical successes that benefit the attacker through position, stability, readiness, or tempo.

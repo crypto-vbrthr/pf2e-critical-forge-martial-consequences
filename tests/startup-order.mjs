@@ -38,14 +38,16 @@ const extensionController = {
 extensionReady({ cards: { extensions: { forModule() { return extensionController; } } } });
 assert.equal(registeredPackBatches.length, 0);
 init();
-assert.equal(registeredSettings.size, 2);
+assert.equal(registeredSettings.size, 3);
 assert.ok(registeredSettings.has("pf2e-critical-forge-martial-consequences.enableMartialAttackFumbles"));
 assert.ok(registeredSettings.has("pf2e-critical-forge-martial-consequences.enableRangedMishaps"));
+assert.ok(registeredSettings.has("pf2e-critical-forge-martial-consequences.enableMartialOpenings"));
 assert.equal(registeredPackBatches.length, 1);
-assert.equal(registeredPackBatches[0].packs.length, 2);
+assert.equal(registeredPackBatches[0].packs.length, 3);
 assert.equal(registeredPackBatches[0].packs[0].cards.length, 30);
 assert.equal(registeredPackBatches[0].packs[1].cards.length, 30);
+assert.equal(registeredPackBatches[0].packs[2].cards.length, 10);
 assert.ok(registeredPackBatches[0].packs.every((pack) => pack.enabled === false));
 assert.equal(registeredPackBatches[0].options.replace, false);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.2.3 startup-order validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.3.0 startup-order validation passed.");

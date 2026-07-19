@@ -4,12 +4,13 @@
 
 Martial Consequences is an extension module for **PF2E Critical Forge**. It adds card packs focused on stance, timing, positioning, openings, and battlefield momentum.
 
-## Version 0.2.3
+## Version 0.3.0
 
-The current release contains two optional packs:
+The current release contains three optional packs:
 
 - **Martial Attack Fumbles** — 30 cards for critical failures on non-spell weapon attacks.
-- **Ranged Mishaps** — 30 cards for critical failures unique to non-spell ranged weapon attacks.
+- **Ranged Mishaps** — 30 cards for critical failures unique to non-spell ranged attacks.
+- **Martial Openings** — 10 cards for critical hits with non-spell Strikes that create tactical opportunities for allies.
 
 The packs deliberately avoid damage-type-specific injuries. Those belong to **PF2E Critical Forge: Arsenal**. Martial Consequences instead asks how the failed attack changes the next few moments of the fight.
 
@@ -28,9 +29,11 @@ Then enable the desired card packs in the module settings. Each pack can be acti
 
 **Ranged Mishaps** covers failures that depend specifically on ranged combat: sightlines, cover, firing positions, trajectory, range estimation, and shot rhythm. Every card requires the synthetic `ranged` attack trait and excludes `spell`.
 
+**Martial Openings** covers critical hits with non-spell Strikes, including weapon, unarmed, and natural attacks. Its cards create opportunities for allies rather than additional injuries or personal momentum for the attacker.
+
 ## Automation
 
-Four Martial Attack Fumbles create applicable Critical Forge effects. The remaining 26 Martial Attack Fumbles and all 30 Ranged Mishaps describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, claimed spaces, extra reactions, temporary reaction restrictions, cover changes, visibility changes, range-increment changes, or action sequencing.
+Four Martial Attack Fumbles create applicable Critical Forge effects. The remaining 26 Martial Attack Fumbles, all 30 Ranged Mishaps, and all 10 Martial Openings describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, claimed spaces, extra reactions, temporary reaction restrictions, cover changes, visibility changes, range-increment changes, or action sequencing.
 
 **Forced Reset** creates an automated effect that may be removed manually when the affected creature spends the action described by the card.
 
@@ -44,7 +47,7 @@ Four Martial Attack Fumbles create applicable Critical Forge effects. The remain
 
 - Martial Attack Fumbles — 30/30, mechanical review passed
 - Ranged Mishaps — 30/30, mechanical review passed
-- Martial Openings — planned
+- Martial Openings — 10/30
 - Combat Momentum — planned
 
 Each completed pack is planned to contain 30 cards. After reaching 30 cards, each pack receives a dedicated review for redundant mechanics, overlapping themes, balance, and identity.

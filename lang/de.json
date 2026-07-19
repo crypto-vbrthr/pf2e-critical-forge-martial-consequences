@@ -8,6 +8,10 @@
       "RangedMishaps": {
         "Title": "Martial Consequences: Fernkampfmissgeschicke",
         "Description": "Kritische Fehlschläge, die nur bei nichtmagischen Fernkampfwaffenangriffen auftreten. Dieses Paket konzentriert sich auf Schusslinien, Feuerstellungen, Deckung, Reichweite und Schussrhythmus statt auf allgemeine Kampffehler oder schadensartspezifische Verletzungen."
+      },
+      "MartialOpenings": {
+        "Title": "Martial Openings",
+        "Description": "Kritische Treffer mit nichtmagischen Angriffen, die taktische Öffnungen für Verbündete statt zusätzlicher Verletzungen schaffen. Umfasst Waffenangriffe, unbewaffnete Angriffe und natürliche Angriffe."
       }
     },
     "Settings": {
@@ -18,6 +22,10 @@
       "RangedMishaps": {
         "Name": "Fernkampfmissgeschicke aktivieren",
         "Hint": "Fügt Karten für kritische Fehlschläge hinzu, die nur bei nichtmagischen Fernkampfwaffenangriffen auftreten, darunter verlorene Schusslinien, offene Stellungen, unterbrochener Schussrhythmus und Reichweitenfehler."
+      },
+      "MartialOpenings": {
+        "Name": "Martial Openings aktivieren",
+        "Hint": "Fügt Karten für kritische Treffer hinzu, die nach nichtmagischen Waffenangriffen, unbewaffneten Angriffen und natürlichen Angriffen taktische Chancen für Verbündete schaffen."
       }
     },
     "Notifications": {
@@ -264,6 +272,46 @@
       "ReturnAddressIncluded": {
         "Title": "Rücksendeadresse inklusive",
         "Description": "Der Fehlschuss trifft mit bemerkenswert deutlicher Rücksendeadresse ein. Das Ziel wählt einen Verbündeten, der es sehen kann und über einen Fernkampfangriff verfügt. Dieser Verbündete darf sofort als Freie Aktion einen Schritt ausführen und muss diesen, wenn möglich, mit Wirkungslinie zu dir beenden. Gibt es keinen geeigneten Verbündeten, darf das Ziel stattdessen sofort einen Schritt ausführen."
+      },
+      "GuardDrawnWide": {
+        "Title": "Weit geöffnete Deckung",
+        "Description": "Dein kritischer Treffer zieht die Verteidigung des Ziels weit auseinander. Der nächste Angriff eines Verbündeten außer dir gegen das Ziel vor Beginn deines nächsten Zuges erhält einen Umstandsbonus von +1. Danach ist der Bonus verbraucht."
+      },
+      "ClearLine": {
+        "Title": "Freie Linie",
+        "Description": "Der Treffer dreht das Ziel gerade weit genug, um einem anderen Kämpfer freie Sicht zu verschaffen. Wähle einen Verbündeten außer dir. Das Ziel erhält gegen den nächsten Angriff dieses Verbündeten vor Beginn deines nächsten Zuges keine Deckung durch dazwischenstehende Kreaturen. Andere Quellen von Deckung gelten weiterhin."
+      },
+      "SplitAttention": {
+        "Title": "Geteilte Aufmerksamkeit",
+        "Description": "Das Ziel kann nicht jede Bedrohung gleichzeitig verfolgen. Wähle einen Verbündeten außer dir, den das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges kann das Ziel keine Reaktionen einsetzen, die durch die Bewegung dieses Verbündeten ausgelöst werden."
+      },
+      "AChoiceTechnically": {
+        "Title": "Technisch gesehen eine Wahl",
+        "Description": "Die Verteidigung des Ziels bricht in zwei gleichermaßen unerfreuliche Möglichkeiten auseinander. Es wählt eine: Es führt sofort einen Schritt aus; oder ein bereitwilliger Verbündeter von dir innerhalb von 3 Metern um das Ziel darf sofort einen Schritt ausführen. Die Kreatur, die den Schritt ausführt, wählt ihr Ziel-Feld selbst."
+      },
+      "ReadTheDefense": {
+        "Title": "Verteidigung gelesen",
+        "Description": "Dein Treffer offenbart den Rhythmus hinter der Deckung des Ziels. Wähle einen Verbündeten außer dir, der das Ziel sehen kann. Vor Beginn deines nächsten Zuges erhält dieser Verbündete einen Umstandsbonus von +1 auf seinen nächsten Versuch gegen das Ziel, es zu Täuschen, zu Demoralisieren, zu Ergreifen, Fortzubewegen, zu Stoßen oder Zu-Fall-zu-Bringen."
+      },
+      "CrowdTheGap": {
+        "Title": "In die Lücke drängen",
+        "Description": "Der kritische Treffer öffnet auf beiden Seiten des Ziels einen Weg. Bis zu zwei bereitwillige Verbündete neben dem Ziel dürfen in beliebiger Reihenfolge jeweils sofort als Freie Aktion einen Schritt ausführen. Beide müssen neben dem Ziel enden und dürfen nicht dasselbe Feld belegen."
+      },
+      "NoSafeRetreat": {
+        "Title": "Kein sicherer Rückzug",
+        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel beendet eine Bewegungsaktion. Effekt: Der Verbündete führt einen Schritt aus und darf danach nicht weiter vom Ziel entfernt sein als zuvor."
+      },
+      "OpenPassage": {
+        "Title": "Offener Durchgang",
+        "Description": "Das Ziel wird durch die Wucht des Treffers zur Seite gedreht. Wähle einen Verbündeten außer dir. Bis zum Beginn deines nächsten Zuges darf sich dieser Verbündete durch das Feld des Ziels bewegen, ohne Hindurchzuturnen, und behandelt das Feld als schwieriges Gelände. Er muss seine Bewegung auf einem legalen Feld beenden."
+      },
+      "KeepItGoing": {
+        "Title": "Nicht nachlassen",
+        "Description": "Die Öffnung bleibt gerade lange genug bestehen, damit jemand anderes sie weitertragen kann. Wenn ein Verbündeter außer dir das Ziel vor Beginn deines nächsten Zuges das nächste Mal trifft, darf dieser Verbündete nach Abwicklung des Angriffs sofort als Freie Aktion einen Schritt ausführen."
+      },
+      "EyesOnMe": {
+        "Title": "Augen auf mich",
+        "Description": "Die Aufmerksamkeit des Ziels heftet sich mit bewundernswerter Hingabe an dich. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion Deckung suchen, sofern möglich. Besitzt er danach Deckung oder Verbergung vor dem Ziel, darf er als Teil derselben Freien Aktion nach den normalen Regeln Verstecken einsetzen."
       }
     },
     "Effects": {

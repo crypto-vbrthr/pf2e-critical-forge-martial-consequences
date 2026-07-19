@@ -25,32 +25,40 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.2.3");
+assert.equal(manifest.version, "0.3.0");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
 assert.ok(manifest.relationships?.systems?.some((entry) => entry.id === "pf2e"));
 
-assert.equal(MARTIAL_PACK_CONFIGS.length, 2);
+assert.equal(MARTIAL_PACK_CONFIGS.length, 3);
 const disabled = buildMartialConsequencesPacks(() => false);
 const enabled = buildMartialConsequencesPacks(() => true);
 const rangedOnly = buildMartialConsequencesPacks((key) => key === "enableRangedMishaps");
-assert.equal(disabled.length, 2);
+const openingsOnly = buildMartialConsequencesPacks((key) => key === "enableMartialOpenings");
+assert.equal(disabled.length, 3);
 assert.equal(disabled[0].id, MARTIAL_PACK_IDS.martialAttackFumbles);
 assert.equal(disabled[1].id, MARTIAL_PACK_IDS.rangedMishaps);
+assert.equal(disabled[2].id, MARTIAL_PACK_IDS.martialOpenings);
 assert.ok(disabled.every((pack) => pack.enabled === false));
 assert.ok(enabled.every((pack) => pack.enabled === true));
 assert.equal(rangedOnly[0].enabled, false);
 assert.equal(rangedOnly[1].enabled, true);
+assert.equal(rangedOnly[2].enabled, false);
+assert.equal(openingsOnly[0].enabled, false);
+assert.equal(openingsOnly[1].enabled, false);
+assert.equal(openingsOnly[2].enabled, true);
 assert.equal(disabled[0].cards.length, 30);
 assert.equal(disabled[1].cards.length, 30);
+assert.equal(disabled[2].cards.length, 10);
 
 const ids = new Set();
 let automated = 0;
 let manual = 0;
-for (const pack of disabled) {
+for (const [packIndex, pack] of disabled.entries()) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.2.3");
+  assert.equal(pack.version, "0.3.0");
+  const expectedCategory = packIndex === 2 ? "criticalHit" : "criticalFumble";
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
     assert.ok(getLocalization(dictionary, pack.descriptionKey), pack.descriptionKey);
@@ -59,7 +67,7 @@ for (const pack of disabled) {
   for (const card of pack.cards) {
     assert.equal(card.schemaVersion, 1);
     assert.equal(card.packId, pack.id);
-    assert.equal(card.category, "criticalFumble");
+    assert.equal(card.category, expectedCategory);
     assert.ok(!ids.has(card.id), `Duplicate card id: ${card.id}`);
     ids.add(card.id);
     assert.ok(card.filters.excludedAttackTraits.includes("spell"), `${card.id} must exclude spell attacks.`);
@@ -69,7 +77,7 @@ for (const pack of disabled) {
     }
     if (card.effect) {
       automated += 1;
-      assert.equal(card.effect.target, "source");
+      assert.equal(card.effect.target, expectedCategory === "criticalHit" ? "target" : "source");
       assert.equal(card.effect.definition.schemaVersion, 2);
       assert.ok(card.effect.definition.duration);
       assert.ok(card.effect.definition.components.length > 0);
@@ -83,7 +91,7 @@ for (const pack of disabled) {
   }
 }
 
-assert.equal(ids.size, 60);
+assert.equal(ids.size, 70);
 
 const martialCards = disabled[0].cards;
 const martialById = new Map(martialCards.map((card) => [card.id.split(".").at(-1), card]));
@@ -175,12 +183,37 @@ assert.ok(rangedById.get("rm-029-dust-signature").tags.includes("concealment"));
 assert.ok(rangedById.get("rm-030-return-address-included").tags.includes("line-of-effect"));
 assert.ok(!rangedById.get("rm-030-return-address-included").fallbackDescription.includes("does not trigger reactions"));
 
+const openingCards = disabled[2].cards;
+const openingById = new Map(openingCards.map((card) => [card.id.split(".").at(-1), card]));
+assert.ok(openingById.has("mo-001-guard-drawn-wide"));
+assert.ok(openingById.has("mo-010-eyes-on-me"));
+for (const card of openingCards) {
+  assert.equal(card.category, "criticalHit");
+  assert.ok(card.filters.excludedAttackTraits.includes("spell"), `${card.id} must exclude spell.`);
+  assert.equal(card.filters.attackTraits.length, 0, `${card.id} must remain available to weapon, unarmed, and natural Strikes.`);
+  assert.ok(card.tags.includes("opening"));
+  assert.ok(card.tags.includes("teamwork"));
+  assert.equal(card.metadata.collection, "martial-openings");
+  assert.equal(card.effect, null, `${card.id} should use manual tactical resolution in the first Martial Openings block.`);
+}
+assert.equal(openingById.get("mo-001-guard-drawn-wide").weight, 2);
+assert.ok(openingById.get("mo-002-clear-line").tags.includes("cover"));
+assert.ok(openingById.get("mo-003-split-attention").tags.includes("reaction-denial"));
+assert.ok(openingById.get("mo-004-a-choice-technically").tags.includes("choice"));
+assert.ok(openingById.get("mo-005-read-the-defense").tags.includes("skill-action"));
+assert.equal(openingById.get("mo-006-crowd-the-gap").impact, "strong");
+assert.ok(openingById.get("mo-007-no-safe-retreat").tags.includes("ally-reaction"));
+assert.ok(openingById.get("mo-008-open-passage").tags.includes("tumble-through"));
+assert.ok(openingById.get("mo-009-keep-it-going").tags.includes("follow-through"));
+assert.ok(openingById.get("mo-010-eyes-on-me").tags.includes("hide"));
+
 assert.equal(automated, 4);
-assert.equal(manual, 56);
+assert.equal(manual, 66);
 
 const settingsScript = await readFile(path.join(root, "scripts/settings.js"), "utf8");
 assert.match(settingsScript, /game\.settings\.register/);
 assert.match(settingsScript, /enableRangedMishaps/);
+assert.match(settingsScript, /enableMartialOpenings/);
 assert.match(settingsScript, /default: false/);
 
 const mainScript = await readFile(path.join(root, "scripts/main.js"), "utf8");
@@ -188,4 +221,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.2.3 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.3.0 structural validation passed.");
