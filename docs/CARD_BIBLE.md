@@ -158,13 +158,13 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | MO-001 | Guard Drawn Wide | Light | Manual | Next Strike by an ally other than the source gains +1 |
 | MO-002 | Clear Line | Light | Manual | One ally ignores cover from intervening creatures for its next attack |
 | MO-003 | Split Attention | Moderate | Manual | Target cannot react to one chosen ally's movement |
-| MO-004 | A Choice, Technically | Moderate | Manual | Target chooses between its own Step and an ally's Step |
-| MO-005 | Read the Defense | Light | Manual | One ally gains +1 to a selected tactical skill action against the target |
+| MO-004 | A Choice, Technically | Moderate | Manual | Target chooses which ally is prepared to Aid a follow-up against it |
+| MO-005 | Read the Defense | Light | Manual | One ally gains +1 to the check for a selected tactical skill action |
 | MO-006 | Crowd the Gap | Strong | Manual | Up to two adjacent allies Step around the target |
-| MO-007 | No Safe Retreat | Moderate | Manual | One ally gains a pursuit Step reaction after the target moves |
+| MO-007 | No Safe Retreat | Moderate | Manual | One ally can Stride up to half Speed to pursue a retreating target |
 | MO-008 | Open Passage | Moderate | Manual | One ally may move through the target's space without Tumble Through |
 | MO-009 | Keep It Going | Moderate | Manual | Next ally to hit may Step after resolving the attack |
-| MO-010 | Eyes on Me | Moderate | Manual | One ally may Take Cover and possibly Hide while the target focuses on the source |
+| MO-010 | Eyes on Me | Light | Manual | One ally may Take Cover and possibly Hide while the target focuses on the source |
 
 ## Martial Openings — Block 2
 
@@ -172,26 +172,26 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 |---|---|---|---|---|
 | MO-011 | Hands Free | Moderate | Manual | Target cannot react to one ally's manipulate actions |
 | MO-012 | Broken Screen | Light | Manual | Target stops providing cover to other creatures against one ally |
-| MO-013 | No Time to Brace | Strong | Manual | One ally treats its next Athletics attack action as one attack earlier for MAP |
+| MO-013 | No Time to Brace | Strong | Manual | One MAP-affected Athletics attack action counts as one attack earlier |
 | MO-014 | Room to Recover | Moderate | Manual | One ally may immediately Stand, Escape, or Step away |
 | MO-015 | A Moment, Please | Moderate | Manual | One ally receives a free Interact for gear, grip, or one reload step |
 | MO-016 | Lesson in Motion | Light | Manual | One ally may immediately Recall Knowledge about the target |
-| MO-017 | Formation Cracked | Moderate | Manual | Target cannot flank or help flank one chosen ally |
+| MO-017 | Formation Cracked | Moderate | Manual | One ally is not off-guard from any flank involving the target |
 | MO-018 | Inside Track | Strong | Manual | One ally Strides up to half Speed and ends adjacent to the target |
-| MO-019 | While They're Busy | Moderate | Manual | One ally may Step or Interact when the target uses a reaction |
-| MO-020 | Marked by Motion | Light | Manual | One ally ignores concealment's flat check for its next attack |
+| MO-019 | While They're Busy | Moderate | Manual | One ally may Step or Interact on a target reaction, with an Interact fallback |
+| MO-020 | Marked by Motion | Light | Manual | One ally ignores and only then consumes one concealment flat check |
 
 ## Martial Openings — Block 3
 
 | ID | Card | Impact | Automation | Core Idea |
 |---|---|---|---|---|
-| MO-021 | Shield Turned | Moderate | Manual | One ally ignores the target's Shield, Parry, or similar circumstance AC bonus once |
-| MO-022 | Passing the Breach | Moderate | Manual | One ally's hit passes a free Step to a second ally |
-| MO-023 | Coordinated Exchange | Strong | Manual | Two allies exchange adjacent spaces while the target is disrupted |
-| MO-024 | Instant Coordination | Moderate | Manual | One ally gains a reaction to grant +1 to another ally's attack |
+| MO-021 | Shield Turned | Moderate | Manual | One ally bypasses defensive AC bonuses or suppresses reactions for one attack |
+| MO-022 | Passing the Breach | Strong | Manual | One ally's follow-up hit shuts down the target's reactions |
+| MO-023 | Coordinated Exchange | Strong | Manual | Two allies exchange spaces through one simultaneous special movement effect |
+| MO-024 | Instant Coordination | Moderate | Manual | One ally can suppress target reactions against a coordinated action |
 | MO-025 | Open Hand-Off | Light | Manual | One ally passes a held item to an adjacent ally as a free action |
-| MO-026 | Borrowed Defense | Moderate | Manual | One ally immediately Raises a Shield or uses a parry action |
-| MO-027 | Pinned Between Threats | Moderate | Manual | Target cannot Step farther from both the source and one adjacent ally |
+| MO-026 | Borrowed Defense | Moderate | Manual | One ally raises a guard, takes cover, or drops prone |
+| MO-027 | Pinned Between Threats | Strong | Manual | One ally may Grapple or Trip when the target begins moving |
 | MO-028 | Call and Response | Moderate | Manual | A successful tactical skill action grants another ally a Step |
 | MO-029 | Break Their Focus | Moderate | Manual | One ally may Step or Take Cover when the target Concentrates |
 | MO-030 | Seize the Moment | Strong | Manual | One ally immediately Feints, Demoralizes, or Seeks |
@@ -201,4 +201,29 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 - 30 of 30 planned cards implemented.
 - All thirty cards exclude spell attacks and support weapon, unarmed, and natural Strikes.
 - All three blocks are intentionally team-focused and manually resolved.
-- Redundancy, balance, and cross-pack identity are ready for the full mechanical review.
+- Full mechanical review passed after revision in version 0.3.3.
+
+
+## Martial Openings Review
+
+### Complete Redesigns
+
+The following cards were redesigned in version 0.3.3:
+
+- MO-004 A Choice, Technically
+- MO-007 No Safe Retreat
+- MO-022 Passing the Breach
+- MO-024 Instant Coordination
+- MO-027 Pinned Between Threats
+
+The revisions replaced a target-benefiting choice, ineffective pursuit, repeated Step chains, a duplicate fixed attack bonus, and Step-only containment with prepared Aid, half-Speed pursuit, chained reaction denial, coordinated reaction protection, and a Grapple-or-Trip containment response.
+
+### Targeted Adjustments
+
+MO-005, MO-010, MO-013, MO-017, MO-019, MO-020, MO-021, MO-023, and MO-026 received rules wording, impact, conditional consumption, fallback, simultaneous movement, or reliability adjustments.
+
+### Review Status
+
+**Mechanical Review: Passed after revision**
+
+Future reviews will examine pack identity, narrative consistency, translation quality, and statistical distribution across all four planned packs.

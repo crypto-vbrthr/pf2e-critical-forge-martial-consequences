@@ -4,7 +4,7 @@
 
 Martial Consequences is an extension module for **PF2E Critical Forge**. It adds card packs focused on stance, timing, positioning, openings, and battlefield momentum.
 
-## Version 0.3.2
+## Version 0.3.3
 
 The current release contains three optional packs:
 
@@ -12,7 +12,7 @@ The current release contains three optional packs:
 - **Ranged Mishaps** — 30 cards for critical failures unique to non-spell ranged attacks.
 - **Martial Openings** — 30 cards for critical hits with non-spell Strikes that create tactical opportunities for allies.
 
-The packs deliberately avoid damage-type-specific injuries. Those belong to **PF2E Critical Forge: Arsenal**. Martial Consequences instead asks how the failed attack changes the next few moments of the fight.
+The packs deliberately avoid damage-type-specific injuries. Those belong to **PF2E Critical Forge: Arsenal**. Martial Consequences instead asks how a critical attack changes the next few moments of the fight.
 
 ## Installation
 
@@ -43,11 +43,13 @@ Four Martial Attack Fumbles create applicable Critical Forge effects. The remain
 
 **Ranged Mishaps** completed its first full mechanical review in version 0.2.3. Nine cards were redesigned to remove cross-pack overlap, invalid action usage, and empty conditional outcomes. Seven additional cards received targeted rules, reliability, impact, or wording adjustments.
 
+**Martial Openings** completed its first full mechanical review in version 0.3.3. Five cards were redesigned to reduce repeated Step and fixed attack-bonus patterns, and nine cards received targeted rules, fallback, consumption, impact, or timing adjustments.
+
 ## Planned Packs
 
 - Martial Attack Fumbles — 30/30, mechanical review passed
 - Ranged Mishaps — 30/30, mechanical review passed
-- Martial Openings — 30/30, mechanical review pending
+- Martial Openings — 30/30, mechanical review passed
 - Combat Momentum — planned
 
 Each completed pack is planned to contain 30 cards. After reaching 30 cards, each pack receives a dedicated review for redundant mechanics, overlapping themes, balance, and identity.

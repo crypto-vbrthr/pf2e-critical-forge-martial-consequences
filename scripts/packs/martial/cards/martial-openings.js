@@ -22,13 +22,13 @@ export const MARTIAL_OPENING_CARDS = Object.freeze([
   defineMartialOpening({
     id: "mo-004-a-choice-technically", localizationKey: "AChoiceTechnically",
     tone: "humorous", impact: "moderate", fallbackTitle: "A Choice, Technically",
-    fallbackDescription: "The target's defense collapses into two equally unappealing options. It chooses one: it immediately Steps; or one willing ally of yours within 10 feet of it may immediately Step. The creature that Steps chooses its destination.",
-    tags: ["choice", "target-movement", "ally-movement", "free-action", "manual"]
+    fallbackDescription: "The target is invited to choose which ally becomes the problem. Choose up to two allies other than you that can perceive the target and have a reaction available. The target chooses one of them; if only one is eligible, that ally is chosen. Until the start of your next turn, the chosen ally is considered prepared to Aid the next attack roll or skill check another ally attempts against the target. The chosen ally must still use its reaction and attempt the normal Aid check.",
+    tags: ["choice", "aid", "ally-support", "ally-reaction", "manual"]
   }),
   defineMartialOpening({
     id: "mo-005-read-the-defense", localizationKey: "ReadTheDefense",
     tone: "neutral", impact: "light", fallbackTitle: "Read the Defense",
-    fallbackDescription: "Your strike reveals the rhythm behind the target's guard. Choose one ally other than you that can see the target. Before the start of your next turn, that ally gains a +1 circumstance bonus to its next Feint, Demoralize, Grapple, Reposition, Shove, or Trip against the target.",
+    fallbackDescription: "Your strike reveals the rhythm behind the target's guard. Choose one ally other than you that can see the target. Before the start of your next turn, that ally gains a +1 circumstance bonus to the check for its next Feint, Demoralize, Grapple, Reposition, Shove, or Trip against the target.",
     weight: 2, tags: ["skill-action", "ally-support", "one-use", "manual"]
   }),
   defineMartialOpening({
@@ -40,8 +40,8 @@ export const MARTIAL_OPENING_CARDS = Object.freeze([
   defineMartialOpening({
     id: "mo-007-no-safe-retreat", localizationKey: "NoSafeRetreat",
     tone: "serious", impact: "moderate", fallbackTitle: "No Safe Retreat",
-    fallbackDescription: "Choose one ally other than you that can perceive the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: the target completes a move action. Effect: the ally Steps and must end no farther from the target than it began.",
-    tags: ["pursuit", "ally-reaction", "target-movement", "manual"]
+    fallbackDescription: "Choose one ally other than you that can perceive the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: the target completes an action with the move trait and is farther from the ally than it was before that action. Effect: the ally Strides up to half its Speed and must end closer to the target than it began. This movement must be used to pursue the target and follows the normal rules for movement.",
+    tags: ["pursuit", "ally-reaction", "target-movement", "stride", "manual"]
   }),
   defineMartialOpening({
     id: "mo-008-open-passage", localizationKey: "OpenPassage",
@@ -57,9 +57,9 @@ export const MARTIAL_OPENING_CARDS = Object.freeze([
   }),
   defineMartialOpening({
     id: "mo-010-eyes-on-me", localizationKey: "EyesOnMe",
-    tone: "humorous", impact: "moderate", fallbackTitle: "Eyes on Me",
+    tone: "humorous", impact: "light", fallbackTitle: "Eyes on Me",
     fallbackDescription: "The target's attention fixes on you with admirable dedication. Choose one ally other than you. That ally may immediately Take Cover as a free action if able. If it has cover or concealment from the target afterward, it may Hide as part of the same free action, following the normal rules for Hide.",
-    tags: ["attention", "ally-action", "take-cover", "hide", "manual"]
+    tags: ["attention", "ally-action", "take-cover", "hide", "conditional", "manual"]
   }),
   defineMartialOpening({
     id: "mo-011-hands-free", localizationKey: "HandsFree",
@@ -76,8 +76,8 @@ export const MARTIAL_OPENING_CARDS = Object.freeze([
   defineMartialOpening({
     id: "mo-013-no-time-to-brace", localizationKey: "NoTimeToBrace",
     tone: "dramatic", impact: "strong", fallbackTitle: "No Time to Brace",
-    fallbackDescription: "Choose one ally other than you. Before the start of your next turn, that ally calculates its next Grapple, Reposition, Shove, or Trip against the target as though it had made one fewer attack that turn for its multiple attack penalty, to a minimum of no penalty. The benefit is then consumed.",
-    tags: ["skill-action", "multiple-attack-penalty", "ally-support", "one-use", "manual"]
+    fallbackDescription: "Choose one ally other than you. Before the start of your next turn, the next Grapple, Reposition, Shove, or Trip that ally attempts against the target and that would take a multiple attack penalty is calculated as though the ally had made one fewer attack that turn, to a minimum of no penalty. A listed action that has no multiple attack penalty does not consume the benefit.",
+    tags: ["skill-action", "multiple-attack-penalty", "ally-support", "one-use", "conditional-consumption", "manual"]
   }),
   defineMartialOpening({
     id: "mo-014-room-to-recover", localizationKey: "RoomToRecover",
@@ -100,7 +100,7 @@ export const MARTIAL_OPENING_CARDS = Object.freeze([
   defineMartialOpening({
     id: "mo-017-formation-cracked", localizationKey: "FormationCracked",
     tone: "serious", impact: "moderate", fallbackTitle: "Formation Cracked",
-    fallbackDescription: "The target loses its place in the enemy formation. Choose one ally other than you. Until the start of your next turn, the target does not count as flanking that ally and cannot help another creature flank that ally.",
+    fallbackDescription: "The target loses its place in the enemy formation. Choose one ally other than you. Until the start of your next turn, that ally is not off-guard due to any flank involving the target.",
     tags: ["formation", "flanking", "ally-defense", "manual"]
   }),
   defineMartialOpening({
@@ -111,39 +111,39 @@ export const MARTIAL_OPENING_CARDS = Object.freeze([
   }),
   defineMartialOpening({
     id: "mo-019-while-theyre-busy", localizationKey: "WhileTheyreBusy",
-    tone: "humorous", impact: "moderate", fallbackTitle: "While They're Busy",
-    fallbackDescription: "Choose one ally other than you that can perceive the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: the target uses a reaction. Effect: the ally Steps or takes one Interact action.",
-    tags: ["ally-reaction", "reaction-window", "step", "interact", "manual"]
+    tone: "neutral", impact: "moderate", fallbackTitle: "While They're Busy",
+    fallbackDescription: "Choose one ally other than you that can perceive the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: the target uses a reaction. Effect: the ally Steps or takes one Interact action. If the granted reaction remains unused when the duration ends, the ally may immediately take one Interact action as a free action instead.",
+    tags: ["ally-reaction", "reaction-window", "step", "interact", "fallback-interact", "manual"]
   }),
   defineMartialOpening({
     id: "mo-020-marked-by-motion", localizationKey: "MarkedByMotion",
     tone: "neutral", impact: "light", fallbackTitle: "Marked by Motion",
-    fallbackDescription: "The target's movement after the hit gives away its outline. Choose one ally other than you that can perceive the target. For that ally's next attack against the target before the start of your next turn, ignore the flat check caused only by the target being concealed. This does not affect hidden or undetected targets.",
-    weight: 2, tags: ["concealment", "ally-attack", "one-use", "manual"]
+    fallbackDescription: "The target's movement after the hit gives away its outline. Choose one ally other than you that can perceive the target. Before the start of your next turn, the first attack that ally makes against the target that would require a flat check solely because the target is concealed ignores that flat check. The benefit is consumed only when it removes such a flat check and does not affect hidden or undetected targets.",
+    tags: ["concealment", "ally-attack", "one-use", "conditional-consumption", "manual"]
   }),
   defineMartialOpening({
     id: "mo-021-shield-turned", localizationKey: "ShieldTurned",
     tone: "serious", impact: "moderate", fallbackTitle: "Shield Turned",
-    fallbackDescription: "The target drags its guard toward the impact and leaves the far side exposed. Choose one ally other than you. For that ally's next attack against the target before the start of your next turn, the target gains no circumstance bonus to AC from Raise a Shield, Parry, or a similar defensive action. Other circumstance bonuses still apply.",
-    tags: ["defense", "shield", "parry", "ally-attack", "one-use", "manual"]
+    fallbackDescription: "The target drags its guard toward the impact and leaves the far side exposed. Choose one ally other than you. For that ally's next attack against the target before the start of your next turn, the target gains no circumstance bonus to AC from Raise a Shield, Parry, a defensive reaction, or a similar defensive action. If no such circumstance bonus would apply, the target instead cannot use reactions triggered by that attack.",
+    tags: ["defense", "shield", "parry", "ally-attack", "reaction-denial", "fallback-reaction", "one-use", "manual"]
   }),
   defineMartialOpening({
     id: "mo-022-passing-the-breach", localizationKey: "PassingTheBreach",
-    tone: "dramatic", impact: "moderate", fallbackTitle: "Passing the Breach",
-    fallbackDescription: "The opening can be handed down the line. Choose one ally other than you. The next time that ally hits the target before the start of your next turn, a second willing ally within 10 feet of the target may immediately Step as a free action.",
-    tags: ["ally-attack", "chain", "ally-movement", "free-action", "manual"]
+    tone: "dramatic", impact: "strong", fallbackTitle: "Passing the Breach",
+    fallbackDescription: "The opening can be handed down the line. Choose one ally other than you. The next time that ally hits the target before the start of your next turn, the target cannot use reactions until the start of its next turn. This restriction begins after the triggering attack resolves.",
+    tags: ["ally-attack", "chain", "reaction-denial", "one-use", "manual"]
   }),
   defineMartialOpening({
     id: "mo-023-coordinated-exchange", localizationKey: "CoordinatedExchange",
     tone: "neutral", impact: "strong", fallbackTitle: "Coordinated Exchange",
-    fallbackDescription: "Choose two willing allies other than you that are adjacent to each other, with at least one adjacent to the target. They may immediately exchange spaces as a free action if both can occupy the other's space and the route is clear. This movement does not trigger reactions from the target.",
-    tags: ["formation", "space-swap", "ally-movement", "free-action", "manual"]
+    fallbackDescription: "Choose two willing allies other than you that are adjacent to each other, with at least one adjacent to the target. As a single special movement effect granted by this card, they may immediately exchange spaces simultaneously if both can occupy the other's space and the route is clear. This is not two separate actions, and the movement does not trigger reactions from the target.",
+    tags: ["formation", "space-swap", "ally-movement", "special-movement", "manual"]
   }),
   defineMartialOpening({
     id: "mo-024-instant-coordination", localizationKey: "InstantCoordination",
     tone: "neutral", impact: "moderate", fallbackTitle: "Instant Coordination",
-    fallbackDescription: "Choose one ally other than you. Until the start of your next turn, that ally gains a one-use reaction. Trigger: another ally attempts an attack against the target. Effect: the chosen ally calls the opening and grants a +1 circumstance bonus to the triggering roll. It must perceive both the attacker and the target.",
-    weight: 2, tags: ["ally-reaction", "ally-attack", "circumstance-bonus", "one-use", "manual"]
+    fallbackDescription: "Choose one ally other than you that can perceive the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: another ally begins an action that either targets the target or would move that ally adjacent to it. Effect: the target cannot use reactions triggered by that action. The chosen ally must perceive the acting ally.",
+    tags: ["ally-reaction", "coordination", "reaction-denial", "one-use", "manual"]
   }),
   defineMartialOpening({
     id: "mo-025-open-hand-off", localizationKey: "OpenHandOff",
@@ -154,14 +154,14 @@ export const MARTIAL_OPENING_CARDS = Object.freeze([
   defineMartialOpening({
     id: "mo-026-borrowed-defense", localizationKey: "BorrowedDefense",
     tone: "serious", impact: "moderate", fallbackTitle: "Borrowed Defense",
-    fallbackDescription: "The target's disrupted offense gives someone else time to set a guard. Choose one ally other than you. That ally may immediately Raise a Shield or use a single action granted by a parry trait as a free action. It must meet all normal requirements for the chosen action.",
-    tags: ["shield", "parry", "ally-defense", "free-action", "manual"]
+    fallbackDescription: "The target's disrupted offense gives someone else time to set a guard. Choose one ally other than you. That ally may immediately Raise a Shield or use a single action granted by a parry trait as a free action. If it can do neither, it may instead immediately Take Cover if able; if it cannot Take Cover, it may Drop Prone. It must meet all normal requirements for the chosen option.",
+    tags: ["shield", "parry", "ally-defense", "take-cover", "drop-prone", "fallback-defense", "free-action", "manual"]
   }),
   defineMartialOpening({
     id: "mo-027-pinned-between-threats", localizationKey: "PinnedBetweenThreats",
-    tone: "dramatic", impact: "moderate", fallbackTitle: "Pinned Between Threats",
-    fallbackDescription: "Choose one ally other than you that is adjacent to the target. Until the start of your next turn, the target cannot Step to a space that increases its distance from both you and the chosen ally. Other movement is unaffected.",
-    tags: ["containment", "target-movement", "formation", "manual"]
+    tone: "dramatic", impact: "strong", fallbackTitle: "Pinned Between Threats",
+    fallbackDescription: "Choose one ally other than you that is adjacent to the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: the target begins an action with the move trait while adjacent to the ally. Effect: before the target moves, the ally attempts to Grapple or Trip it, applying its current multiple attack penalty. If the result prevents the triggering movement, the target's action is still spent.",
+    tags: ["containment", "ally-reaction", "grapple", "trip", "target-movement", "manual"]
   }),
   defineMartialOpening({
     id: "mo-028-call-and-response", localizationKey: "CallAndResponse",

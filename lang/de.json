@@ -287,11 +287,11 @@
       },
       "AChoiceTechnically": {
         "Title": "Technisch gesehen eine Wahl",
-        "Description": "Die Verteidigung des Ziels bricht in zwei gleichermaßen unerfreuliche Möglichkeiten auseinander. Es wählt eine: Es führt sofort einen Schritt aus; oder ein bereitwilliger Verbündeter von dir innerhalb von 3 Metern um das Ziel darf sofort einen Schritt ausführen. Die Kreatur, die den Schritt ausführt, wählt ihr Ziel-Feld selbst."
+        "Description": "Das Ziel darf entscheiden, welcher Verbündete zum Problem wird. Wähle bis zu zwei Verbündete außer dir, die das Ziel wahrnehmen können und noch über ihre Reaktion verfügen. Das Ziel wählt einen davon; ist nur einer geeignet, wird dieser gewählt. Bis zum Beginn deines nächsten Zuges gilt der gewählte Verbündete als darauf vorbereitet, den nächsten Angriffswurf oder Fertigkeitswurf zu Unterstützen, den ein anderer Verbündeter gegen das Ziel versucht. Der gewählte Verbündete muss weiterhin seine Reaktion einsetzen und den normalen Wurf für Unterstützen ablegen."
       },
       "ReadTheDefense": {
         "Title": "Verteidigung gelesen",
-        "Description": "Dein Treffer offenbart den Rhythmus hinter der Deckung des Ziels. Wähle einen Verbündeten außer dir, der das Ziel sehen kann. Vor Beginn deines nächsten Zuges erhält dieser Verbündete einen Umstandsbonus von +1 auf seinen nächsten Versuch gegen das Ziel, es zu Täuschen, zu Demoralisieren, zu Ergreifen, Fortzubewegen, zu Stoßen oder Zu-Fall-zu-Bringen."
+        "Description": "Dein Treffer offenbart den Rhythmus hinter der Deckung des Ziels. Wähle einen Verbündeten außer dir, der das Ziel sehen kann. Vor Beginn deines nächsten Zuges erhält dieser Verbündete einen Umstandsbonus von +1 auf den Wurf für seinen nächsten Versuch gegen das Ziel, es zu Täuschen, zu Demoralisieren, zu Ergreifen, Fortzubewegen, zu Stoßen oder Zu-Fall-zu-Bringen."
       },
       "CrowdTheGap": {
         "Title": "In die Lücke drängen",
@@ -299,7 +299,7 @@
       },
       "NoSafeRetreat": {
         "Title": "Kein sicherer Rückzug",
-        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel beendet eine Bewegungsaktion. Effekt: Der Verbündete führt einen Schritt aus und darf danach nicht weiter vom Ziel entfernt sein als zuvor."
+        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel beendet eine Aktion mit dem Merkmal Bewegung und ist danach weiter vom Verbündeten entfernt als zuvor. Effekt: Der Verbündete läuft bis zur Hälfte seiner Bewegungsrate und muss danach näher am Ziel sein als zu Beginn. Diese Bewegung muss zur Verfolgung des Ziels dienen und folgt den normalen Bewegungsregeln."
       },
       "OpenPassage": {
         "Title": "Offener Durchgang",
@@ -323,7 +323,7 @@
       },
       "NoTimeToBrace": {
         "Title": "Keine Zeit zum Abstützen",
-        "Description": "Wähle einen Verbündeten außer dir. Vor Beginn deines nächsten Zuges berechnet dieser Verbündete bei seinem nächsten Versuch gegen das Ziel, es zu Ergreifen, Fortzubewegen, zu Stoßen oder Zu-Fall-zu-Bringen, seinen Mehrfachangriffsmalus so, als hätte er in diesem Zug einen Angriff weniger ausgeführt, mindestens jedoch ohne Malus. Danach ist der Vorteil verbraucht."
+        "Description": "Wähle einen Verbündeten außer dir. Vor Beginn deines nächsten Zuges berechnet dieser Verbündete den nächsten Versuch gegen das Ziel, es zu Ergreifen, Fortzubewegen, zu Stoßen oder Zu-Fall-zu-Bringen, der einem Mehrfachangriffsmalus unterliegen würde, so, als hätte er in diesem Zug einen Angriff weniger ausgeführt, mindestens jedoch ohne Malus. Eine aufgeführte Aktion ohne Mehrfachangriffsmalus verbraucht den Vorteil nicht."
       },
       "RoomToRecover": {
         "Title": "Raum zur Erholung",
@@ -339,7 +339,7 @@
       },
       "FormationCracked": {
         "Title": "Formation aufgebrochen",
-        "Description": "Das Ziel verliert seinen Platz in der gegnerischen Formation. Wähle einen Verbündeten außer dir. Bis zum Beginn deines nächsten Zuges gilt das Ziel gegenüber diesem Verbündeten nicht als in die Zange nehmend und kann keiner anderen Kreatur dabei helfen, diesen Verbündeten in die Zange zu nehmen."
+        "Description": "Das Ziel verliert seinen Platz in der gegnerischen Formation. Wähle einen Verbündeten außer dir. Bis zum Beginn deines nächsten Zuges gilt dieser Verbündete nicht als auf dem falschen Fuß, wenn das Ziel an der Zange beteiligt ist."
       },
       "InsideTrack": {
         "Title": "Direkter Weg",
@@ -347,27 +347,27 @@
       },
       "WhileTheyreBusy": {
         "Title": "Solange sie beschäftigt sind",
-        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel setzt eine Reaktion ein. Effekt: Der Verbündete führt einen Schritt oder eine Aktion Interagieren aus."
+        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel setzt eine Reaktion ein. Effekt: Der Verbündete führt einen Schritt oder eine Aktion Interagieren aus. Bleibt die gewährte Reaktion bis zum Ende der Dauer ungenutzt, darf der Verbündete stattdessen sofort eine Aktion Interagieren als Freie Aktion ausführen."
       },
       "MarkedByMotion": {
         "Title": "Durch Bewegung markiert",
-        "Description": "Die Bewegung des Ziels nach dem Treffer verrät seine Kontur. Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Beim nächsten Angriff dieses Verbündeten gegen das Ziel vor Beginn deines nächsten Zuges wird nur der durch den Zustand Verborgen verursachte verdeckte Wurf ignoriert. Dies wirkt nicht gegen Versteckte oder Unbemerkte Ziele."
+        "Description": "Die Bewegung des Ziels nach dem Treffer verrät seine Kontur. Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Vor Beginn deines nächsten Zuges ignoriert der erste Angriff dieses Verbündeten gegen das Ziel, der ausschließlich wegen des Zustands Verborgen einen verdeckten Wurf erfordern würde, diesen Wurf. Der Vorteil wird nur verbraucht, wenn er einen solchen Wurf tatsächlich entfernt, und wirkt nicht gegen Versteckte oder Unbemerkte Ziele."
       },
       "ShieldTurned": {
         "Title": "Schild herumgerissen",
-        "Description": "Das Ziel reißt seine Deckung zum Einschlag herum und entblößt die andere Seite. Wähle einen Verbündeten außer dir. Gegen den nächsten Angriff dieses Verbündeten auf das Ziel vor Beginn deines nächsten Zuges erhält das Ziel keinen Umstandsbonus auf RK durch Schild heben, Parieren oder eine vergleichbare Verteidigungsaktion. Andere Umstandsboni gelten weiterhin."
+        "Description": "Das Ziel reißt seine Deckung zum Einschlag herum und entblößt die andere Seite. Wähle einen Verbündeten außer dir. Gegen den nächsten Angriff dieses Verbündeten auf das Ziel vor Beginn deines nächsten Zuges erhält das Ziel keinen Umstandsbonus auf RK durch Schild heben, Parieren, eine defensive Reaktion oder eine vergleichbare Verteidigungsaktion. Würde kein solcher Umstandsbonus gelten, kann das Ziel stattdessen keine durch diesen Angriff ausgelösten Reaktionen einsetzen."
       },
       "PassingTheBreach": {
         "Title": "Die Bresche weiterreichen",
-        "Description": "Die Öffnung lässt sich durch die Reihe weitergeben. Wähle einen Verbündeten außer dir. Wenn dieser Verbündete das Ziel vor Beginn deines nächsten Zuges das nächste Mal trifft, darf ein zweiter bereitwilliger Verbündeter innerhalb von 3 Metern um das Ziel sofort als Freie Aktion einen Schritt ausführen."
+        "Description": "Die Öffnung lässt sich durch die Reihe weitergeben. Wähle einen Verbündeten außer dir. Wenn dieser Verbündete das Ziel vor Beginn deines nächsten Zuges das nächste Mal trifft, kann das Ziel bis zum Beginn seines nächsten Zuges keine Reaktionen einsetzen. Diese Einschränkung beginnt nach der Abwicklung des auslösenden Angriffs."
       },
       "CoordinatedExchange": {
         "Title": "Koordinierter Wechsel",
-        "Description": "Wähle zwei bereitwillige Verbündete außer dir, die aneinander angrenzen, wobei mindestens einer an das Ziel angrenzen muss. Sie dürfen sofort als Freie Aktion ihre Plätze tauschen, sofern beide den Platz des jeweils anderen einnehmen können und der Weg frei ist. Diese Bewegung löst beim Ziel keine Reaktionen aus."
+        "Description": "Wähle zwei bereitwillige Verbündete außer dir, die aneinander angrenzen, wobei mindestens einer an das Ziel angrenzen muss. Als einzelnen besonderen Bewegungseffekt dieser Karte dürfen sie sofort gleichzeitig ihre Plätze tauschen, sofern beide den Platz des jeweils anderen einnehmen können und der Weg frei ist. Dies sind nicht zwei getrennte Aktionen, und die Bewegung löst beim Ziel keine Reaktionen aus."
       },
       "InstantCoordination": {
         "Title": "Sofortige Koordination",
-        "Description": "Wähle einen Verbündeten außer dir. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Ein anderer Verbündeter versucht einen Angriff gegen das Ziel. Effekt: Der gewählte Verbündete ruft die Öffnung aus und verleiht dem auslösenden Wurf einen Umstandsbonus von +1. Er muss sowohl den Angreifer als auch das Ziel wahrnehmen können."
+        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Ein anderer Verbündeter beginnt eine Aktion, die entweder das Ziel als Ziel hat oder ihn an das Ziel angrenzend bewegen würde. Effekt: Das Ziel kann keine durch diese Aktion ausgelösten Reaktionen einsetzen. Der gewählte Verbündete muss den handelnden Verbündeten wahrnehmen können."
       },
       "OpenHandOff": {
         "Title": "Freie Übergabe",
@@ -375,11 +375,11 @@
       },
       "BorrowedDefense": {
         "Title": "Geliehene Verteidigung",
-        "Description": "Die gestörte Offensive des Ziels gibt jemand anderem Zeit, seine Deckung aufzubauen. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion Schild heben oder eine einzelne Aktion einsetzen, die ihm durch ein Merkmal zum Parieren gewährt wird. Er muss alle normalen Voraussetzungen der gewählten Aktion erfüllen."
+        "Description": "Die gestörte Offensive des Ziels gibt jemand anderem Zeit, seine Deckung aufzubauen. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion Schild heben oder eine einzelne Aktion einsetzen, die ihm durch ein Merkmal zum Parieren gewährt wird. Kann er beides nicht, darf er stattdessen sofort Deckung suchen, sofern möglich; kann er auch das nicht, darf er sich zu Boden werfen. Er muss alle normalen Voraussetzungen der gewählten Option erfüllen."
       },
       "PinnedBetweenThreats": {
         "Title": "Zwischen Bedrohungen festgesetzt",
-        "Description": "Wähle einen Verbündeten außer dir, der an das Ziel angrenzt. Bis zum Beginn deines nächsten Zuges kann das Ziel keinen Schritt auf ein Feld ausführen, das seine Entfernung sowohl zu dir als auch zum gewählten Verbündeten vergrößert. Andere Bewegungen sind nicht betroffen."
+        "Description": "Wähle einen Verbündeten außer dir, der an das Ziel angrenzt. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel beginnt eine Aktion mit dem Merkmal Bewegung, während es an den Verbündeten angrenzt. Effekt: Bevor das Ziel sich bewegt, versucht der Verbündete, es zu Ergreifen oder Zu-Fall-zu-Bringen, wobei sein aktueller Mehrfachangriffsmalus gilt. Verhindert das Ergebnis die auslösende Bewegung, ist die Aktion des Ziels dennoch verbraucht."
       },
       "CallAndResponse": {
         "Title": "Ruf und Antwort",

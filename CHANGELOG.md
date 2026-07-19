@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.3
+
+- Completed the first full mechanical review of Martial Openings.
+- Redesigned MO-004, MO-007, MO-022, MO-024, and MO-027 to remove target-benefiting choices, ineffective pursuit, repeated Step chains, duplicate fixed attack bonuses, and Step-only containment.
+- Added prepared Aid, half-Speed pursuit, chained reaction denial, coordinated reaction protection, and a Grapple-or-Trip containment reaction.
+- Adjusted MO-005, MO-010, MO-013, MO-017, MO-019, MO-020, MO-021, MO-023, and MO-026 for rules wording, impact, conditional consumption, reliable fallbacks, simultaneous movement, and equipment independence.
+- Added the Martial Openings mechanical review report and marked the pack as passed after revision.
+- Preserved 30 Martial Openings cards and 90 total cards across three optional packs.
+
 ## 0.3.2
 
 - Added Martial Openings MO-021 through MO-030.

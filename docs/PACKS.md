@@ -102,7 +102,7 @@ The completed pack received a full mechanical review after reaching 30 cards. Ve
 
 - 30 of 30 planned cards
 - Blocks MO-001 through MO-030 implemented
-- Full mechanical review is the next development step
+- Full mechanical review passed in version 0.3.3
 
 ### Purpose
 
@@ -144,6 +144,8 @@ filters: {
 **Martial Openings** changes what allies can do because the target's defense has been disrupted. **Combat Momentum** will instead change what the attacker can do because the attacker has seized the rhythm of the fight. Arsenal remains responsible for physical injuries and damage-type-specific consequences.
 
 All three blocks deliberately use manual one-use effects, immediate movement, reaction windows, free actions, and source-specific opportunities. These mechanics preserve the pack's teamplay identity more clearly than broad automated penalties would.
+
+The version 0.3.3 mechanical review redesigned five cards to reduce repeated Step and fixed attack-bonus patterns. It also added reliable fallbacks, conditional consumption, pursuit that can answer a normal Stride, a rules-clear coordinated exchange, chained reaction denial, and a containment reaction using Grapple or Trip.
 
 ## Planned Packs
 
