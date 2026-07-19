@@ -166,9 +166,24 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | MO-009 | Keep It Going | Moderate | Manual | Next ally to hit may Step after resolving the attack |
 | MO-010 | Eyes on Me | Moderate | Manual | One ally may Take Cover and possibly Hide while the target focuses on the source |
 
+## Martial Openings — Block 2
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| MO-011 | Hands Free | Moderate | Manual | Target cannot react to one ally's manipulate actions |
+| MO-012 | Broken Screen | Light | Manual | Target stops providing cover to other creatures against one ally |
+| MO-013 | No Time to Brace | Strong | Manual | One ally treats its next Athletics attack action as one attack earlier for MAP |
+| MO-014 | Room to Recover | Moderate | Manual | One ally may immediately Stand, Escape, or Step away |
+| MO-015 | A Moment, Please | Moderate | Manual | One ally receives a free Interact for gear, grip, or one reload step |
+| MO-016 | Lesson in Motion | Light | Manual | One ally may immediately Recall Knowledge about the target |
+| MO-017 | Formation Cracked | Moderate | Manual | Target cannot flank or help flank one chosen ally |
+| MO-018 | Inside Track | Strong | Manual | One ally Strides up to half Speed and ends adjacent to the target |
+| MO-019 | While They're Busy | Moderate | Manual | One ally may Step or Interact when the target uses a reaction |
+| MO-020 | Marked by Motion | Light | Manual | One ally ignores concealment's flat check for its next attack |
+
 ### Development Status
 
-- 10 of 30 planned cards implemented.
-- All ten cards exclude spell attacks and support weapon, unarmed, and natural Strikes.
-- The first block is intentionally team-focused and manually resolved.
+- 20 of 30 planned cards implemented.
+- All twenty cards exclude spell attacks and support weapon, unarmed, and natural Strikes.
+- The first two blocks are intentionally team-focused and manually resolved.
 - Redundancy, balance, and cross-pack identity will receive a full mechanical review after MO-030.

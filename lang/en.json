@@ -312,6 +312,46 @@
       "EyesOnMe": {
         "Title": "Eyes on Me",
         "Description": "The target's attention fixes on you with admirable dedication. Choose one ally other than you. That ally may immediately Take Cover as a free action if able. If it has cover or concealment from the target afterward, it may Hide as part of the same free action, following the normal rules for Hide."
+      },
+      "HandsFree": {
+        "Title": "Hands Free",
+        "Description": "Your hit occupies the target's guard. Choose one ally other than you that the target can perceive. Until the start of your next turn, the target cannot use reactions triggered by that ally's actions with the manipulate trait."
+      },
+      "BrokenScreen": {
+        "Title": "Broken Screen",
+        "Description": "The target can no longer screen its allies effectively. Choose one ally other than you. Until the start of your next turn, the target does not provide cover to other creatures against that ally's attacks. Other sources of cover still apply."
+      },
+      "NoTimeToBrace": {
+        "Title": "No Time to Brace",
+        "Description": "Choose one ally other than you. Before the start of your next turn, that ally calculates its next Grapple, Reposition, Shove, or Trip against the target as though it had made one fewer attack that turn for its multiple attack penalty, to a minimum of no penalty. The benefit is then consumed."
+      },
+      "RoomToRecover": {
+        "Title": "Room to Recover",
+        "Description": "The target's disrupted guard gives someone room to recover. Choose one ally other than you. That ally may immediately Stand, attempt to Escape an effect imposed by the target, or Step directly away from the target as a free action, following the normal rules for the chosen action."
+      },
+      "AMomentPlease": {
+        "Title": "A Moment, Please",
+        "Description": "The target is too busy recovering to object to a brief adjustment. Choose one ally other than you. That ally may immediately take one Interact action as a free action to draw or stow an item, change its grip, or complete one Interact step required to reload a weapon."
+      },
+      "LessonInMotion": {
+        "Title": "Lesson in Motion",
+        "Description": "The target's reaction to the hit reveals something useful about how it fights. Choose one ally other than you that can observe the target. That ally may immediately attempt to Recall Knowledge about the target as a free action, following the normal rules."
+      },
+      "FormationCracked": {
+        "Title": "Formation Cracked",
+        "Description": "The target loses its place in the enemy formation. Choose one ally other than you. Until the start of your next turn, the target does not count as flanking that ally and cannot help another creature flank that ally."
+      },
+      "InsideTrack": {
+        "Title": "Inside Track",
+        "Description": "The opening gives an ally a direct route into the fight. Choose one willing ally other than you that can perceive the target. That ally may immediately Stride up to half its Speed as a free action and must end that movement adjacent to the target. If it cannot end adjacent, it cannot use this movement."
+      },
+      "WhileTheyreBusy": {
+        "Title": "While They're Busy",
+        "Description": "Choose one ally other than you that can perceive the target. Until the start of your next turn, that ally gains a one-use reaction. Trigger: the target uses a reaction. Effect: the ally Steps or takes one Interact action."
+      },
+      "MarkedByMotion": {
+        "Title": "Marked by Motion",
+        "Description": "The target's movement after the hit gives away its outline. Choose one ally other than you that can perceive the target. For that ally's next attack against the target before the start of your next turn, ignore the flat check caused only by the target being concealed. This does not affect hidden or undetected targets."
       }
     },
     "Effects": {

@@ -25,7 +25,7 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.3.0");
+assert.equal(manifest.version, "0.3.1");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
@@ -50,14 +50,14 @@ assert.equal(openingsOnly[1].enabled, false);
 assert.equal(openingsOnly[2].enabled, true);
 assert.equal(disabled[0].cards.length, 30);
 assert.equal(disabled[1].cards.length, 30);
-assert.equal(disabled[2].cards.length, 10);
+assert.equal(disabled[2].cards.length, 20);
 
 const ids = new Set();
 let automated = 0;
 let manual = 0;
 for (const [packIndex, pack] of disabled.entries()) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.3.0");
+  assert.equal(pack.version, "0.3.1");
   const expectedCategory = packIndex === 2 ? "criticalHit" : "criticalFumble";
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
@@ -91,7 +91,7 @@ for (const [packIndex, pack] of disabled.entries()) {
   }
 }
 
-assert.equal(ids.size, 70);
+assert.equal(ids.size, 80);
 
 const martialCards = disabled[0].cards;
 const martialById = new Map(martialCards.map((card) => [card.id.split(".").at(-1), card]));
@@ -187,6 +187,8 @@ const openingCards = disabled[2].cards;
 const openingById = new Map(openingCards.map((card) => [card.id.split(".").at(-1), card]));
 assert.ok(openingById.has("mo-001-guard-drawn-wide"));
 assert.ok(openingById.has("mo-010-eyes-on-me"));
+assert.ok(openingById.has("mo-011-hands-free"));
+assert.ok(openingById.has("mo-020-marked-by-motion"));
 for (const card of openingCards) {
   assert.equal(card.category, "criticalHit");
   assert.ok(card.filters.excludedAttackTraits.includes("spell"), `${card.id} must exclude spell.`);
@@ -194,7 +196,7 @@ for (const card of openingCards) {
   assert.ok(card.tags.includes("opening"));
   assert.ok(card.tags.includes("teamwork"));
   assert.equal(card.metadata.collection, "martial-openings");
-  assert.equal(card.effect, null, `${card.id} should use manual tactical resolution in the first Martial Openings block.`);
+  assert.equal(card.effect, null, `${card.id} should use manual tactical resolution in the current Martial Openings blocks.`);
 }
 assert.equal(openingById.get("mo-001-guard-drawn-wide").weight, 2);
 assert.ok(openingById.get("mo-002-clear-line").tags.includes("cover"));
@@ -206,9 +208,20 @@ assert.ok(openingById.get("mo-007-no-safe-retreat").tags.includes("ally-reaction
 assert.ok(openingById.get("mo-008-open-passage").tags.includes("tumble-through"));
 assert.ok(openingById.get("mo-009-keep-it-going").tags.includes("follow-through"));
 assert.ok(openingById.get("mo-010-eyes-on-me").tags.includes("hide"));
+assert.ok(openingById.get("mo-011-hands-free").tags.includes("manipulate"));
+assert.equal(openingById.get("mo-012-broken-screen").weight, 2);
+assert.equal(openingById.get("mo-013-no-time-to-brace").impact, "strong");
+assert.ok(openingById.get("mo-013-no-time-to-brace").tags.includes("multiple-attack-penalty"));
+assert.ok(openingById.get("mo-014-room-to-recover").tags.includes("escape"));
+assert.ok(openingById.get("mo-015-a-moment-please").tags.includes("reload"));
+assert.ok(openingById.get("mo-016-lesson-in-motion").tags.includes("recall-knowledge"));
+assert.ok(openingById.get("mo-017-formation-cracked").tags.includes("flanking"));
+assert.equal(openingById.get("mo-018-inside-track").impact, "strong");
+assert.ok(openingById.get("mo-019-while-theyre-busy").tags.includes("reaction-window"));
+assert.ok(openingById.get("mo-020-marked-by-motion").tags.includes("concealment"));
 
 assert.equal(automated, 4);
-assert.equal(manual, 66);
+assert.equal(manual, 76);
 
 const settingsScript = await readFile(path.join(root, "scripts/settings.js"), "utf8");
 assert.match(settingsScript, /game\.settings\.register/);
@@ -221,4 +234,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.3.0 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.3.1 structural validation passed.");

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.1
+
+- Added Martial Openings MO-011 through MO-020.
+- Expanded Martial Openings to 20 cards and the module to 80 cards across three optional packs.
+- Added team opportunities involving manipulate-action safety, broken creature cover, improved multiple-attack-penalty timing for Athletics actions, immediate recovery, equipment adjustment, Recall Knowledge, flanking disruption, rapid engagement, reaction windows, and concealment counterplay.
+- Preserved support for weapon, unarmed, and natural Strikes while excluding spell attacks.
+- Kept all second-block Martial Openings manually resolved so ally-specific, one-use, reaction-based, and immediate tactical effects remain precise at the table.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+
 ## 0.3.0
 
 - Added the optional Martial Openings card pack.

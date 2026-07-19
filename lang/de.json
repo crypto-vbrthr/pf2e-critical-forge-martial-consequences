@@ -312,6 +312,46 @@
       "EyesOnMe": {
         "Title": "Augen auf mich",
         "Description": "Die Aufmerksamkeit des Ziels heftet sich mit bewundernswerter Hingabe an dich. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion Deckung suchen, sofern möglich. Besitzt er danach Deckung oder Verbergung vor dem Ziel, darf er als Teil derselben Freien Aktion nach den normalen Regeln Verstecken einsetzen."
+      },
+      "HandsFree": {
+        "Title": "Freie Hand",
+        "Description": "Dein Treffer bindet die Deckung des Ziels. Wähle einen Verbündeten außer dir, den das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges kann das Ziel keine Reaktionen einsetzen, die durch Aktionen dieses Verbündeten mit dem Merkmal Handhaben ausgelöst werden."
+      },
+      "BrokenScreen": {
+        "Title": "Gebrochener Schutzschirm",
+        "Description": "Das Ziel kann seine Verbündeten nicht mehr wirksam abschirmen. Wähle einen Verbündeten außer dir. Bis zum Beginn deines nächsten Zuges gewährt das Ziel anderen Kreaturen gegen Angriffe dieses Verbündeten keine Deckung. Andere Quellen von Deckung gelten weiterhin."
+      },
+      "NoTimeToBrace": {
+        "Title": "Keine Zeit zum Abstützen",
+        "Description": "Wähle einen Verbündeten außer dir. Vor Beginn deines nächsten Zuges berechnet dieser Verbündete bei seinem nächsten Versuch gegen das Ziel, es zu Ergreifen, Fortzubewegen, zu Stoßen oder Zu-Fall-zu-Bringen, seinen Mehrfachangriffsmalus so, als hätte er in diesem Zug einen Angriff weniger ausgeführt, mindestens jedoch ohne Malus. Danach ist der Vorteil verbraucht."
+      },
+      "RoomToRecover": {
+        "Title": "Raum zur Erholung",
+        "Description": "Die gestörte Deckung des Ziels verschafft jemandem Raum, sich zu fangen. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion Aufstehen, versuchen, einem vom Ziel auferlegten Effekt zu Entkommen, oder einen Schritt direkt vom Ziel weg ausführen. Für die gewählte Aktion gelten die normalen Regeln."
+      },
+      "AMomentPlease": {
+        "Title": "Einen Moment, bitte",
+        "Description": "Das Ziel ist zu sehr mit seiner Erholung beschäftigt, um gegen eine kurze Anpassung Einspruch zu erheben. Wähle einen Verbündeten außer dir. Dieser Verbündete darf sofort als Freie Aktion eine Aktion Interagieren ausführen, um einen Gegenstand zu ziehen oder wegzustecken, seinen Griff zu ändern oder einen für das Nachladen einer Waffe erforderlichen Interagieren-Schritt abzuschließen."
+      },
+      "LessonInMotion": {
+        "Title": "Lehrstück in Bewegung",
+        "Description": "Die Reaktion des Ziels auf den Treffer verrät etwas Nützliches über seine Kampfweise. Wähle einen Verbündeten außer dir, der das Ziel beobachten kann. Dieser Verbündete darf sofort als Freie Aktion nach den normalen Regeln versuchen, Wissen über das Ziel abzurufen."
+      },
+      "FormationCracked": {
+        "Title": "Formation aufgebrochen",
+        "Description": "Das Ziel verliert seinen Platz in der gegnerischen Formation. Wähle einen Verbündeten außer dir. Bis zum Beginn deines nächsten Zuges gilt das Ziel gegenüber diesem Verbündeten nicht als in die Zange nehmend und kann keiner anderen Kreatur dabei helfen, diesen Verbündeten in die Zange zu nehmen."
+      },
+      "InsideTrack": {
+        "Title": "Direkter Weg",
+        "Description": "Die Öffnung verschafft einem Verbündeten einen direkten Weg in den Kampf. Wähle einen bereitwilligen Verbündeten außer dir, der das Ziel wahrnehmen kann. Dieser Verbündete darf sofort als Freie Aktion bis zur Hälfte seiner Bewegungsrate Laufen und muss diese Bewegung neben dem Ziel beenden. Kann er nicht neben dem Ziel enden, kann er diese Bewegung nicht einsetzen."
+      },
+      "WhileTheyreBusy": {
+        "Title": "Solange sie beschäftigt sind",
+        "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Bis zum Beginn deines nächsten Zuges erhält dieser Verbündete eine einmalige Reaktion. Auslöser: Das Ziel setzt eine Reaktion ein. Effekt: Der Verbündete führt einen Schritt oder eine Aktion Interagieren aus."
+      },
+      "MarkedByMotion": {
+        "Title": "Durch Bewegung markiert",
+        "Description": "Die Bewegung des Ziels nach dem Treffer verrät seine Kontur. Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Beim nächsten Angriff dieses Verbündeten gegen das Ziel vor Beginn deines nächsten Zuges wird nur der durch den Zustand Verborgen verursachte verdeckte Wurf ignoriert. Dies wirkt nicht gegen Versteckte oder Unbemerkte Ziele."
       }
     },
     "Effects": {
