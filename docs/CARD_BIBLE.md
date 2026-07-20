@@ -259,11 +259,26 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | CM-019 | Through the Gap | Moderate | Manual | Source gains +2 and reaction protection for one Tumble Through |
 | CM-020 | Long Follow-Through | Strong | Manual | Source increases reach by 5 feet for one melee Strike |
 
+## Combat Momentum — Block 3
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| CM-021 | Break Contact | Moderate | Manual | Source withdraws up to half Speed without triggering the target |
+| CM-022 | Living Bulwark | Moderate | Manual | Target upgrades creature-provided cover against one ranged attack |
+| CM-023 | Form Finds You | Strong | Manual | Source enters a stance for free or Steps as a fallback |
+| CM-024 | Momentum to Spare | Strong | Manual | Source gains one target-specific additional reaction |
+| CM-025 | Break the Bind | Moderate | Manual | Source Escapes immediately or banks a bonus for its next Escape |
+| CM-026 | Close-Quarters Clarity | Light | Manual | Source Seeks or Recalls Knowledge about the target for free |
+| CM-027 | Turn the Tables | Strong | Manual | Failed enemy combat maneuver enables a penalized counter-maneuver |
+| CM-028 | Don't Blink | Moderate | Manual | Source can Seek as a reaction after the target Hides or Sneaks |
+| CM-029 | Victory Echo | Moderate | Manual | Defeating the target enables Demoralize, with a one-use fallback bonus |
+| CM-030 | Momentum Unspent | Strong | Manual | Source makes a follow-up melee Strike against a different creature |
+
 ### Development Status
 
-- 20 of 30 planned cards implemented.
-- All twenty cards require non-spell melee attacks.
+- 30 of 30 planned cards implemented.
+- All thirty cards require non-spell melee attacks.
 - Melee weapon, unarmed, and natural attacks are supported.
-- Both blocks benefit the attacker rather than allies.
+- All three blocks benefit the attacker rather than allies.
 - All Combat Momentum cards currently use manual tactical resolution.
-- Full mechanical review is scheduled after CM-030.
+- Full mechanical review is the next planned step.

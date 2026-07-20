@@ -151,9 +151,9 @@ The version 0.3.3 mechanical review redesigned five cards to reduce repeated Ste
 
 ### Current Status
 
-- 20 of 30 planned cards
-- Blocks CM-001 through CM-020 implemented
-- Mechanical review scheduled after CM-030
+- 30 of 30 planned cards
+- Blocks CM-001 through CM-030 implemented
+- Full mechanical review pending
 
 ### Purpose
 
@@ -187,6 +187,10 @@ filters: {
 - fear recovery, anti-flanking defense, and temporary Hit Points
 - reactive movement after a missed counterattack
 - improved Tumble Through and one-use extended reach
+- protected withdrawals and using the target as cover
+- free stance entry and target-specific reaction economy
+- Escape opportunities, close-range observation, and counter-maneuvers
+- pursuit of hidden targets, victory-driven intimidation, and chained follow-up Strikes
 
 ### Not Included
 
@@ -200,4 +204,4 @@ filters: {
 
 **Combat Momentum** changes what the attacker can do because the attacker has seized the rhythm of melee combat. **Martial Openings** changes what allies can do because the target's defense has been disrupted. Arsenal remains responsible for injury and damage-type-specific consequences.
 
-The first two blocks are manually resolved because their effects rely on one-use timing, immediate free actions, special movement, action sequencing, source-specific penalties, temporary Hit Points based on actor level, reaction windows, target switching, and temporary reach changes.
+All three blocks are manually resolved because their effects rely on one-use timing, immediate free actions, special movement, action sequencing, source-specific penalties, temporary Hit Points based on actor level, reaction windows, target switching, temporary reach changes, stance entry, extra reactions, counter-maneuvers, conditional defeat triggers, and follow-up Strikes.

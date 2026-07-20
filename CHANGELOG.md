@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.2
+
+- Added Combat Momentum CM-021 through CM-030.
+- Completed the initial 30-card Combat Momentum set and expanded the module to 120 cards across four optional packs.
+- Added attacker-focused momentum involving protected withdrawal, target-provided cover, free stance entry, target-specific extra reactions, immediate Escape attempts, close-range Seek or Recall Knowledge, reactive counter-maneuvers, pursuit of hidden targets, victory-driven Demoralize, and a chained follow-up melee Strike.
+- Preserved support for melee weapons, unarmed attacks, and natural melee attacks while excluding spell and ranged attacks.
+- Kept all third-block Combat Momentum cards manually resolved so free actions, extra reactions, stance entry, conditional triggers, counter-maneuvers, and follow-up Strikes remain precise at the table.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, changelog, and validation tests.
+- Marked Combat Momentum as ready for its full mechanical review.
+
 ## 0.4.1
 
 - Added Combat Momentum CM-011 through CM-020.

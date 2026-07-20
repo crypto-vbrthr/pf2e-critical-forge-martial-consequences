@@ -480,6 +480,46 @@
       "LongFollowThrough": {
         "Title": "Weites Nachsetzen",
         "Description": "Vor Ende deines nächsten Zuges darfst du deine Reichweite für einen Nahkampfangriff um 1,5 Meter erhöhen. Der Vorteil wird verbraucht, sobald du die erhöhte Reichweite ankündigst, selbst wenn der Angriff misslingt. Er ist nicht mit einer anderen vorübergehenden Erhöhung deiner Reichweite kumulativ."
+      },
+      "BreakContact": {
+        "Title": "Kontakt lösen",
+        "Description": "Der Treffer öffnet dir einen sauberen Rückzug. Du darfst sofort als Freie Aktion bis zur Hälfte deiner Bewegungsrate Laufen. Du musst die Bewegung weiter vom Ziel entfernt beenden, als du sie begonnen hast, und diese Bewegung löst beim Ziel keine Reaktionen aus."
+      },
+      "LivingBulwark": {
+        "Title": "Lebendes Bollwerk",
+        "Description": "Bis zum Beginn deines nächsten Zuges gilt: Wenn erstmals eine andere Kreatur als das Ziel einen Fernkampfangriff gegen dich ausführt, während das Ziel zwischen euch steht, behandelst du geringe Deckung, die dir das Ziel gewährt, für diesen Angriff als normale Deckung. Danach ist der Vorteil verbraucht."
+      },
+      "FormFindsYou": {
+        "Title": "Die Form findet dich",
+        "Description": "Dein Körper findet in eine eingeübte Form, ohne den Rhythmus zu verlieren. Du darfst sofort als Freie Aktion eine dir bekannte Haltung einnehmen, sofern du ihre Voraussetzungen erfüllst. Hast du keine geeignete Haltung oder befindest dich bereits in der gewünschten Haltung, darfst du stattdessen sofort einen Schritt ausführen."
+      },
+      "MomentumToSpare": {
+        "Title": "Schwung im Überfluss",
+        "Description": "Du erhältst eine zusätzliche Reaktion, die bis zum Beginn deines nächsten Zuges anhält. Du kannst diese Reaktion nur für eine Reaktion einsetzen, deren Auslöser durch eine Aktion oder Aktivität des Ziels verursacht wird. Sie erlaubt dir nicht, dieselbe Reaktion für einen einzelnen Auslöser mehr als einmal einzusetzen."
+      },
+      "BreakTheBind": {
+        "Title": "Fessel brechen",
+        "Description": "Bist du gepackt, festgesetzt oder bewegungsunfähig, darfst du sofort als Freie Aktion nach den normalen Regeln versuchen, einem dieser Effekte zu Entkommen. Trifft keiner dieser Zustände zu, erhält dein nächster Versuch zu Entkommen vor Ende deines nächsten Zuges einen Umstandsbonus von +2. Danach ist der Bonus verbraucht."
+      },
+      "CloseQuartersClarity": {
+        "Title": "Klarheit auf Armlänge",
+        "Description": "Auf diese Entfernung werden die Gewohnheiten des Ziels plötzlich offensichtlich. Du darfst sofort als Freie Aktion in einem Bereich, der das Ziel einschließt, Suchen oder Wissen über das Ziel abrufen; dabei gelten die normalen Regeln für die gewählte Aktion."
+      },
+      "TurnTheTables": {
+        "Title": "Den Spieß umdrehen",
+        "Description": "Bis zum Beginn deines nächsten Zuges erhältst du eine einmalige Reaktion. Auslöser: Das Ziel scheitert oder scheitert kritisch bei einem Versuch, dich zu Ergreifen, Fortzubewegen, zu Stoßen oder Zu-Fall-zu-Bringen. Effekt: Nachdem seine Aktion abgewickelt wurde, darfst du dieselbe Aktion mit einem Umstandsmalus von -2 gegen das Ziel versuchen; dabei gelten die normalen Voraussetzungen. Danach ist die Reaktion verbraucht."
+      },
+      "DontBlink": {
+        "Title": "Nicht blinzeln",
+        "Description": "Bis zum Beginn deines nächsten Zuges erhältst du eine einmalige Reaktion. Auslöser: Das Ziel versucht, sich zu Verstecken oder zu Schleichen. Effekt: Nachdem die Aktion abgewickelt wurde, führst du als Reaktion Suchen aus und musst das zuletzt bekannte Feld des Ziels in den durchsuchten Bereich einbeziehen. Danach ist die Reaktion verbraucht."
+      },
+      "VictoryEcho": {
+        "Title": "Echo des Sieges",
+        "Description": "Reduziert der auslösende kritische Treffer das Ziel auf 0 Trefferpunkte, darfst du sofort als Freie Aktion nach den normalen Regeln versuchen, einen anderen Gegner innerhalb von 9 Metern zu Demoralisieren. Andernfalls erhält dein nächster Versuch zu Demoralisieren vor Ende deines nächsten Zuges einen Umstandsbonus von +1. Danach ist der Bonus verbraucht."
+      },
+      "MomentumUnspent": {
+        "Title": "Ungenutzter Schwung",
+        "Description": "Nachdem der Schaden des auslösenden Angriffs abgewickelt wurde, darfst du sofort als Freie Aktion einen Nahkampfangriff gegen eine andere Kreatur in deiner Reichweite ausführen. Wende deinen Mehrfachangriffsmalus so an, als wäre dies dein nächster Angriff des Zuges. Dieser Angriff kann keine weitere Critical-Forge-Karte auslösen. Befindet sich keine andere Kreatur in Reichweite, darfst du stattdessen sofort einen Schritt ausführen."
       }
     },
     "Effects": {

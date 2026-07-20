@@ -120,5 +120,65 @@ export const COMBAT_MOMENTUM_CARDS = Object.freeze([
     tone: "dramatic", impact: "strong", fallbackTitle: "Long Follow-Through",
     fallbackDescription: "Before the end of your next turn, you may increase your reach by 5 feet for one melee Strike. The benefit is consumed when you declare the increased reach, even if the Strike fails, and it does not stack with another temporary increase to your reach.",
     tags: ["reach", "follow-up-strike", "one-use", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-021-break-contact", localizationKey: "BreakContact",
+    tone: "neutral", impact: "moderate", fallbackTitle: "Break Contact",
+    fallbackDescription: "The impact creates a clean exit. You may immediately Stride up to half your Speed as a free action. You must end farther from the target than you began, and this movement does not trigger reactions from the target.",
+    tags: ["self-movement", "stride", "retreat", "reaction-protection", "free-action", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-022-living-bulwark", localizationKey: "LivingBulwark",
+    tone: "dramatic", impact: "moderate", fallbackTitle: "Living Bulwark",
+    fallbackDescription: "Until the start of your next turn, the first time a creature other than the target makes a ranged attack against you while the target is between you and the attacker, treat lesser cover granted by the target as standard cover for that attack. The benefit is then consumed.",
+    tags: ["self-defense", "cover", "ranged-defense", "target-position", "one-use", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-023-form-finds-you", localizationKey: "FormFindsYou",
+    tone: "dramatic", impact: "strong", fallbackTitle: "Form Finds You",
+    fallbackDescription: "Your body settles into practiced form without losing the beat. You may immediately enter a stance you know as a free action, provided you meet its requirements. If you have no eligible stance or are already in the stance you want, you may immediately Step instead.",
+    tags: ["stance", "free-action", "fallback-step", "self-readiness", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-024-momentum-to-spare", localizationKey: "MomentumToSpare",
+    tone: "serious", impact: "strong", fallbackTitle: "Momentum to Spare",
+    fallbackDescription: "Gain one additional reaction that lasts until the start of your next turn. This reaction can be used only for a reaction whose trigger is caused by the target's action or activity. It does not allow the same reaction to be used more than once for a single trigger.",
+    tags: ["reaction", "reaction-economy", "target-specific", "self-readiness", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-025-break-the-bind", localizationKey: "BreakTheBind",
+    tone: "serious", impact: "moderate", fallbackTitle: "Break the Bind",
+    fallbackDescription: "If you are grabbed, restrained, or immobilized, you may immediately attempt to Escape from one such effect as a free action, following the normal rules. If none of those conditions apply, your next attempt to Escape before the end of your next turn gains a +2 circumstance bonus. The bonus is then consumed.",
+    tags: ["escape", "condition-response", "free-action", "fallback-bonus", "one-use", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-026-close-quarters-clarity", localizationKey: "CloseQuartersClarity",
+    tone: "neutral", impact: "light", fallbackTitle: "Close-Quarters Clarity",
+    fallbackDescription: "At this distance, the target's habits become suddenly obvious. You may immediately Seek in an area that includes the target or Recall Knowledge about the target as a free action, following the normal rules for the chosen action.",
+    weight: 2, tags: ["seek", "recall-knowledge", "perception", "knowledge", "free-action", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-027-turn-the-tables", localizationKey: "TurnTheTables",
+    tone: "dramatic", impact: "strong", fallbackTitle: "Turn the Tables",
+    fallbackDescription: "Until the start of your next turn, you gain a one-use reaction. Trigger: the target fails or critically fails an attempt to Grapple, Reposition, Shove, or Trip you. Effect: after its action resolves, you may attempt the same action against the target with a -2 circumstance penalty, following the normal requirements. The reaction is then expended.",
+    tags: ["reaction", "counter-maneuver", "grapple", "reposition", "shove", "trip", "one-use", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-028-dont-blink", localizationKey: "DontBlink",
+    tone: "serious", impact: "moderate", fallbackTitle: "Don't Blink",
+    fallbackDescription: "Until the start of your next turn, you gain a one-use reaction. Trigger: the target Hides or Sneaks. Effect: after the action resolves, you Seek as a reaction and must include the target's last known space in the area you search. The reaction is then expended.",
+    tags: ["reaction", "seek", "hide", "sneak", "tracking", "one-use", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-029-victory-echo", localizationKey: "VictoryEcho",
+    tone: "humorous", impact: "moderate", fallbackTitle: "Victory Echo",
+    fallbackDescription: "If the triggering critical hit reduces the target to 0 Hit Points, you may immediately attempt to Demoralize one other enemy within 30 feet as a free action, following the normal rules. Otherwise, your next attempt to Demoralize before the end of your next turn gains a +1 circumstance bonus. The bonus is then consumed.",
+    tags: ["demoralize", "defeat-trigger", "free-action", "fallback-bonus", "one-use", "manual"]
+  }),
+  defineCombatMomentum({
+    id: "cm-030-momentum-unspent", localizationKey: "MomentumUnspent",
+    tone: "dramatic", impact: "strong", fallbackTitle: "Momentum Unspent",
+    fallbackDescription: "After resolving the triggering attack's damage, you may immediately make a melee Strike as a free action against a different creature within your reach. Apply your multiple attack penalty as though this were your next attack of the turn. This Strike cannot trigger another Critical Forge card. If no other creature is within reach, you may immediately Step instead.",
+    tags: ["follow-up-strike", "multiple-attack-penalty", "free-action", "anti-chain", "fallback-step", "manual"]
   })
 ]);
