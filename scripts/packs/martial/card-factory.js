@@ -2,7 +2,8 @@ export const MARTIAL_CARD_ID_PREFIX = "pf2e-critical-forge-martial-consequences"
 export const MARTIAL_PACK_IDS = Object.freeze({
   martialAttackFumbles: `${MARTIAL_CARD_ID_PREFIX}.martial-attack-fumbles`,
   rangedMishaps: `${MARTIAL_CARD_ID_PREFIX}.ranged-mishaps`,
-  martialOpenings: `${MARTIAL_CARD_ID_PREFIX}.martial-openings`
+  martialOpenings: `${MARTIAL_CARD_ID_PREFIX}.martial-openings`,
+  combatMomentum: `${MARTIAL_CARD_ID_PREFIX}.combat-momentum`
 });
 
 export const DURATIONS = Object.freeze({
@@ -101,5 +102,17 @@ export function defineMartialOpening(card) {
     category: "criticalHit",
     baseTags: ["martial", "critical-hit", "opening", "teamwork"],
     defaultEffectTarget: "target"
+  });
+}
+
+export function defineCombatMomentum(card) {
+  return defineMartialCard({
+    ...card,
+    packId: MARTIAL_PACK_IDS.combatMomentum,
+    collection: "combat-momentum",
+    category: "criticalHit",
+    baseTags: ["martial", "critical-hit", "momentum", "self-benefit"],
+    requiredAttackTraits: ["melee"],
+    defaultEffectTarget: "source"
   });
 }

@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.0
+
+- Added the optional Combat Momentum card pack.
+- Added Combat Momentum CM-001 through CM-010.
+- Added critical-hit support for non-spell melee Strikes, including melee weapons, unarmed attacks, and natural melee attacks.
+- Added attacker-focused momentum involving repositioning, defensive recovery, target switching, extended movement, multiple-attack-penalty relief, reaction denial, space control, immediate Feint or Demoralize, immediate Grapple or Trip, and resistance to retaliatory Athletics actions.
+- Required the synthetic `melee` attack trait and excluded `spell` for every Combat Momentum card.
+- Kept all first-block Combat Momentum cards manually resolved so one-use, action-sequencing, movement, and source-specific effects remain precise at the table.
+- Added an independent module setting for Combat Momentum.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+- Expanded the module to 100 cards across four optional packs.
+
 ## 0.3.3
 
 - Completed the first full mechanical review of Martial Openings.

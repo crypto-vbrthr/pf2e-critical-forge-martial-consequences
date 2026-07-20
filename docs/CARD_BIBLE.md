@@ -227,3 +227,28 @@ MO-005, MO-010, MO-013, MO-017, MO-019, MO-020, MO-021, MO-023, and MO-026 recei
 **Mechanical Review: Passed after revision**
 
 Future reviews will examine pack identity, narrative consistency, translation quality, and statistical distribution across all four planned packs.
+
+
+## Combat Momentum — Block 1
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| CM-001 | Press the Advantage | Light | Manual | Source Steps while remaining adjacent to the target |
+| CM-002 | Guard on the Return | Moderate | Manual | Source raises a shield or parry, with a one-use defensive fallback |
+| CM-003 | Next in Line | Moderate | Manual | Source can Step into a melee Strike against a different enemy |
+| CM-004 | Longer Stride | Light | Manual | Source's next Stride moves 5 feet farther |
+| CM-005 | Rhythm Carries | Strong | Manual | Source reduces MAP by 2 for one follow-up melee Strike |
+| CM-006 | No Time to Answer | Moderate | Manual | Target cannot react to the source's next action |
+| CM-007 | Claim the Gap | Moderate | Manual | Source can Step into the target's vacated space |
+| CM-008 | Apparently, That Was Impressive | Moderate | Manual | Source immediately Feints or Demoralizes |
+| CM-009 | Keep Them There | Strong | Manual | Source immediately Grapples or Trips at current MAP |
+| CM-010 | Unshaken Stance | Moderate | Manual | First retaliatory Shove, Reposition, or Trip takes -2 |
+
+### Development Status
+
+- 10 of 30 planned cards implemented.
+- All ten cards require non-spell melee attacks.
+- Melee weapon, unarmed, and natural attacks are supported.
+- All first-block cards benefit the attacker rather than allies.
+- All first-block cards use manual tactical resolution.
+- Full mechanical review is scheduled after CM-030.

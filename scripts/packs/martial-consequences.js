@@ -2,6 +2,7 @@ import { MARTIAL_PACK_IDS } from "./martial/card-factory.js";
 import { MARTIAL_ATTACK_FUMBLE_CARDS } from "./martial/cards/martial-attack-fumbles.js";
 import { RANGED_MISHAP_CARDS } from "./martial/cards/ranged-mishaps.js";
 import { MARTIAL_OPENING_CARDS } from "./martial/cards/martial-openings.js";
+import { COMBAT_MOMENTUM_CARDS } from "./martial/cards/combat-momentum.js";
 
 export const MARTIAL_PACK_CONFIGS = Object.freeze([
   Object.freeze({
@@ -48,6 +49,21 @@ export const MARTIAL_PACK_CONFIGS = Object.freeze([
       category: "martial-critical-hit",
       scope: "non-spell-strikes"
     })
+  }),
+  Object.freeze({
+    settingKey: "enableCombatMomentum",
+    id: MARTIAL_PACK_IDS.combatMomentum,
+    titleKey: "PF2ECFMC.Packs.CombatMomentum.Title",
+    descriptionKey: "PF2ECFMC.Packs.CombatMomentum.Description",
+    fallbackTitle: "Martial Consequences: Combat Momentum",
+    fallbackDescription: "Critical hits with non-spell melee Strikes that turn success into personal movement, readiness, control, and follow-through.",
+    cards: COMBAT_MOMENTUM_CARDS,
+    metadata: Object.freeze({
+      theme: "martial-consequences",
+      family: "martial-consequences",
+      category: "melee-critical-hit",
+      scope: "non-spell-melee-strikes"
+    })
   })
 ]);
 
@@ -59,7 +75,7 @@ export function buildMartialConsequencesPacks(isEnabled = () => false) {
     descriptionKey: config.descriptionKey,
     fallbackTitle: config.fallbackTitle,
     fallbackDescription: config.fallbackDescription,
-    version: "0.3.3",
+    version: "0.4.0",
     priority: 10,
     enabled: Boolean(isEnabled(config.settingKey)),
     metadata: config.metadata,

@@ -12,6 +12,10 @@
       "MartialOpenings": {
         "Title": "Martial Openings",
         "Description": "Kritische Treffer mit nichtmagischen Angriffen, die taktische Öffnungen für Verbündete statt zusätzlicher Verletzungen schaffen. Umfasst Waffenangriffe, unbewaffnete Angriffe und natürliche Angriffe."
+      },
+      "CombatMomentum": {
+        "Title": "Combat Momentum",
+        "Description": "Kritische Treffer mit nichtmagischen Nahkampfangriffen, die den Erfolg in persönliche Bewegung, Bereitschaft, Kontrolle und fließendes Nachsetzen verwandeln. Umfasst Nahkampfwaffen, unbewaffnete Angriffe und natürliche Angriffe."
       }
     },
     "Settings": {
@@ -26,6 +30,10 @@
       "MartialOpenings": {
         "Name": "Martial Openings aktivieren",
         "Hint": "Fügt Karten für kritische Treffer hinzu, die nach nichtmagischen Waffenangriffen, unbewaffneten Angriffen und natürlichen Angriffen taktische Chancen für Verbündete schaffen."
+      },
+      "CombatMomentum": {
+        "Name": "Combat Momentum aktivieren",
+        "Hint": "Fügt Karten für kritische Treffer hinzu, die den Angreifer nach nichtmagischen Nahkampfwaffenangriffen, unbewaffneten Angriffen und natürlichen Angriffen begünstigen."
       }
     },
     "Notifications": {
@@ -392,6 +400,46 @@
       "SeizeTheMoment": {
         "Title": "Den Moment nutzen",
         "Description": "Wähle einen Verbündeten außer dir, der das Ziel wahrnehmen kann. Dieser Verbündete darf sofort als Freie Aktion nach den normalen Regeln versuchen, das Ziel zu Täuschen oder zu Demoralisieren oder nach ihm zu Suchen."
+      },
+      "PressTheAdvantage": {
+        "Title": "Vorteil ausbauen",
+        "Description": "Der Treffer verschafft dir genau den Raum, den du brauchst. Du darfst sofort als freie Aktion einen Schritt ausführen. Du musst die Bewegung angrenzend an das Ziel beenden."
+      },
+      "GuardOnTheReturn": {
+        "Title": "Deckung im Rücklauf",
+        "Description": "Dein Angriff findet beinahe von selbst in die Deckung zurück. Du darfst sofort als freie Aktion einen Schild heben oder eine einzelne Aktion verwenden, die dir durch die Eigenschaft Parade gewährt wird. Würde keine der beiden Möglichkeiten deine Verteidigung verbessern, erhält der nächste Angriff des Ziels gegen dich vor Beginn deines nächsten Zuges einen Umstandsmalus von -1. Danach ist der Malus verbraucht."
+      },
+      "NextInLine": {
+        "Title": "Der Nächste bitte",
+        "Description": "Wähle einen anderen Gegner, den du wahrnehmen kannst. Ist deine nächste Aktion in diesem Zug ein Nahkampfangriff gegen diesen Gegner, darfst du unmittelbar vor dem Angriff als Teil derselben Aktion einen Schritt ausführen. Du musst den Gegner danach in Reichweite haben; andernfalls kannst du diesen Schritt nicht nutzen."
+      },
+      "LongerStride": {
+        "Title": "Längerer Schritt",
+        "Description": "Der erfolgreiche Angriff trägt deine Bewegung weiter. Wenn du dich vor Beginn deines nächsten Zuges das nächste Mal fortbewegst, darfst du dich 1,5 Meter weiter als deine Bewegungsrate bewegen. Danach ist der Vorteil verbraucht."
+      },
+      "RhythmCarries": {
+        "Title": "Getragener Rhythmus",
+        "Description": "Der kritische Treffer bindet deinen nächsten Angriff in denselben Rhythmus ein. Reduziere bei deinem nächsten Nahkampfangriff vor Ende dieses Zuges deinen Mehrfachangriffsmalus um 2. Dadurch kann der Malus nicht unter 0 sinken. Danach ist der Vorteil verbraucht."
+      },
+      "NoTimeToAnswer": {
+        "Title": "Keine Zeit zur Antwort",
+        "Description": "Das Ziel verarbeitet den Einschlag noch, als du bereits weitermachst. Es kann keine Reaktionen einsetzen, die durch deine nächste Aktion vor Beginn deines nächsten Zuges ausgelöst würden. Der Vorteil wird verbraucht, sobald diese Aktion beginnt."
+      },
+      "ClaimTheGap": {
+        "Title": "Die Lücke besetzen",
+        "Description": "Bis zum Beginn deines nächsten Zuges erhältst du eine einmalig nutzbare ausgelöste freie Aktion. Auslöser: Das Ziel verlässt sein aktuelles Feld während einer Aktion mit der Eigenschaft Bewegung, und das Feld ist nach der Bewegung frei. Effekt: Nachdem die Bewegung des Ziels endet, führst du einen Schritt auf das geräumte Feld aus. Du musst das Feld mit einem Schritt erreichen können."
+      },
+      "ApparentlyImpressive": {
+        "Title": "Offenbar beeindruckend",
+        "Description": "Ob durch Können oder theatralischen Zufall: Das Ziel passt jetzt auf. Du darfst sofort als freie Aktion versuchen, das Ziel zu täuschen oder zu demoralisieren. Es gelten die normalen Regeln der gewählten Aktion."
+      },
+      "KeepThemThere": {
+        "Title": "Festhalten",
+        "Description": "Der Treffer öffnet das Ziel für unmittelbare Kontrolle. Du darfst sofort als freie Aktion versuchen, das Ziel zu ergreifen oder zu Fall zu bringen. Wende deinen aktuellen Mehrfachangriffsmalus an und erfülle alle normalen Voraussetzungen der gewählten Aktion."
+      },
+      "UnshakenStance": {
+        "Title": "Unerschütterlicher Stand",
+        "Description": "Dein Erfolg festigt deinen Stand gegen den Gegenschlag. Der erste Versuch vor Beginn deines nächsten Zuges, dich zu stoßen, fortzubewegen oder zu Fall zu bringen, erhält einen Umstandsmalus von -2. Danach ist der Malus verbraucht."
       }
     },
     "Effects": {

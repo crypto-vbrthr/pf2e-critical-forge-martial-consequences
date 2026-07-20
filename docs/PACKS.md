@@ -141,13 +141,57 @@ filters: {
 
 ### Boundary
 
-**Martial Openings** changes what allies can do because the target's defense has been disrupted. **Combat Momentum** will instead change what the attacker can do because the attacker has seized the rhythm of the fight. Arsenal remains responsible for physical injuries and damage-type-specific consequences.
+**Martial Openings** changes what allies can do because the target's defense has been disrupted. **Combat Momentum** instead changes what the attacker can do because the attacker has seized the rhythm of the fight. Arsenal remains responsible for physical injuries and damage-type-specific consequences.
 
 All three blocks deliberately use manual one-use effects, immediate movement, reaction windows, free actions, and source-specific opportunities. These mechanics preserve the pack's teamplay identity more clearly than broad automated penalties would.
 
 The version 0.3.3 mechanical review redesigned five cards to reduce repeated Step and fixed attack-bonus patterns. It also added reliable fallbacks, conditional consumption, pursuit that can answer a normal Stride, a rules-clear coordinated exchange, chained reaction denial, and a containment reaction using Grapple or Trip.
 
-## Planned Packs
+## Combat Momentum
 
-### Combat Momentum
-Critical successes that benefit the attacker through position, stability, readiness, or tempo.
+### Current Status
+
+- 10 of 30 planned cards
+- Block CM-001 through CM-010 implemented
+- Mechanical review scheduled after CM-030
+
+### Purpose
+
+Critical-hit consequences that turn a successful non-spell melee Strike into personal momentum for the attacker.
+
+### Trigger
+
+Critical success on a non-spell melee Strike. The pack requires the synthetic `melee` attack trait and excludes attacks carrying the synthetic `spell` attack trait. It includes melee weapons, unarmed melee attacks, and natural melee attacks.
+
+```js
+filters: {
+  attackTraits: ["melee"],
+  excludedAttackTraits: ["spell"]
+}
+```
+
+### Typical Effects
+
+- immediate repositioning while maintaining pressure
+- defensive recovery through shields, parries, or guarded follow-through
+- changing targets without losing the attack sequence
+- longer movement carried by the successful strike
+- reduced multiple attack penalty for one follow-up
+- temporary protection from the target's reactions
+- occupying space vacated by a retreating target
+- immediate Feint, Demoralize, Grapple, or Trip attempts
+- resistance to retaliatory Shove, Reposition, or Trip attempts
+
+### Not Included
+
+- benefits for allies; those belong to **Martial Openings**
+- additional damage or damage-type-specific injuries
+- spell attacks
+- ranged attacks, including thrown ranged attacks; critical ranged hits are reserved for a separate future extension
+- permanent equipment changes
+
+### Boundary
+
+**Combat Momentum** changes what the attacker can do because the attacker has seized the rhythm of melee combat. **Martial Openings** changes what allies can do because the target's defense has been disrupted. Arsenal remains responsible for injury and damage-type-specific consequences.
+
+The first block is manually resolved because its effects rely on one-use timing, immediate free actions, action sequencing, source-specific reaction denial, target switching, and movement into vacated spaces.

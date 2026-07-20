@@ -12,6 +12,10 @@
       "MartialOpenings": {
         "Title": "Martial Openings",
         "Description": "Critical hits with non-spell Strikes that create tactical openings for allies rather than additional injuries. Includes weapon, unarmed, and natural attacks."
+      },
+      "CombatMomentum": {
+        "Title": "Combat Momentum",
+        "Description": "Critical hits with non-spell melee Strikes that turn success into personal movement, readiness, control, and follow-through. Includes melee weapon, unarmed, and natural attacks."
       }
     },
     "Settings": {
@@ -26,6 +30,10 @@
       "MartialOpenings": {
         "Name": "Enable Martial Openings",
         "Hint": "Adds critical-hit cards that create tactical opportunities for allies after non-spell weapon, unarmed, and natural Strikes."
+      },
+      "CombatMomentum": {
+        "Name": "Enable Combat Momentum",
+        "Hint": "Adds critical-hit cards that benefit the attacker after non-spell melee weapon, unarmed, and natural Strikes."
       }
     },
     "Notifications": {
@@ -392,6 +400,46 @@
       "SeizeTheMoment": {
         "Title": "Seize the Moment",
         "Description": "Choose one ally other than you that can perceive the target. That ally may immediately attempt to Feint or Demoralize the target, or Seek for it, as a free action, following the normal rules for the chosen action."
+      },
+      "PressTheAdvantage": {
+        "Title": "Press the Advantage",
+        "Description": "The hit gives you exactly the space you need. You may immediately Step as a free action. You must end adjacent to the target."
+      },
+      "GuardOnTheReturn": {
+        "Title": "Guard on the Return",
+        "Description": "Your attack returns to guard almost by itself. You may immediately Raise a Shield or use a single action granted by a parry trait as a free action. If neither option would improve your defense, the next attack the target makes against you before the start of your next turn takes a -1 circumstance penalty. The penalty is then consumed."
+      },
+      "NextInLine": {
+        "Title": "Next in Line",
+        "Description": "Choose a different enemy you can perceive. If your next action this turn is a melee Strike against that enemy, you may Step once immediately before the Strike as part of the same action. You must end with that enemy in reach; otherwise, you cannot use this Step."
+      },
+      "LongerStride": {
+        "Title": "Longer Stride",
+        "Description": "The successful attack carries your movement forward. The next time you Stride before the start of your next turn, you may move 5 feet farther than your Speed. The benefit is then consumed."
+      },
+      "RhythmCarries": {
+        "Title": "Rhythm Carries",
+        "Description": "The critical hit locks your next attack into the same rhythm. For your next melee Strike before the end of this turn, reduce your multiple attack penalty by 2. This cannot reduce the penalty below 0, and the benefit is then consumed."
+      },
+      "NoTimeToAnswer": {
+        "Title": "No Time to Answer",
+        "Description": "The target is still reacting to the impact when you move again. It cannot use reactions triggered by your next action before the start of your next turn. The benefit is consumed when that action begins."
+      },
+      "ClaimTheGap": {
+        "Title": "Claim the Gap",
+        "Description": "Until the start of your next turn, you gain a one-use triggered free action. Trigger: the target leaves its current space during an action with the move trait, and that space is vacant after the movement. Effect: after the target's movement ends, you Step into the space it left. You must be able to reach that space with a Step."
+      },
+      "ApparentlyImpressive": {
+        "Title": "Apparently, That Was Impressive",
+        "Description": "Whether by skill or theatrical accident, the target is paying attention now. You may immediately attempt to Feint or Demoralize the target as a free action, following the normal rules for the chosen action."
+      },
+      "KeepThemThere": {
+        "Title": "Keep Them There",
+        "Description": "The hit leaves the target open to immediate control. You may immediately attempt to Grapple or Trip the target as a free action, applying your current multiple attack penalty and following the normal requirements for the chosen action."
+      },
+      "UnshakenStance": {
+        "Title": "Unshaken Stance",
+        "Description": "Your success settles your stance against retaliation. Before the start of your next turn, the first check made to Shove, Reposition, or Trip you takes a -2 circumstance penalty. The penalty is then consumed."
       }
     },
     "Effects": {
