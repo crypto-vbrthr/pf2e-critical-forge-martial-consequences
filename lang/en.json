@@ -440,6 +440,46 @@
       "UnshakenStance": {
         "Title": "Unshaken Stance",
         "Description": "Your success settles your stance against retaliation. Before the start of your next turn, the first check made to Shove, Reposition, or Trip you takes a -2 circumstance penalty. The penalty is then consumed."
+      },
+      "PivotPoint": {
+        "Title": "Pivot Point",
+        "Description": "The target's guard becomes your fulcrum. You may immediately move up to 10 feet through spaces adjacent to the target, ending adjacent to it. This special movement does not trigger reactions from the target, but it cannot pass through occupied or otherwise impassable spaces."
+      },
+      "HandsStillMoving": {
+        "Title": "Hands Still Moving",
+        "Description": "Without breaking rhythm, you may immediately Interact as a free action to draw or stow one worn item, pick up one unattended item within reach, or change your grip on an item you hold. This cannot be used to Reload or activate an item."
+      },
+      "HardToIgnore": {
+        "Title": "Hard to Ignore",
+        "Description": "Until the start of your next turn, the target takes a -1 circumstance penalty to its next Strike against a creature other than you. The penalty is consumed when applied."
+      },
+      "FearCanWait": {
+        "Title": "Fear Can Wait",
+        "Description": "Reduce your frightened value by 1. If you are not frightened, you instead gain a +1 circumstance bonus to your next Will save before the start of your next turn. The bonus is then consumed."
+      },
+      "CutTheCorner": {
+        "Title": "Cut the Corner",
+        "Description": "The next time you Stride before the start of your next turn, ignore up to 10 feet of difficult terrain during that movement. The benefit is then consumed and does not let you cross greater difficult terrain or impassable spaces."
+      },
+      "CenterOfTheFight": {
+        "Title": "Center of the Fight",
+        "Description": "Until the start of your next turn, you are not off-guard from flanking if the target is one of the creatures flanking you. Other sources of off-guard affect you normally."
+      },
+      "LetThemSwing": {
+        "Title": "Let Them Swing",
+        "Description": "Until the start of your next turn, you gain a one-use reaction. Trigger: the target makes a melee Strike against you and misses. Effect: after the Strike resolves, you Step. The reaction is then expended."
+      },
+      "AdrenalineDividend": {
+        "Title": "Adrenaline Dividend",
+        "Description": "Apparently, success pays interest. Gain temporary Hit Points equal to half your level, rounded up, with a minimum of 1. They last until the end of your next turn."
+      },
+      "ThroughTheGap": {
+        "Title": "Through the Gap",
+        "Description": "Your next attempt to Tumble Through the target before the end of your next turn gains a +2 circumstance bonus. If you succeed, the target cannot use reactions triggered by that movement. The benefit is consumed when you attempt the check."
+      },
+      "LongFollowThrough": {
+        "Title": "Long Follow-Through",
+        "Description": "Before the end of your next turn, you may increase your reach by 5 feet for one melee Strike. The benefit is consumed when you declare the increased reach, even if the Strike fails, and it does not stack with another temporary increase to your reach."
       }
     },
     "Effects": {

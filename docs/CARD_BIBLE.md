@@ -244,11 +244,26 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | CM-009 | Keep Them There | Strong | Manual | Source immediately Grapples or Trips at current MAP |
 | CM-010 | Unshaken Stance | Moderate | Manual | First retaliatory Shove, Reposition, or Trip takes -2 |
 
+## Combat Momentum — Block 2
+
+| ID | Card | Impact | Automation | Core Idea |
+|---|---|---|---|---|
+| CM-011 | Pivot Point | Moderate | Manual | Source circles the target with protected special movement |
+| CM-012 | Hands Still Moving | Light | Manual | Source draws, stows, picks up, or regrips an item for free |
+| CM-013 | Hard to Ignore | Moderate | Manual | Target's next Strike against someone else takes -1 |
+| CM-014 | Fear Can Wait | Moderate | Manual | Source reduces frightened or gains a one-use Will bonus |
+| CM-015 | Cut the Corner | Light | Manual | Source ignores 10 feet of difficult terrain on its next Stride |
+| CM-016 | Center of the Fight | Moderate | Manual | Target cannot help flank the source for one round |
+| CM-017 | Let Them Swing | Moderate | Manual | Source Steps after the target misses with a melee Strike |
+| CM-018 | Adrenaline Dividend | Moderate | Manual | Source gains short-lived temporary Hit Points based on level |
+| CM-019 | Through the Gap | Moderate | Manual | Source gains +2 and reaction protection for one Tumble Through |
+| CM-020 | Long Follow-Through | Strong | Manual | Source increases reach by 5 feet for one melee Strike |
+
 ### Development Status
 
-- 10 of 30 planned cards implemented.
-- All ten cards require non-spell melee attacks.
+- 20 of 30 planned cards implemented.
+- All twenty cards require non-spell melee attacks.
 - Melee weapon, unarmed, and natural attacks are supported.
-- All first-block cards benefit the attacker rather than allies.
-- All first-block cards use manual tactical resolution.
+- Both blocks benefit the attacker rather than allies.
+- All Combat Momentum cards currently use manual tactical resolution.
 - Full mechanical review is scheduled after CM-030.

@@ -25,7 +25,7 @@ const { MARTIAL_PACK_IDS } = await import(
 );
 
 assert.equal(manifest.id, "pf2e-critical-forge-martial-consequences");
-assert.equal(manifest.version, "0.4.0");
+assert.equal(manifest.version, "0.4.1");
 assert.equal(manifest.compatibility.minimum, "14");
 assert.ok(manifest.esmodules.includes("scripts/main.js"));
 assert.ok(manifest.relationships?.requires?.some((entry) => entry.id === "pf2e-critical-forge"));
@@ -59,14 +59,14 @@ assert.equal(momentumOnly[3].enabled, true);
 assert.equal(disabled[0].cards.length, 30);
 assert.equal(disabled[1].cards.length, 30);
 assert.equal(disabled[2].cards.length, 30);
-assert.equal(disabled[3].cards.length, 10);
+assert.equal(disabled[3].cards.length, 20);
 
 const ids = new Set();
 let automated = 0;
 let manual = 0;
 for (const [packIndex, pack] of disabled.entries()) {
   assert.equal(pack.schemaVersion, 1);
-  assert.equal(pack.version, "0.4.0");
+  assert.equal(pack.version, "0.4.1");
   const expectedCategory = packIndex >= 2 ? "criticalHit" : "criticalFumble";
   for (const dictionary of [de, en]) {
     assert.ok(getLocalization(dictionary, pack.titleKey), pack.titleKey);
@@ -100,7 +100,7 @@ for (const [packIndex, pack] of disabled.entries()) {
   }
 }
 
-assert.equal(ids.size, 100);
+assert.equal(ids.size, 110);
 
 const martialCards = disabled[0].cards;
 const martialById = new Map(martialCards.map((card) => [card.id.split(".").at(-1), card]));
@@ -265,7 +265,7 @@ assert.equal(openingById.get("mo-030-seize-the-moment").impact, "strong");
 
 const momentumCards = disabled[3].cards;
 const momentumById = new Map(momentumCards.map((card) => [card.id.split(".").at(-1), card]));
-assert.equal(momentumCards.length, 10);
+assert.equal(momentumCards.length, 20);
 for (const card of momentumCards) {
   assert.equal(card.category, "criticalHit");
   assert.deepEqual(card.filters.attackTraits, ["melee"]);
@@ -286,9 +286,22 @@ assert.ok(momentumById.get("cm-007-claim-the-gap").tags.includes("space-control"
 assert.ok(momentumById.get("cm-008-apparently-impressive").tags.includes("demoralize"));
 assert.equal(momentumById.get("cm-009-keep-them-there").impact, "strong");
 assert.ok(momentumById.get("cm-010-unshaken-stance").tags.includes("athletics"));
+assert.ok(momentumById.get("cm-011-pivot-point").tags.includes("special-movement"));
+assert.equal(momentumById.get("cm-012-hands-still-moving").weight, 2);
+assert.ok(momentumById.get("cm-012-hands-still-moving").tags.includes("interact"));
+assert.ok(momentumById.get("cm-013-hard-to-ignore").tags.includes("mark"));
+assert.ok(momentumById.get("cm-014-fear-can-wait").tags.includes("frightened"));
+assert.equal(momentumById.get("cm-015-cut-the-corner").impact, "light");
+assert.ok(momentumById.get("cm-015-cut-the-corner").tags.includes("difficult-terrain"));
+assert.ok(momentumById.get("cm-016-center-of-the-fight").tags.includes("flanking"));
+assert.ok(momentumById.get("cm-017-let-them-swing").tags.includes("target-miss"));
+assert.ok(momentumById.get("cm-018-adrenaline-dividend").tags.includes("temporary-hit-points"));
+assert.ok(momentumById.get("cm-019-through-the-gap").tags.includes("tumble-through"));
+assert.equal(momentumById.get("cm-020-long-follow-through").impact, "strong");
+assert.ok(momentumById.get("cm-020-long-follow-through").tags.includes("reach"));
 
 assert.equal(automated, 4);
-assert.equal(manual, 96);
+assert.equal(manual, 106);
 
 const settingsScript = await readFile(path.join(root, "scripts/settings.js"), "utf8");
 assert.match(settingsScript, /game\.settings\.register/);
@@ -302,4 +315,4 @@ assert.match(mainScript, /pf2eCriticalForgeReady/);
 assert.match(mainScript, /registerPacks/);
 assert.match(mainScript, /replace: true/);
 
-console.log("PF2E Critical Forge: Martial Consequences 0.4.0 structural validation passed.");
+console.log("PF2E Critical Forge: Martial Consequences 0.4.1 structural validation passed.");

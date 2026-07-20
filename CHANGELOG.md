@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.1
+
+- Added Combat Momentum CM-011 through CM-020.
+- Expanded Combat Momentum to 20 cards and the module to 110 cards across four optional packs.
+- Added attacker-focused momentum involving protected movement around the target, free item handling, drawing enemy attention, fear recovery, difficult-terrain efficiency, anti-flanking defense, reactive Steps, temporary Hit Points, improved Tumble Through, and temporary extended reach.
+- Preserved support for melee weapon, unarmed, and natural attacks while excluding spell and ranged attacks.
+- Kept all second-block Combat Momentum cards manually resolved so special movement, source-specific one-use penalties, actor-level scaling, reaction windows, and temporary reach remain precise at the table.
+- Expanded German and English localization.
+- Updated the Card Bible, pack documentation, README, and validation tests.
+
 ## 0.4.0
 
 - Added the optional Combat Momentum card pack.

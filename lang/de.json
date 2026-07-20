@@ -440,6 +440,46 @@
       "UnshakenStance": {
         "Title": "Unerschütterlicher Stand",
         "Description": "Dein Erfolg festigt deinen Stand gegen den Gegenschlag. Der erste Versuch vor Beginn deines nächsten Zuges, dich zu stoßen, fortzubewegen oder zu Fall zu bringen, erhält einen Umstandsmalus von -2. Danach ist der Malus verbraucht."
+      },
+      "PivotPoint": {
+        "Title": "Drehpunkt",
+        "Description": "Die Deckung des Ziels wird zu deinem Drehpunkt. Du darfst dich sofort bis zu 3 Meter weit durch Felder bewegen, die an das Ziel angrenzen, und musst die Bewegung angrenzend an das Ziel beenden. Diese besondere Bewegung löst beim Ziel keine Reaktionen aus, kann aber keine besetzten oder anderweitig unpassierbaren Felder durchqueren."
+      },
+      "HandsStillMoving": {
+        "Title": "Hände in Bewegung",
+        "Description": "Ohne deinen Rhythmus zu unterbrechen, darfst du sofort als freie Aktion Interagieren, um einen getragenen Gegenstand zu ziehen oder wegzustecken, einen unbeaufsichtigten Gegenstand in Reichweite aufzuheben oder deinen Griff an einem gehaltenen Gegenstand zu ändern. Dies kann nicht zum Nachladen oder Aktivieren eines Gegenstands verwendet werden."
+      },
+      "HardToIgnore": {
+        "Title": "Schwer zu ignorieren",
+        "Description": "Bis zum Beginn deines nächsten Zuges erhält das Ziel einen Umstandsmalus von -1 auf seinen nächsten Angriff gegen eine andere Kreatur als dich. Der Malus wird verbraucht, sobald er angewendet wird."
+      },
+      "FearCanWait": {
+        "Title": "Die Angst kann warten",
+        "Description": "Reduziere deinen Wert für Verängstigt um 1. Bist du nicht verängstigt, erhältst du stattdessen einen Umstandsbonus von +1 auf deinen nächsten Willensrettungswurf vor Beginn deines nächsten Zuges. Danach ist der Bonus verbraucht."
+      },
+      "CutTheCorner": {
+        "Title": "Die Kurve schneiden",
+        "Description": "Wenn du dich vor Beginn deines nächsten Zuges das nächste Mal fortbewegst, ignorierst du während dieser Bewegung bis zu 3 Meter schwieriges Gelände. Danach ist der Vorteil verbraucht. Er erlaubt dir nicht, besonders schwieriges Gelände oder unpassierbare Felder zu durchqueren."
+      },
+      "CenterOfTheFight": {
+        "Title": "Im Zentrum des Kampfes",
+        "Description": "Bis zum Beginn deines nächsten Zuges bist du durch In-die-Zange-Nehmen nicht auf dem falschen Fuß, wenn das Ziel eine der Kreaturen ist, die dich in die Zange nehmen. Andere Quellen von Auf dem falschen Fuß wirken normal auf dich."
+      },
+      "LetThemSwing": {
+        "Title": "Lass sie zuschlagen",
+        "Description": "Bis zum Beginn deines nächsten Zuges erhältst du eine einmalig nutzbare Reaktion. Auslöser: Das Ziel führt einen Nahkampfangriff gegen dich aus und verfehlt. Effekt: Nachdem der Angriff abgewickelt wurde, führst du einen Schritt aus. Danach ist die Reaktion verbraucht."
+      },
+      "AdrenalineDividend": {
+        "Title": "Adrenalinrendite",
+        "Description": "Offenbar zahlt sich Erfolg mit Zinsen aus. Du erhältst temporäre Trefferpunkte in Höhe deiner halben Stufe, aufgerundet, mindestens jedoch 1. Sie halten bis zum Ende deines nächsten Zuges an."
+      },
+      "ThroughTheGap": {
+        "Title": "Durch die Lücke",
+        "Description": "Dein nächster Versuch vor Ende deines nächsten Zuges, durch das Ziel hindurchzuturnen, erhält einen Umstandsbonus von +2. Bei einem Erfolg kann das Ziel keine Reaktionen einsetzen, die durch diese Bewegung ausgelöst werden. Der Vorteil wird verbraucht, sobald du den Wurf versuchst."
+      },
+      "LongFollowThrough": {
+        "Title": "Weites Nachsetzen",
+        "Description": "Vor Ende deines nächsten Zuges darfst du deine Reichweite für einen Nahkampfangriff um 1,5 Meter erhöhen. Der Vorteil wird verbraucht, sobald du die erhöhte Reichweite ankündigst, selbst wenn der Angriff misslingt. Er ist nicht mit einer anderen vorübergehenden Erhöhung deiner Reichweite kumulativ."
       }
     },
     "Effects": {
