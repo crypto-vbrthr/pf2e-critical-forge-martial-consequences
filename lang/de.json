@@ -407,23 +407,23 @@
       },
       "GuardOnTheReturn": {
         "Title": "Deckung im Rücklauf",
-        "Description": "Dein Angriff findet beinahe von selbst in die Deckung zurück. Du darfst sofort als freie Aktion einen Schild heben oder eine einzelne Aktion verwenden, die dir durch die Eigenschaft Parade gewährt wird. Würde keine der beiden Möglichkeiten deine Verteidigung verbessern, erhält der nächste Angriff des Ziels gegen dich vor Beginn deines nächsten Zuges einen Umstandsmalus von -1. Danach ist der Malus verbraucht."
+        "Description": "Deine Rückbewegung schließt jeden offensichtlichen Winkel. Beim nächsten Angriff des Ziels gegen dich vor dem Ende deines nächsten Zuges werden Umstandsboni auf seinen Angriffswurf und Umstandsmali auf deine RK ignoriert. Andere Modifikatoren gelten normal. Der Vorteil wird verbraucht, sobald dieser Angriff abgewickelt ist."
       },
       "NextInLine": {
         "Title": "Der Nächste bitte",
-        "Description": "Wähle einen anderen Gegner, den du wahrnehmen kannst. Ist deine nächste Aktion in diesem Zug ein Nahkampfangriff gegen diesen Gegner, darfst du unmittelbar vor dem Angriff als Teil derselben Aktion einen Schritt ausführen. Du musst den Gegner danach in Reichweite haben; andernfalls kannst du diesen Schritt nicht nutzen."
+        "Description": "Führst du vor dem Ende deines nächsten Zuges einen Nahkampfangriff gegen eine andere Kreatur als das Ziel aus, darfst du unmittelbar vor dem Angriff als Teil derselben Aktion einen Schritt ausführen. Du musst die Kreatur danach in Reichweite haben. Der Vorteil wird nur verbraucht, wenn du den Schritt nutzt."
       },
       "LongerStride": {
         "Title": "Längerer Schritt",
-        "Description": "Der erfolgreiche Angriff trägt deine Bewegung weiter. Wenn du dich vor Beginn deines nächsten Zuges das nächste Mal fortbewegst, darfst du dich 1,5 Meter weiter als deine Bewegungsrate bewegen. Danach ist der Vorteil verbraucht."
+        "Description": "Der erfolgreiche Angriff trägt deine Bewegung weiter. Wenn du das nächste Mal vor dem Ende deines nächsten Zuges läufst, darfst du dich 1,5 Meter weiter als deine Bewegungsrate bewegen. Danach ist der Vorteil verbraucht."
       },
       "RhythmCarries": {
         "Title": "Getragener Rhythmus",
-        "Description": "Der kritische Treffer bindet deinen nächsten Angriff in denselben Rhythmus ein. Reduziere bei deinem nächsten Nahkampfangriff vor Ende dieses Zuges deinen Mehrfachangriffsmalus um 2. Dadurch kann der Malus nicht unter 0 sinken. Danach ist der Vorteil verbraucht."
+        "Description": "Bei deinem nächsten Nahkampfangriff vor dem Ende deines nächsten Zuges, auf den ein Malus für Mehrfachangriffe angewendet würde, reduzierst du diesen Malus um 2. Dadurch kann der Malus nicht unter 0 sinken. Der Vorteil wird nur verbraucht, wenn er den Malus tatsächlich reduziert."
       },
       "NoTimeToAnswer": {
         "Title": "Keine Zeit zur Antwort",
-        "Description": "Das Ziel verarbeitet den Einschlag noch, als du bereits weitermachst. Es kann keine Reaktionen einsetzen, die durch deine nächste Aktion vor Beginn deines nächsten Zuges ausgelöst würden. Der Vorteil wird verbraucht, sobald diese Aktion beginnt."
+        "Description": "Beginnst du vor dem Ende deines nächsten Zuges eine Aktion, die eine Reaktion des Ziels auslösen könnte, darfst du diese Aktion als geschützt bestimmen. Das Ziel kann keine Reaktionen einsetzen, die durch diese Aktion ausgelöst werden. Der Vorteil wird nur verbraucht, wenn du eine geschützte Aktion bestimmst."
       },
       "ClaimTheGap": {
         "Title": "Die Lücke besetzen",
@@ -447,7 +447,7 @@
       },
       "HandsStillMoving": {
         "Title": "Hände in Bewegung",
-        "Description": "Ohne deinen Rhythmus zu unterbrechen, darfst du sofort als freie Aktion Interagieren, um einen getragenen Gegenstand zu ziehen oder wegzustecken, einen unbeaufsichtigten Gegenstand in Reichweite aufzuheben oder deinen Griff an einem gehaltenen Gegenstand zu ändern. Dies kann nicht zum Nachladen oder Aktivieren eines Gegenstands verwendet werden."
+        "Description": "Vor dem Ende deines nächsten Zuges darfst du einmal Ergreifen, Fortbewegen, Stoßen oder Zu Fall bringen gegen das Ziel versuchen, ohne eine freie Hand oder eine Waffe mit der entsprechenden Eigenschaft zu benötigen. Du musst das Ziel weiterhin erreichen und beeinflussen können; dein Malus für Mehrfachangriffe und alle anderen Voraussetzungen gelten normal. Der Vorteil wird verbraucht, wenn du den Wurf versuchst."
       },
       "HardToIgnore": {
         "Title": "Schwer zu ignorieren",
@@ -455,15 +455,15 @@
       },
       "FearCanWait": {
         "Title": "Die Angst kann warten",
-        "Description": "Reduziere deinen Wert für Verängstigt um 1. Bist du nicht verängstigt, erhältst du stattdessen einen Umstandsbonus von +1 auf deinen nächsten Willensrettungswurf vor Beginn deines nächsten Zuges. Danach ist der Bonus verbraucht."
+        "Description": "Reduziere deinen Wert für Verängstigt um 1. Bist du nicht verängstigt, erhältst du stattdessen einen Umstandsbonus von +1 auf deinen nächsten Willensrettungswurf vor dem Ende deines nächsten Zuges. Danach ist der Bonus verbraucht."
       },
       "CutTheCorner": {
         "Title": "Die Kurve schneiden",
-        "Description": "Wenn du dich vor Beginn deines nächsten Zuges das nächste Mal fortbewegst, ignorierst du während dieser Bewegung bis zu 3 Meter schwieriges Gelände. Danach ist der Vorteil verbraucht. Er erlaubt dir nicht, besonders schwieriges Gelände oder unpassierbare Felder zu durchqueren."
+        "Description": "Wenn du das nächste Mal vor dem Ende deines nächsten Zuges läufst, ignorierst du während dieser Bewegung bis zu 3 Meter schwieriges Gelände. Danach ist der Vorteil verbraucht. Er erlaubt dir nicht, besonders schwieriges Gelände oder unpassierbare Felder zu überqueren."
       },
       "CenterOfTheFight": {
         "Title": "Im Zentrum des Kampfes",
-        "Description": "Bis zum Beginn deines nächsten Zuges bist du durch In-die-Zange-Nehmen nicht auf dem falschen Fuß, wenn das Ziel eine der Kreaturen ist, die dich in die Zange nehmen. Andere Quellen von Auf dem falschen Fuß wirken normal auf dich."
+        "Description": "Bis zum Beginn deines nächsten Zuges gelten Felder innerhalb deiner Nahkampfreichweite für das Ziel als schwieriges Gelände, wenn es sich freiwillig bewegt. Dies betrifft weder erzwungene Bewegung noch Teleportation und ist nicht mit anderem schwierigen Gelände kumulativ."
       },
       "LetThemSwing": {
         "Title": "Lass sie zuschlagen",
@@ -471,11 +471,11 @@
       },
       "AdrenalineDividend": {
         "Title": "Adrenalinrendite",
-        "Description": "Offenbar zahlt sich Erfolg mit Zinsen aus. Du erhältst temporäre Trefferpunkte in Höhe deiner halben Stufe, aufgerundet, mindestens jedoch 1. Sie halten bis zum Ende deines nächsten Zuges an."
+        "Description": "Offenbar zahlt Erfolg Zinsen. Wenn du vor dem Ende deines nächsten Zuges das nächste Mal einen Athletik- oder Akrobatikwurf versuchst, der das Ziel betrifft oder gegen einen seiner SG gewürfelt wird, würfelst du zweimal und verwendest das höhere Ergebnis. Dies ist ein Glückseffekt; danach ist der Vorteil verbraucht."
       },
       "ThroughTheGap": {
         "Title": "Durch die Lücke",
-        "Description": "Dein nächster Versuch vor Ende deines nächsten Zuges, durch das Ziel hindurchzuturnen, erhält einen Umstandsbonus von +2. Bei einem Erfolg kann das Ziel keine Reaktionen einsetzen, die durch diese Bewegung ausgelöst werden. Der Vorteil wird verbraucht, sobald du den Wurf versuchst."
+        "Description": "Beginnst du vor dem Ende deines nächsten Zuges Hindurchturnen gegen das Ziel, erhältst du einen Umstandsbonus von +1 auf den Akrobatikwurf, und das Ziel kann keine Reaktionen einsetzen, die durch eine Bewegung dieser Aktion ausgelöst werden. Der Vorteil wird beim Beginn der Aktion verbraucht, unabhängig vom Ergebnis des Wurfs."
       },
       "LongFollowThrough": {
         "Title": "Weites Nachsetzen",
@@ -483,27 +483,27 @@
       },
       "BreakContact": {
         "Title": "Kontakt lösen",
-        "Description": "Der Treffer öffnet dir einen sauberen Rückzug. Du darfst sofort als Freie Aktion bis zur Hälfte deiner Bewegungsrate Laufen. Du musst die Bewegung weiter vom Ziel entfernt beenden, als du sie begonnen hast, und diese Bewegung löst beim Ziel keine Reaktionen aus."
+        "Description": "Der Treffer schafft einen sauberen Rückzugsweg. Du darfst sofort als freie Aktion bis zur Hälfte deiner Bewegungsrate laufen. Du musst weiter vom Ziel entfernt enden als zu Beginn, und diese Bewegung löst keine Reaktionen des Ziels aus."
       },
       "LivingBulwark": {
         "Title": "Lebendes Bollwerk",
-        "Description": "Bis zum Beginn deines nächsten Zuges gilt: Wenn erstmals eine andere Kreatur als das Ziel einen Fernkampfangriff gegen dich ausführt, während das Ziel zwischen euch steht, behandelst du geringe Deckung, die dir das Ziel gewährt, für diesen Angriff als normale Deckung. Danach ist der Vorteil verbraucht."
+        "Description": "Bis zum Ende deines nächsten Zuges erhältst du gegen den ersten Fernkampfangriff einer anderen Kreatur als des Ziels einen Umstandsbonus auf deine RK von +2, wenn sich das Ziel zwischen dir und dem Angreifer befindet, andernfalls einen Umstandsbonus von +1. Der Vorteil wird verbraucht, sobald dieser Angriff abgewickelt ist."
       },
       "FormFindsYou": {
         "Title": "Die Form findet dich",
-        "Description": "Dein Körper findet in eine eingeübte Form, ohne den Rhythmus zu verlieren. Du darfst sofort als Freie Aktion eine dir bekannte Haltung einnehmen, sofern du ihre Voraussetzungen erfüllst. Hast du keine geeignete Haltung oder befindest dich bereits in der gewünschten Haltung, darfst du stattdessen sofort einen Schritt ausführen."
+        "Description": "Dein Körper findet in die eingeübte Form, ohne den Rhythmus zu verlieren. Du darfst sofort als freie Aktion eine dir bekannte Haltung einnehmen, jedoch nur, wenn du sie nach allen normalen Haltungsregeln legal einnehmen kannst, einschließlich möglicher Beschränkungen beim Wechseln der Haltung. Hast du keine geeignete Haltung oder befindest dich bereits in der gewünschten Haltung, darfst du stattdessen sofort einen Schritt ausführen."
       },
       "MomentumToSpare": {
         "Title": "Schwung im Überfluss",
-        "Description": "Du erhältst eine zusätzliche Reaktion, die bis zum Beginn deines nächsten Zuges anhält. Du kannst diese Reaktion nur für eine Reaktion einsetzen, deren Auslöser durch eine Aktion oder Aktivität des Ziels verursacht wird. Sie erlaubt dir nicht, dieselbe Reaktion für einen einzelnen Auslöser mehr als einmal einzusetzen."
+        "Description": "Du erhältst eine zusätzliche Reaktion, die bis zum Beginn deines nächsten Zuges anhält. Du kannst sie nur für eine Reaktion verwenden, deren Auslöser durch eine Aktion oder Aktivität des Ziels verursacht wird. Alle normalen Auslöser, Voraussetzungen, Einschränkungen und Häufigkeitsbegrenzungen dieser Reaktion gelten weiterhin; außerdem erlaubt dies nicht, dieselbe Reaktion bei einem einzelnen Auslöser mehr als einmal einzusetzen."
       },
       "BreakTheBind": {
         "Title": "Fessel brechen",
-        "Description": "Bist du gepackt, festgesetzt oder bewegungsunfähig, darfst du sofort als Freie Aktion nach den normalen Regeln versuchen, einem dieser Effekte zu Entkommen. Trifft keiner dieser Zustände zu, erhält dein nächster Versuch zu Entkommen vor Ende deines nächsten Zuges einen Umstandsbonus von +2. Danach ist der Bonus verbraucht."
+        "Description": "Bist du ergriffen oder bewegungsunfähig, darfst du sofort als freie Aktion nach den normalen Regeln versuchen, einem dieser Effekte zu entkommen. Trifft keiner der beiden Zustände zu, darfst du stattdessen sofort einen Schritt ausführen und musst nach Möglichkeit weiter vom Ziel entfernt enden."
       },
       "CloseQuartersClarity": {
         "Title": "Klarheit auf Armlänge",
-        "Description": "Auf diese Entfernung werden die Gewohnheiten des Ziels plötzlich offensichtlich. Du darfst sofort als Freie Aktion in einem Bereich, der das Ziel einschließt, Suchen oder Wissen über das Ziel abrufen; dabei gelten die normalen Regeln für die gewählte Aktion."
+        "Description": "Bis zum Beginn deines nächsten Zuges kann der erste Schritt, den das Ziel innerhalb deiner Nahkampfreichweite ausführt, deine Reaktionen auslösen, als hätte es eine andere Bewegungsaktion als Schritt verwendet. Dies gewährt dir keine zusätzliche Reaktion und hebt keine normalen Voraussetzungen auf. Der Vorteil wird verbraucht, sobald das Ziel den Schritt ausführt, unabhängig davon, ob du reagierst."
       },
       "TurnTheTables": {
         "Title": "Den Spieß umdrehen",
@@ -519,7 +519,7 @@
       },
       "MomentumUnspent": {
         "Title": "Ungenutzter Schwung",
-        "Description": "Nachdem der Schaden des auslösenden Angriffs abgewickelt wurde, darfst du sofort als Freie Aktion einen Nahkampfangriff gegen eine andere Kreatur in deiner Reichweite ausführen. Wende deinen Mehrfachangriffsmalus so an, als wäre dies dein nächster Angriff des Zuges. Dieser Angriff kann keine weitere Critical-Forge-Karte auslösen. Befindet sich keine andere Kreatur in Reichweite, darfst du stattdessen sofort einen Schritt ausführen."
+        "Description": "Nachdem der Schaden des auslösenden Angriffs abgewickelt wurde, darfst du sofort als freie Aktion einen Nahkampfangriff gegen eine andere Kreatur in deiner Reichweite ausführen. Fand der auslösende Angriff während deines Zuges statt, wendest du deinen Malus für Mehrfachangriffe an, als wäre dies dein nächster Angriff in diesem Zug. Fand er außerhalb deines Zuges statt, gilt für den Folgeangriff ein Malus für Mehrfachangriffe von -5 beziehungsweise -4 bei einem Angriff mit der Eigenschaft Agil. Dieser Angriff kann keine weitere Critical-Forge-Karte auslösen. Befindet sich keine andere Kreatur in Reichweite, darfst du stattdessen sofort einen Schritt ausführen."
       }
     },
     "Effects": {

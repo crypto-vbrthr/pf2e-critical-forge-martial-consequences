@@ -153,7 +153,7 @@ The version 0.3.3 mechanical review redesigned five cards to reduce repeated Ste
 
 - 30 of 30 planned cards
 - Blocks CM-001 through CM-030 implemented
-- Full mechanical review pending
+- Full mechanical review completed in 0.4.3
 
 ### Purpose
 
@@ -173,24 +173,25 @@ filters: {
 ### Typical Effects
 
 - immediate repositioning while maintaining pressure
-- defensive recovery through shields, parries, or guarded follow-through
+- target-specific defensive neutralization and guarded follow-through
 - changing targets without losing the attack sequence
 - longer movement carried by the successful strike
-- reduced multiple attack penalty for one follow-up
+- conditional multiple-attack-penalty relief for one follow-up
 - temporary protection from the target's reactions
 - occupying space vacated by a retreating target
 - immediate Feint, Demoralize, Grapple, or Trip attempts
+- one-use combat maneuvers without a free-hand requirement
 - resistance to retaliatory Shove, Reposition, or Trip attempts
 - special movement around the target and through difficult terrain
-- item handling without losing the attack rhythm
+- controlling spaces within melee reach
 - drawing enemy attention away from allies
-- fear recovery, anti-flanking defense, and temporary Hit Points
+- fear recovery and target-specific fortune on Athletics or Acrobatics
 - reactive movement after a missed counterattack
-- improved Tumble Through and one-use extended reach
-- protected withdrawals and using the target as cover
-- free stance entry and target-specific reaction economy
-- Escape opportunities, close-range observation, and counter-maneuvers
-- pursuit of hidden targets, victory-driven intimidation, and chained follow-up Strikes
+- protected Tumble Through and one-use extended reach
+- protected withdrawals and target-positioned ranged defense
+- legal stance entry and target-specific reaction economy
+- immediate Escape, Step fallbacks, and counter-maneuvers
+- Step-triggered reaction windows, pursuit of hidden targets, victory-driven intimidation, and bounded follow-up Strikes
 
 ### Not Included
 
@@ -204,4 +205,7 @@ filters: {
 
 **Combat Momentum** changes what the attacker can do because the attacker has seized the rhythm of melee combat. **Martial Openings** changes what allies can do because the target's defense has been disrupted. Arsenal remains responsible for injury and damage-type-specific consequences.
 
-All three blocks are manually resolved because their effects rely on one-use timing, immediate free actions, special movement, action sequencing, source-specific penalties, temporary Hit Points based on actor level, reaction windows, target switching, temporary reach changes, stance entry, extra reactions, counter-maneuvers, conditional defeat triggers, and follow-up Strikes.
+All three blocks are manually resolved because their effects rely on one-use timing, immediate free actions, special movement, action sequencing, source-specific modifiers, fortune effects, reaction windows, target switching, temporary reach changes, stance entry, extra reactions, counter-maneuvers, conditional defeat triggers, and bounded follow-up Strikes.
+
+
+The completed pack received a full mechanical review after reaching 30 cards. Version 0.4.3 replaced direct self-targeted mirrors of Martial Openings, a Core-style temporary-Hit-Point reward, retroactive Tumble Through protection, and repeated Seek or Recall Knowledge options. Timing windows now support out-of-turn critical hits, one-use benefits consume only when they matter, and stance, reaction-frequency, Escape, and multiple-attack-penalty edge cases are explicit.

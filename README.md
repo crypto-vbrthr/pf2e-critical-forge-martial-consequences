@@ -4,7 +4,7 @@
 
 Martial Consequences is an extension module for **PF2E Critical Forge**. It adds card packs focused on stance, timing, positioning, openings, and battlefield momentum.
 
-## Version 0.4.2
+## Version 0.4.3
 
 The current release contains four optional packs:
 
@@ -36,7 +36,7 @@ Then enable the desired card packs in the module settings. Each pack can be acti
 
 ## Automation
 
-Four Martial Attack Fumbles create applicable Critical Forge effects. The remaining 26 Martial Attack Fumbles, all 30 Ranged Mishaps, all 30 Martial Openings, and all 30 Combat Momentum cards describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, claimed spaces, extra reactions, temporary reaction restrictions, cover changes, visibility changes, range-increment changes, or action sequencing, actor-level temporary Hit Points, or temporary reach changes.
+Four Martial Attack Fumbles create applicable Critical Forge effects. The remaining 26 Martial Attack Fumbles, all 30 Ranged Mishaps, all 30 Martial Openings, and all 30 Combat Momentum cards describe tactical consequences that require manual resolution because the current Effect Engine does not model immediate movement, one-use or source-specific modifiers, action taxes, multiple-attack-penalty changes, claimed spaces, extra reactions, temporary reaction restrictions, cover changes, visibility changes, range-increment changes, or action sequencing, fortune effects, temporary reaction windows, stance entry, out-of-turn multiple-attack-penalty handling, or temporary reach changes.
 
 **Forced Reset** creates an automated effect that may be removed manually when the affected creature spends the action described by the card.
 
@@ -48,15 +48,15 @@ Four Martial Attack Fumbles create applicable Critical Forge effects. The remain
 
 **Martial Openings** completed its first full mechanical review in version 0.3.3. Five cards were redesigned to reduce repeated Step and fixed attack-bonus patterns, and nine cards received targeted rules, fallback, consumption, impact, or timing adjustments.
 
-**Combat Momentum** now contains its complete initial 30-card set. Its full mechanical review is the next planned development step.
+**Combat Momentum** completed its first full mechanical review in version 0.4.3. Six cards were redesigned to remove direct mirrors of Martial Openings and Core content, and twelve cards received timing, fallback, action-economy, stance, reaction, or out-of-turn corrections.
 
 ## Planned Packs
 
 - Martial Attack Fumbles — 30/30, mechanical review passed
 - Ranged Mishaps — 30/30, mechanical review passed
 - Martial Openings — 30/30, mechanical review passed
-- Combat Momentum — 30/30, mechanical review pending
+- Combat Momentum — 30/30, mechanical review passed
 
-Each completed pack is planned to contain 30 cards. After reaching 30 cards, each pack receives a dedicated review for redundant mechanics, overlapping themes, balance, and identity.
+Each completed pack contains 30 cards and has received a dedicated mechanical review for redundant mechanics, overlapping themes, balance, timing, and rules clarity. The next review stage can now examine identity, narrative consistency, localization, and module-wide statistics.
 
 See [docs/PACKS.md](docs/PACKS.md) and [docs/CARD_BIBLE.md](docs/CARD_BIBLE.md).

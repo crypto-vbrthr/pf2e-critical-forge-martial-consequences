@@ -2,7 +2,7 @@
   "id": "pf2e-critical-forge-martial-consequences",
   "title": "PF2E Critical Forge: Martial Consequences",
   "description": "Tactical card packs for PF2E Critical Forge that reshape the flow of martial combat.",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "authors": [
     {
       "name": "Bully"
@@ -45,5 +45,8 @@
     }
   ],
   "readme": "README.md",
-  "license": "LICENSE"
+  "license": "LICENSE",
+  "url": "https://github.com/crypto-vbrthr/pf2e-critical-forge-martial-consequences",
+  "manifest": "https://raw.githubusercontent.com/crypto-vbrthr/pf2e-critical-forge-martial-consequences/main/module.json",
+  "download": "https://github.com/crypto-vbrthr/pf2e-critical-forge-martial-consequences/releases/download/0.4.3/pf2e-critical-forge-martial-consequences.zip"
 }

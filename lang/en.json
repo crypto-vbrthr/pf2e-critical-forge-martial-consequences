@@ -407,23 +407,23 @@
       },
       "GuardOnTheReturn": {
         "Title": "Guard on the Return",
-        "Description": "Your attack returns to guard almost by itself. You may immediately Raise a Shield or use a single action granted by a parry trait as a free action. If neither option would improve your defense, the next attack the target makes against you before the start of your next turn takes a -1 circumstance penalty. The penalty is then consumed."
+        "Description": "Your follow-through closes every obvious angle. Before the end of your next turn, for the target's next Strike against you, ignore circumstance bonuses to its attack roll and circumstance penalties to your AC. Other modifiers apply normally. The benefit is consumed when that Strike resolves."
       },
       "NextInLine": {
         "Title": "Next in Line",
-        "Description": "Choose a different enemy you can perceive. If your next action this turn is a melee Strike against that enemy, you may Step once immediately before the Strike as part of the same action. You must end with that enemy in reach; otherwise, you cannot use this Step."
+        "Description": "Before the end of your next turn, when you make a melee Strike against a creature other than the target, you may Step immediately before the Strike as part of the same action. You must end with that creature in reach. The benefit is consumed only when you use the Step."
       },
       "LongerStride": {
         "Title": "Longer Stride",
-        "Description": "The successful attack carries your movement forward. The next time you Stride before the start of your next turn, you may move 5 feet farther than your Speed. The benefit is then consumed."
+        "Description": "The successful attack carries your movement forward. The next time you Stride before the end of your next turn, you may move 5 feet farther than your Speed. The benefit is then consumed."
       },
       "RhythmCarries": {
         "Title": "Rhythm Carries",
-        "Description": "The critical hit locks your next attack into the same rhythm. For your next melee Strike before the end of this turn, reduce your multiple attack penalty by 2. This cannot reduce the penalty below 0, and the benefit is then consumed."
+        "Description": "For your next melee Strike before the end of your next turn that would take a multiple attack penalty, reduce that penalty by 2. This cannot reduce the penalty below 0. The benefit is consumed only when it actually reduces the penalty."
       },
       "NoTimeToAnswer": {
         "Title": "No Time to Answer",
-        "Description": "The target is still reacting to the impact when you move again. It cannot use reactions triggered by your next action before the start of your next turn. The benefit is consumed when that action begins."
+        "Description": "Before the end of your next turn, when you begin an action that could trigger a reaction from the target, you may declare that action protected. The target cannot use reactions triggered by that action. The benefit is consumed only when you declare a protected action."
       },
       "ClaimTheGap": {
         "Title": "Claim the Gap",
@@ -447,7 +447,7 @@
       },
       "HandsStillMoving": {
         "Title": "Hands Still Moving",
-        "Description": "Without breaking rhythm, you may immediately Interact as a free action to draw or stow one worn item, pick up one unattended item within reach, or change your grip on an item you hold. This cannot be used to Reload or activate an item."
+        "Description": "Before the end of your next turn, you may attempt one Grapple, Reposition, Shove, or Trip against the target without needing a free hand or a weapon with the corresponding trait. You must still be able to reach and affect the target, and your multiple attack penalty and all other requirements apply. The benefit is consumed when you attempt the check."
       },
       "HardToIgnore": {
         "Title": "Hard to Ignore",
@@ -455,15 +455,15 @@
       },
       "FearCanWait": {
         "Title": "Fear Can Wait",
-        "Description": "Reduce your frightened value by 1. If you are not frightened, you instead gain a +1 circumstance bonus to your next Will save before the start of your next turn. The bonus is then consumed."
+        "Description": "Reduce your frightened value by 1. If you are not frightened, you instead gain a +1 circumstance bonus to your next Will save before the end of your next turn. The bonus is then consumed."
       },
       "CutTheCorner": {
         "Title": "Cut the Corner",
-        "Description": "The next time you Stride before the start of your next turn, ignore up to 10 feet of difficult terrain during that movement. The benefit is then consumed and does not let you cross greater difficult terrain or impassable spaces."
+        "Description": "The next time you Stride before the end of your next turn, ignore up to 10 feet of difficult terrain during that movement. The benefit is then consumed and does not let you cross greater difficult terrain or impassable spaces."
       },
       "CenterOfTheFight": {
         "Title": "Center of the Fight",
-        "Description": "Until the start of your next turn, you are not off-guard from flanking if the target is one of the creatures flanking you. Other sources of off-guard affect you normally."
+        "Description": "Until the start of your next turn, spaces within your melee reach are difficult terrain for the target when it moves voluntarily. This does not affect forced movement or teleportation, and it does not stack with other difficult terrain."
       },
       "LetThemSwing": {
         "Title": "Let Them Swing",
@@ -471,11 +471,11 @@
       },
       "AdrenalineDividend": {
         "Title": "Adrenaline Dividend",
-        "Description": "Apparently, success pays interest. Gain temporary Hit Points equal to half your level, rounded up, with a minimum of 1. They last until the end of your next turn."
+        "Description": "Apparently, success pays interest. Before the end of your next turn, the next time you attempt an Athletics or Acrobatics check that targets the target or is rolled against one of its DCs, roll twice and use the higher result. This is a fortune effect, and the benefit is then consumed."
       },
       "ThroughTheGap": {
         "Title": "Through the Gap",
-        "Description": "Your next attempt to Tumble Through the target before the end of your next turn gains a +2 circumstance bonus. If you succeed, the target cannot use reactions triggered by that movement. The benefit is consumed when you attempt the check."
+        "Description": "Before the end of your next turn, when you begin to Tumble Through the target, gain a +1 circumstance bonus to the Acrobatics check, and the target cannot use reactions triggered by any movement that is part of that action. The benefit is consumed when the action begins, regardless of the check's result."
       },
       "LongFollowThrough": {
         "Title": "Long Follow-Through",
@@ -487,23 +487,23 @@
       },
       "LivingBulwark": {
         "Title": "Living Bulwark",
-        "Description": "Until the start of your next turn, the first time a creature other than the target makes a ranged attack against you while the target is between you and the attacker, treat lesser cover granted by the target as standard cover for that attack. The benefit is then consumed."
+        "Description": "Until the end of your next turn, the first ranged attack made against you by a creature other than the target grants you a +2 circumstance bonus to AC if the target is between you and the attacker, or a +1 circumstance bonus otherwise. The benefit is consumed when that attack resolves."
       },
       "FormFindsYou": {
         "Title": "Form Finds You",
-        "Description": "Your body settles into practiced form without losing the beat. You may immediately enter a stance you know as a free action, provided you meet its requirements. If you have no eligible stance or are already in the stance you want, you may immediately Step instead."
+        "Description": "Your body settles into practiced form without losing the beat. You may immediately enter a stance you know as a free action only if you can legally enter it under all normal stance rules, including any restriction on changing stances. If you have no eligible stance or are already in the stance you want, you may immediately Step instead."
       },
       "MomentumToSpare": {
         "Title": "Momentum to Spare",
-        "Description": "Gain one additional reaction that lasts until the start of your next turn. This reaction can be used only for a reaction whose trigger is caused by the target's action or activity. It does not allow the same reaction to be used more than once for a single trigger."
+        "Description": "Gain one additional reaction that lasts until the start of your next turn. It can be used only for a reaction whose trigger is caused by the target's action or activity. All normal triggers, requirements, restrictions, and frequency limits of that reaction still apply, and this does not allow the same reaction to be used more than once for a single trigger."
       },
       "BreakTheBind": {
         "Title": "Break the Bind",
-        "Description": "If you are grabbed, restrained, or immobilized, you may immediately attempt to Escape from one such effect as a free action, following the normal rules. If none of those conditions apply, your next attempt to Escape before the end of your next turn gains a +2 circumstance bonus. The bonus is then consumed."
+        "Description": "If you are grabbed or immobilized, you may immediately attempt to Escape from one such effect as a free action, following the normal rules. If neither condition applies, you may immediately Step instead and must end farther from the target if possible."
       },
       "CloseQuartersClarity": {
         "Title": "Close-Quarters Clarity",
-        "Description": "At this distance, the target's habits become suddenly obvious. You may immediately Seek in an area that includes the target or Recall Knowledge about the target as a free action, following the normal rules for the chosen action."
+        "Description": "Until the start of your next turn, the first time the target Steps while within your melee reach, that Step can trigger your reactions as though it were a move action other than Step. This does not grant an additional reaction or waive any normal requirements. The benefit is consumed when the target Steps, whether or not you react."
       },
       "TurnTheTables": {
         "Title": "Turn the Tables",
@@ -519,7 +519,7 @@
       },
       "MomentumUnspent": {
         "Title": "Momentum Unspent",
-        "Description": "After resolving the triggering attack's damage, you may immediately make a melee Strike as a free action against a different creature within your reach. Apply your multiple attack penalty as though this were your next attack of the turn. This Strike cannot trigger another Critical Forge card. If no other creature is within reach, you may immediately Step instead."
+        "Description": "After resolving the triggering attack's damage, you may immediately make a melee Strike as a free action against a different creature within your reach. If the triggering Strike occurred during your turn, apply your multiple attack penalty as though this were your next attack that turn. If it occurred outside your turn, apply a -5 multiple attack penalty, or -4 if the follow-up Strike uses an agile attack. This Strike cannot trigger another Critical Forge card. If no other creature is within reach, you may immediately Step instead."
       }
     },
     "Effects": {

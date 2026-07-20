@@ -234,11 +234,11 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | ID | Card | Impact | Automation | Core Idea |
 |---|---|---|---|---|
 | CM-001 | Press the Advantage | Light | Manual | Source Steps while remaining adjacent to the target |
-| CM-002 | Guard on the Return | Moderate | Manual | Source raises a shield or parry, with a one-use defensive fallback |
-| CM-003 | Next in Line | Moderate | Manual | Source can Step into a melee Strike against a different enemy |
+| CM-002 | Guard on the Return | Moderate | Manual | One target Strike ignores circumstance advantages against the source |
+| CM-003 | Next in Line | Moderate | Manual | Source can Step into a later melee Strike against a different enemy |
 | CM-004 | Longer Stride | Light | Manual | Source's next Stride moves 5 feet farther |
-| CM-005 | Rhythm Carries | Strong | Manual | Source reduces MAP by 2 for one follow-up melee Strike |
-| CM-006 | No Time to Answer | Moderate | Manual | Target cannot react to the source's next action |
+| CM-005 | Rhythm Carries | Strong | Manual | Source reduces an actual MAP by 2 for one follow-up melee Strike |
+| CM-006 | No Time to Answer | Moderate | Manual | Source protects one eligible action from the target's reactions |
 | CM-007 | Claim the Gap | Moderate | Manual | Source can Step into the target's vacated space |
 | CM-008 | Apparently, That Was Impressive | Moderate | Manual | Source immediately Feints or Demoralizes |
 | CM-009 | Keep Them There | Strong | Manual | Source immediately Grapples or Trips at current MAP |
@@ -249,30 +249,30 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 | ID | Card | Impact | Automation | Core Idea |
 |---|---|---|---|---|
 | CM-011 | Pivot Point | Moderate | Manual | Source circles the target with protected special movement |
-| CM-012 | Hands Still Moving | Light | Manual | Source draws, stows, picks up, or regrips an item for free |
+| CM-012 | Hands Still Moving | Moderate | Manual | Source attempts one combat maneuver without a free hand or matching weapon trait |
 | CM-013 | Hard to Ignore | Moderate | Manual | Target's next Strike against someone else takes -1 |
 | CM-014 | Fear Can Wait | Moderate | Manual | Source reduces frightened or gains a one-use Will bonus |
 | CM-015 | Cut the Corner | Light | Manual | Source ignores 10 feet of difficult terrain on its next Stride |
-| CM-016 | Center of the Fight | Moderate | Manual | Target cannot help flank the source for one round |
+| CM-016 | Center of the Fight | Moderate | Manual | Spaces in the source's reach become difficult terrain for the target |
 | CM-017 | Let Them Swing | Moderate | Manual | Source Steps after the target misses with a melee Strike |
-| CM-018 | Adrenaline Dividend | Moderate | Manual | Source gains short-lived temporary Hit Points based on level |
-| CM-019 | Through the Gap | Moderate | Manual | Source gains +2 and reaction protection for one Tumble Through |
+| CM-018 | Adrenaline Dividend | Strong | Manual | Source gains fortune on one Athletics or Acrobatics check against the target |
+| CM-019 | Through the Gap | Moderate | Manual | Source gains +1 and reaction protection from the start of one Tumble Through |
 | CM-020 | Long Follow-Through | Strong | Manual | Source increases reach by 5 feet for one melee Strike |
 
 ## Combat Momentum — Block 3
 
 | ID | Card | Impact | Automation | Core Idea |
 |---|---|---|---|---|
-| CM-021 | Break Contact | Moderate | Manual | Source withdraws up to half Speed without triggering the target |
-| CM-022 | Living Bulwark | Moderate | Manual | Target upgrades creature-provided cover against one ranged attack |
+| CM-021 | Break Contact | Strong | Manual | Source withdraws up to half Speed without triggering the target |
+| CM-022 | Living Bulwark | Moderate | Manual | Source gains +2 AC when the target intervenes, or +1 otherwise, against one ranged attack |
 | CM-023 | Form Finds You | Strong | Manual | Source enters a stance for free or Steps as a fallback |
 | CM-024 | Momentum to Spare | Strong | Manual | Source gains one target-specific additional reaction |
-| CM-025 | Break the Bind | Moderate | Manual | Source Escapes immediately or banks a bonus for its next Escape |
-| CM-026 | Close-Quarters Clarity | Light | Manual | Source Seeks or Recalls Knowledge about the target for free |
+| CM-025 | Break the Bind | Moderate | Manual | Source Escapes immediately or Steps away as a reliable fallback |
+| CM-026 | Close-Quarters Clarity | Strong | Manual | The target's next Step within reach can trigger the source's reactions |
 | CM-027 | Turn the Tables | Strong | Manual | Failed enemy combat maneuver enables a penalized counter-maneuver |
 | CM-028 | Don't Blink | Moderate | Manual | Source can Seek as a reaction after the target Hides or Sneaks |
 | CM-029 | Victory Echo | Moderate | Manual | Defeating the target enables Demoralize, with a one-use fallback bonus |
-| CM-030 | Momentum Unspent | Strong | Manual | Source makes a follow-up melee Strike against a different creature |
+| CM-030 | Momentum Unspent | Strong | Manual | Source makes a bounded follow-up melee Strike against a different creature |
 
 ### Development Status
 
@@ -281,4 +281,23 @@ Future reviews will examine pack identity, narrative consistency, translation qu
 - Melee weapon, unarmed, and natural attacks are supported.
 - All three blocks benefit the attacker rather than allies.
 - All Combat Momentum cards currently use manual tactical resolution.
-- Full mechanical review is the next planned step.
+- Full mechanical review passed in version 0.4.3.
+
+
+## Combat Momentum Mechanical Review
+
+The complete 30-card pack received its first mechanical review after version 0.4.2. Version 0.4.3 applied the revision.
+
+### Complete Redesigns
+
+CM-002, CM-012, CM-016, CM-018, CM-019, and CM-026 were redesigned. Direct mirrors of Martial Openings, Core-style temporary Hit Points, retroactive movement protection, and repeated Seek or Recall Knowledge options were replaced with circumstance neutralization, hand-independent combat maneuvers, reach-based space control, a target-specific fortune effect, protection from the start of Tumble Through, and a Step-triggered reaction window.
+
+### Targeted Adjustments
+
+CM-003, CM-004, CM-005, CM-006, CM-014, and CM-015 now remain useful after out-of-turn or late-turn critical hits. CM-021 is rated Strong. CM-022 gains a reliable ranged-defense fallback. CM-023 and CM-024 preserve all normal stance and reaction-frequency rules. CM-025 removes the impossible restrained branch and gains an immediate Step fallback. CM-030 applies an explicit second-attack penalty when triggered outside the source's turn.
+
+### Review Status
+
+**Mechanical Review: Passed after revision**
+
+All four Martial Consequences packs have now completed their first dedicated mechanical review.

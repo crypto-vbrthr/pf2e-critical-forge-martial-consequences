@@ -10,32 +10,32 @@ export const COMBAT_MOMENTUM_CARDS = Object.freeze([
   defineCombatMomentum({
     id: "cm-002-guard-on-the-return", localizationKey: "GuardOnTheReturn",
     tone: "neutral", impact: "moderate", fallbackTitle: "Guard on the Return",
-    fallbackDescription: "Your attack returns to guard almost by itself. You may immediately Raise a Shield or use a single action granted by a parry trait as a free action. If neither option would improve your defense, the next attack the target makes against you before the start of your next turn takes a -1 circumstance penalty. The penalty is then consumed.",
-    tags: ["self-defense", "shield", "parry", "fallback-penalty", "one-use", "manual"]
+    fallbackDescription: "Your follow-through closes every obvious angle. Before the end of your next turn, for the target's next Strike against you, ignore circumstance bonuses to its attack roll and circumstance penalties to your AC. Other modifiers apply normally. The benefit is consumed when that Strike resolves.",
+    tags: ["self-defense", "circumstance-neutralization", "target-strike", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-003-next-in-line", localizationKey: "NextInLine",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Next in Line",
-    fallbackDescription: "Choose a different enemy you can perceive. If your next action this turn is a melee Strike against that enemy, you may Step once immediately before the Strike as part of the same action. You must end with that enemy in reach; otherwise, you cannot use this Step.",
-    tags: ["target-switch", "step", "action-sequence", "self-movement", "manual"]
+    fallbackDescription: "Before the end of your next turn, when you make a melee Strike against a creature other than the target, you may Step immediately before the Strike as part of the same action. You must end with that creature in reach. The benefit is consumed only when you use the Step.",
+    tags: ["target-switch", "step", "action-sequence", "self-movement", "conditional-consumption", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-004-longer-stride", localizationKey: "LongerStride",
     tone: "neutral", impact: "light", fallbackTitle: "Longer Stride",
-    fallbackDescription: "The successful attack carries your movement forward. The next time you Stride before the start of your next turn, you may move 5 feet farther than your Speed. The benefit is then consumed.",
+    fallbackDescription: "The successful attack carries your movement forward. The next time you Stride before the end of your next turn, you may move 5 feet farther than your Speed. The benefit is then consumed.",
     weight: 2, tags: ["self-movement", "stride", "speed", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-005-rhythm-carries", localizationKey: "RhythmCarries",
     tone: "dramatic", impact: "strong", fallbackTitle: "Rhythm Carries",
-    fallbackDescription: "The critical hit locks your next attack into the same rhythm. For your next melee Strike before the end of this turn, reduce your multiple attack penalty by 2. This cannot reduce the penalty below 0, and the benefit is then consumed.",
-    tags: ["multiple-attack-penalty", "follow-up-strike", "one-use", "manual"]
+    fallbackDescription: "For your next melee Strike before the end of your next turn that would take a multiple attack penalty, reduce that penalty by 2. This cannot reduce the penalty below 0. The benefit is consumed only when it actually reduces the penalty.",
+    tags: ["multiple-attack-penalty", "follow-up-strike", "conditional-consumption", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-006-no-time-to-answer", localizationKey: "NoTimeToAnswer",
     tone: "serious", impact: "moderate", fallbackTitle: "No Time to Answer",
-    fallbackDescription: "The target is still reacting to the impact when you move again. It cannot use reactions triggered by your next action before the start of your next turn. The benefit is consumed when that action begins.",
-    tags: ["reaction-denial", "self-action", "one-use", "manual"]
+    fallbackDescription: "Before the end of your next turn, when you begin an action that could trigger a reaction from the target, you may declare that action protected. The target cannot use reactions triggered by that action. The benefit is consumed only when you declare a protected action.",
+    tags: ["reaction-denial", "self-action", "conditional-consumption", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-007-claim-the-gap", localizationKey: "ClaimTheGap",
@@ -69,9 +69,9 @@ export const COMBAT_MOMENTUM_CARDS = Object.freeze([
   }),
   defineCombatMomentum({
     id: "cm-012-hands-still-moving", localizationKey: "HandsStillMoving",
-    tone: "neutral", impact: "light", fallbackTitle: "Hands Still Moving",
-    fallbackDescription: "Without breaking rhythm, you may immediately Interact as a free action to draw or stow one worn item, pick up one unattended item within reach, or change your grip on an item you hold. This cannot be used to Reload or activate an item.",
-    weight: 2, tags: ["equipment", "interact", "grip", "free-action", "manual"]
+    tone: "neutral", impact: "moderate", fallbackTitle: "Hands Still Moving",
+    fallbackDescription: "Before the end of your next turn, you may attempt one Grapple, Reposition, Shove, or Trip against the target without needing a free hand or a weapon with the corresponding trait. You must still be able to reach and affect the target, and your multiple attack penalty and all other requirements apply. The benefit is consumed when you attempt the check.",
+    tags: ["combat-maneuver", "free-hand", "grapple", "reposition", "shove", "trip", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-013-hard-to-ignore", localizationKey: "HardToIgnore",
@@ -82,20 +82,20 @@ export const COMBAT_MOMENTUM_CARDS = Object.freeze([
   defineCombatMomentum({
     id: "cm-014-fear-can-wait", localizationKey: "FearCanWait",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Fear Can Wait",
-    fallbackDescription: "Reduce your frightened value by 1. If you are not frightened, you instead gain a +1 circumstance bonus to your next Will save before the start of your next turn. The bonus is then consumed.",
+    fallbackDescription: "Reduce your frightened value by 1. If you are not frightened, you instead gain a +1 circumstance bonus to your next Will save before the end of your next turn. The bonus is then consumed.",
     tags: ["condition-reduction", "frightened", "will", "fallback", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-015-cut-the-corner", localizationKey: "CutTheCorner",
     tone: "neutral", impact: "light", fallbackTitle: "Cut the Corner",
-    fallbackDescription: "The next time you Stride before the start of your next turn, ignore up to 10 feet of difficult terrain during that movement. The benefit is then consumed and does not let you cross greater difficult terrain or impassable spaces.",
+    fallbackDescription: "The next time you Stride before the end of your next turn, ignore up to 10 feet of difficult terrain during that movement. The benefit is then consumed and does not let you cross greater difficult terrain or impassable spaces.",
     weight: 2, tags: ["self-movement", "stride", "difficult-terrain", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-016-center-of-the-fight", localizationKey: "CenterOfTheFight",
     tone: "serious", impact: "moderate", fallbackTitle: "Center of the Fight",
-    fallbackDescription: "Until the start of your next turn, you are not off-guard from flanking if the target is one of the creatures flanking you. Other sources of off-guard affect you normally.",
-    tags: ["self-defense", "flanking", "off-guard", "target-specific", "manual"]
+    fallbackDescription: "Until the start of your next turn, spaces within your melee reach are difficult terrain for the target when it moves voluntarily. This does not affect forced movement or teleportation, and it does not stack with other difficult terrain.",
+    tags: ["space-control", "difficult-terrain", "target-movement", "reach", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-017-let-them-swing", localizationKey: "LetThemSwing",
@@ -105,14 +105,14 @@ export const COMBAT_MOMENTUM_CARDS = Object.freeze([
   }),
   defineCombatMomentum({
     id: "cm-018-adrenaline-dividend", localizationKey: "AdrenalineDividend",
-    tone: "humorous", impact: "moderate", fallbackTitle: "Adrenaline Dividend",
-    fallbackDescription: "Apparently, success pays interest. Gain temporary Hit Points equal to half your level, rounded up, with a minimum of 1. They last until the end of your next turn.",
-    tags: ["temporary-hit-points", "scaling", "self-recovery", "manual"]
+    tone: "humorous", impact: "strong", fallbackTitle: "Adrenaline Dividend",
+    fallbackDescription: "Apparently, success pays interest. Before the end of your next turn, the next time you attempt an Athletics or Acrobatics check that targets the target or is rolled against one of its DCs, roll twice and use the higher result. This is a fortune effect, and the benefit is then consumed.",
+    tags: ["fortune", "athletics", "acrobatics", "target-specific", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-019-through-the-gap", localizationKey: "ThroughTheGap",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Through the Gap",
-    fallbackDescription: "Your next attempt to Tumble Through the target before the end of your next turn gains a +2 circumstance bonus. If you succeed, the target cannot use reactions triggered by that movement. The benefit is consumed when you attempt the check.",
+    fallbackDescription: "Before the end of your next turn, when you begin to Tumble Through the target, gain a +1 circumstance bonus to the Acrobatics check, and the target cannot use reactions triggered by any movement that is part of that action. The benefit is consumed when the action begins, regardless of the check's result.",
     tags: ["tumble-through", "acrobatics", "reaction-protection", "one-use", "manual"]
   }),
   defineCombatMomentum({
@@ -123,39 +123,39 @@ export const COMBAT_MOMENTUM_CARDS = Object.freeze([
   }),
   defineCombatMomentum({
     id: "cm-021-break-contact", localizationKey: "BreakContact",
-    tone: "neutral", impact: "moderate", fallbackTitle: "Break Contact",
+    tone: "neutral", impact: "strong", fallbackTitle: "Break Contact",
     fallbackDescription: "The impact creates a clean exit. You may immediately Stride up to half your Speed as a free action. You must end farther from the target than you began, and this movement does not trigger reactions from the target.",
     tags: ["self-movement", "stride", "retreat", "reaction-protection", "free-action", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-022-living-bulwark", localizationKey: "LivingBulwark",
     tone: "dramatic", impact: "moderate", fallbackTitle: "Living Bulwark",
-    fallbackDescription: "Until the start of your next turn, the first time a creature other than the target makes a ranged attack against you while the target is between you and the attacker, treat lesser cover granted by the target as standard cover for that attack. The benefit is then consumed.",
-    tags: ["self-defense", "cover", "ranged-defense", "target-position", "one-use", "manual"]
+    fallbackDescription: "Until the end of your next turn, the first ranged attack made against you by a creature other than the target grants you a +2 circumstance bonus to AC if the target is between you and the attacker, or a +1 circumstance bonus otherwise. The benefit is consumed when that attack resolves.",
+    tags: ["self-defense", "ranged-defense", "target-position", "ac", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-023-form-finds-you", localizationKey: "FormFindsYou",
     tone: "dramatic", impact: "strong", fallbackTitle: "Form Finds You",
-    fallbackDescription: "Your body settles into practiced form without losing the beat. You may immediately enter a stance you know as a free action, provided you meet its requirements. If you have no eligible stance or are already in the stance you want, you may immediately Step instead.",
+    fallbackDescription: "Your body settles into practiced form without losing the beat. You may immediately enter a stance you know as a free action only if you can legally enter it under all normal stance rules, including any restriction on changing stances. If you have no eligible stance or are already in the stance you want, you may immediately Step instead.",
     tags: ["stance", "free-action", "fallback-step", "self-readiness", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-024-momentum-to-spare", localizationKey: "MomentumToSpare",
     tone: "serious", impact: "strong", fallbackTitle: "Momentum to Spare",
-    fallbackDescription: "Gain one additional reaction that lasts until the start of your next turn. This reaction can be used only for a reaction whose trigger is caused by the target's action or activity. It does not allow the same reaction to be used more than once for a single trigger.",
-    tags: ["reaction", "reaction-economy", "target-specific", "self-readiness", "manual"]
+    fallbackDescription: "Gain one additional reaction that lasts until the start of your next turn. It can be used only for a reaction whose trigger is caused by the target's action or activity. All normal triggers, requirements, restrictions, and frequency limits of that reaction still apply, and this does not allow the same reaction to be used more than once for a single trigger.",
+    tags: ["reaction", "reaction-economy", "target-specific", "frequency-limits", "self-readiness", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-025-break-the-bind", localizationKey: "BreakTheBind",
     tone: "serious", impact: "moderate", fallbackTitle: "Break the Bind",
-    fallbackDescription: "If you are grabbed, restrained, or immobilized, you may immediately attempt to Escape from one such effect as a free action, following the normal rules. If none of those conditions apply, your next attempt to Escape before the end of your next turn gains a +2 circumstance bonus. The bonus is then consumed.",
-    tags: ["escape", "condition-response", "free-action", "fallback-bonus", "one-use", "manual"]
+    fallbackDescription: "If you are grabbed or immobilized, you may immediately attempt to Escape from one such effect as a free action, following the normal rules. If neither condition applies, you may immediately Step instead and must end farther from the target if possible.",
+    tags: ["escape", "condition-response", "free-action", "fallback-step", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-026-close-quarters-clarity", localizationKey: "CloseQuartersClarity",
-    tone: "neutral", impact: "light", fallbackTitle: "Close-Quarters Clarity",
-    fallbackDescription: "At this distance, the target's habits become suddenly obvious. You may immediately Seek in an area that includes the target or Recall Knowledge about the target as a free action, following the normal rules for the chosen action.",
-    weight: 2, tags: ["seek", "recall-knowledge", "perception", "knowledge", "free-action", "manual"]
+    tone: "neutral", impact: "strong", fallbackTitle: "Close-Quarters Clarity",
+    fallbackDescription: "Until the start of your next turn, the first time the target Steps while within your melee reach, that Step can trigger your reactions as though it were a move action other than Step. This does not grant an additional reaction or waive any normal requirements. The benefit is consumed when the target Steps, whether or not you react.",
+    tags: ["reaction-window", "step", "movement", "target-specific", "one-use", "manual"]
   }),
   defineCombatMomentum({
     id: "cm-027-turn-the-tables", localizationKey: "TurnTheTables",
@@ -178,7 +178,7 @@ export const COMBAT_MOMENTUM_CARDS = Object.freeze([
   defineCombatMomentum({
     id: "cm-030-momentum-unspent", localizationKey: "MomentumUnspent",
     tone: "dramatic", impact: "strong", fallbackTitle: "Momentum Unspent",
-    fallbackDescription: "After resolving the triggering attack's damage, you may immediately make a melee Strike as a free action against a different creature within your reach. Apply your multiple attack penalty as though this were your next attack of the turn. This Strike cannot trigger another Critical Forge card. If no other creature is within reach, you may immediately Step instead.",
-    tags: ["follow-up-strike", "multiple-attack-penalty", "free-action", "anti-chain", "fallback-step", "manual"]
+    fallbackDescription: "After resolving the triggering attack's damage, you may immediately make a melee Strike as a free action against a different creature within your reach. If the triggering Strike occurred during your turn, apply your multiple attack penalty as though this were your next attack that turn. If it occurred outside your turn, apply a -5 multiple attack penalty, or -4 if the follow-up Strike uses an agile attack. This Strike cannot trigger another Critical Forge card. If no other creature is within reach, you may immediately Step instead.",
+    tags: ["follow-up-strike", "multiple-attack-penalty", "out-of-turn", "free-action", "anti-chain", "fallback-step", "manual"]
   })
 ]);

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.4.3
+
+- Completed the first full mechanical review of Combat Momentum.
+- Redesigned CM-002, CM-012, CM-016, CM-018, CM-019, and CM-026 to remove direct Martial Openings mirrors, Core-style temporary Hit Points, retroactive Tumble Through protection, and repeated Seek or Recall Knowledge options.
+- Added circumstance neutralization, a hand-independent combat maneuver, reach-based space control, target-specific Athletics or Acrobatics fortune, reaction protection from the start of Tumble Through, and a Step-triggered reaction window.
+- Adjusted CM-003, CM-004, CM-005, CM-006, CM-014, and CM-015 so late-turn and out-of-turn critical hits retain usable timing windows and benefits consume only when applied.
+- Reclassified CM-021 as Strong and gave CM-022 a reliable ranged-defense fallback.
+- Clarified all normal stance rules for CM-023 and reaction requirements and frequency limits for CM-024.
+- Removed the impossible restrained branch from CM-025 and added an immediate Step fallback.
+- Bounded CM-030 with an explicit second-attack multiple attack penalty when triggered outside the source's turn.
+- Added the Combat Momentum mechanical review report and marked all four packs as mechanically reviewed.
+- Updated German and English localization, the Card Bible, pack documentation, README, changelog, and validation tests.
+- Preserved 30 Combat Momentum cards and 120 total cards across four optional packs.
+
 ## 0.4.2
 
 - Added Combat Momentum CM-021 through CM-030.
